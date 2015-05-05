@@ -1,0 +1,14 @@
+{
+	"category" : "SmalltalkREPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SwtSmalltalkREPLDemo",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
