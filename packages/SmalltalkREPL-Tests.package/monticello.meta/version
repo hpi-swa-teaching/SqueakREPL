@@ -1,1 +1,1 @@
-(name 'SmalltalkREPL-Tests-WR.1' message 'Initial renaming' id 'c2e2f1ef-77e9-45b9-bdf8-ddc19e4cdf11' date '5 May 2015' time '3:59:16.883 pm' author 'WR' ancestors () stepChildren ())
+(name 'SmalltalkREPL-Tests-WR.2' message 'empty log message' id '79a0787f-a80b-4b13-a23c-01127fe33b2a' date '6 May 2015' time '4:22:24.693 pm' author 'WR' ancestors ((name 'SmalltalkREPL-Tests-WR.1' message 'Initial renaming' id 'c2e2f1ef-77e9-45b9-bdf8-ddc19e4cdf11' date '5 May 2015' time '3:59:16.883 pm' author 'WR' ancestors () stepChildren ())) stepChildren ())

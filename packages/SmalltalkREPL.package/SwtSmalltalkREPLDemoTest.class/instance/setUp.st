@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	self demo: SwtProjectXXDemo new
+	self demo: SwtSmalltalkREPLDemo new
