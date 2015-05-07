@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BaselineOfProjectSmalltalkREPL",
+	"name" : "BaselineOfSmalltalkREPL",
 	"pools" : [
 		 ],
 	"super" : "BaselineOf",
