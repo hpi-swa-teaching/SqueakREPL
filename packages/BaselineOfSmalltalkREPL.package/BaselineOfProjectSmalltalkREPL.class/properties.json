@@ -1,14 +1,14 @@
 {
-	"category" : "SmalltalkREPL-Tests",
+	"category" : "BaselineOfSmalltalkREPL",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"demo" ],
-	"name" : "SwtSmalltalkREPLDemoTest",
+		 ],
+	"name" : "BaselineOfProjectSmalltalkREPL",
 	"pools" : [
 		 ],
-	"super" : "TestCase",
+	"super" : "BaselineOf",
 	"type" : "normal" }
