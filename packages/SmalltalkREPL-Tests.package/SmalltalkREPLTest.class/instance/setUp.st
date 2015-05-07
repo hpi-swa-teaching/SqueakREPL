@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	self demo: SmalltalkREPL new
+	self repl SmalltalkREPL new

@@ -1,3 +1,3 @@
 running
 testFooBar
-	self assert: self demo foobar = 1256
+	self assert: self repl foobar = 1256
