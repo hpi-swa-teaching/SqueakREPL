@@ -1,5 +1,5 @@
 {
-	"category" : "BaselineOfProjectXX",
+	"category" : "REPL-Core",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "BaselineOfProjectXX",
+	"name" : "SwtREPLDemo",
 	"pools" : [
 		 ],
-	"super" : "BaselineOf",
+	"super" : "Object",
 	"type" : "normal" }
