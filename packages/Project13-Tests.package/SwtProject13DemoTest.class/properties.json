@@ -1,14 +1,14 @@
 {
-	"category" : "ProjectXX-Core",
+	"category" : "Project13-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "SwtProjectXXDemo",
+		"demo" ],
+	"name" : "SwtProject13DemoTest",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TestCase",
 	"type" : "normal" }
