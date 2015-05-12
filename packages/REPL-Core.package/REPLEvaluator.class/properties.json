@@ -1,0 +1,14 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"workspace" ],
+	"name" : "REPLEvaluator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

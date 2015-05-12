@@ -1,0 +1,20 @@
+{
+	"class" : {
+		"source:workspace:" : "db 5/12/2015 20:51" },
+	"instance" : {
+		"bindingOf:" : "db 5/12/2015 20:43",
+		"formatError" : "db 5/12/2015 20:45",
+		"lastError" : "db 5/12/2015 20:45",
+		"lastError:" : "db 5/12/2015 20:41",
+		"lastErrorMessage" : "db 5/12/2015 20:46",
+		"lastErrorMessage:" : "db 5/12/2015 20:41",
+		"lastErrorPosition" : "db 5/12/2015 20:46",
+		"lastErrorPosition:" : "db 5/12/2015 20:41",
+		"lastErrorStatement" : "db 5/12/2015 20:46",
+		"lastErrorStatement:" : "db 5/12/2015 20:41",
+		"model" : "db 5/12/2015 20:41",
+		"model:" : "db 5/12/2015 20:41",
+		"notify:at:in:" : "db 5/12/2015 20:43",
+		"selectionInterval" : "db 5/12/2015 20:44",
+		"text" : "db 5/12/2015 20:41",
+		"text:" : "db 5/12/2015 20:47" } }
