@@ -1,7 +1,0 @@
-startUp:
-addToStartUpList:
-addToShutDownList:
-
-(SmallInteger initialize)
-
-SmalltalkImage Argumente
