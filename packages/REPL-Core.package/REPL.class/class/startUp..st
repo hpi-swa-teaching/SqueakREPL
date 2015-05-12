@@ -7,5 +7,5 @@ startUp: resuming
 		 show: Smalltalk commandLine arguments;
 		 cr.
 	(Smalltalk commandLine arguments includes: self REPLArgument) ifTrue: [
-		Transcript show: 'A REPL was requested.'.
+		Transcript show: 'A REPL was requested.' ; cr.
 		ThisInstance := self new. ]
