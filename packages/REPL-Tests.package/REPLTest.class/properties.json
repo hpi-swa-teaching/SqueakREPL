@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"demo" ],
-	"name" : "SwtREPLDemoTest",
+		"demo",
+		"repl" ],
+	"name" : "REPLTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",

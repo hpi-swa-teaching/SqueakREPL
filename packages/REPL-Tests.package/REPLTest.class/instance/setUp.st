@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	self demo: SwtREPLDemo new
+	self repl: REPL new
