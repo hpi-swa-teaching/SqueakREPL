@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"REPLArgument" : "WR 5/12/2015 21:05",
+		"initialize" : "WR 5/12/2015 21:04",
+		"shutDown:" : "WR 5/12/2015 21:05",
+		"startUp:" : "WR 5/12/2015 21:06" },
+	"instance" : {
+		"barfoo" : "WR 5/12/2015 21:14",
+		"foobar" : "WR 5/12/2015 21:14",
+		"initialize" : "WR 5/12/2015 21:14" } }

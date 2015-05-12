@@ -3,11 +3,11 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"ThisInstance" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "SwtREPLDemo",
+	"name" : "REPL",
 	"pools" : [
 		 ],
 	"super" : "Object",
