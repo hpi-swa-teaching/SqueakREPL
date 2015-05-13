@@ -1,11 +1,6 @@
 system startup
 startUp: resuming 
-	"If image is newly started, check arguments if a REPL was requested.
-	If so, provide one."
-	"Check arguments"
-	Transcript cr; show: 'Arguments: ';
-		 show: Smalltalk commandLine arguments;
-		 cr.
+	"If image is newly started, check arguments if a REPL was requested. If so, provide one."
+
 	(Smalltalk commandLine arguments includes: self REPLArgument) ifTrue: [
-		Transcript show: 'A REPL was requested.' ; cr.
-		ThisInstance := self new. ]
+		ThisInstance := self interfaceClass new. ]

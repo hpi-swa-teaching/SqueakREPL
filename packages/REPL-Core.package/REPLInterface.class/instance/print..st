@@ -1,3 +1,9 @@
-read-eval-print
+print
 print: aString
-	"Print to stdOut"
+	"Write aString and line feed to stdOut and flush."
+
+	self 
+		putAll: aString;
+		lf;
+		putFirstSymbol; 
+		flush
