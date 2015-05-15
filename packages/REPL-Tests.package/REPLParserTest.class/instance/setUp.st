@@ -1,5 +1,6 @@
 running
 setUp
-	"Set up the instance variables in order to run all tests."
+	"Set up the parser on which all tests are performed."
 
+	super setUp.
 	self parser: REPLParser new

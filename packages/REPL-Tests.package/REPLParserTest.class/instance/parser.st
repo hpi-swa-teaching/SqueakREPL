@@ -1,5 +1,5 @@
 accessing
 parser
-	"Answer the syntax analyzer (an instance of Parser)."
+	"Answer the parser (an instance of Parser) on which all tests are performed."
 
 	^ parser
