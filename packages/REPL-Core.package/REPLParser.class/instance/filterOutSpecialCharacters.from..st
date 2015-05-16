@@ -4,4 +4,4 @@ filterOutSpecialCharacters: aCollection from: aString
 
 	^ aCollection inject: aString into:
 		[ :adjustedExpression :eachSpecialCharacter |
-			adjustedExpression copyReplaceTokens: '$', eachSpecialCharacter with: '' ]
+			adjustedExpression copyReplaceTokens: '$' , eachSpecialCharacter with: '' ]

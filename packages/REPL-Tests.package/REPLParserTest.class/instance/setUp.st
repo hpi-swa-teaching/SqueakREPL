@@ -1,6 +1,6 @@
 running
 setUp
-	"Set up the parser on which all tests are performed."
+	"Set up a newly created instance of the receiver."
 
 	super setUp.
 	self parser: REPLParser new
