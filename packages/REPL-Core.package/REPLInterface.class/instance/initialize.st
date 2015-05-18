@@ -5,4 +5,8 @@ initialize
 	self stdOut: ThisOSProcess thisOSProcess stdOut.
 	self stdIn: ThisOSProcess thisOSProcess stdIn.
 
-	self printInitialMessage
+	self parser: REPLParser new.
+	self evaluator: REPLEvaluator new.
+
+	self printInitialMessage.
+	self startLoop

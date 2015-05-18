@@ -1,9 +1,10 @@
-print
+printing
 print: aString
 	"Write aString and line feed to stdOut and flush."
 
 	self 
+		cr;
 		putAll: aString;
 		lf;
-		putFirstSymbol; 
+		putAll: self class startSymbol; 
 		flush

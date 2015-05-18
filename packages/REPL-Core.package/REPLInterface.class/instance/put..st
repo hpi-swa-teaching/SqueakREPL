@@ -1,4 +1,4 @@
-print
+printing
 put: aSymbol
 	"Write aSymbol to stdOut."
 

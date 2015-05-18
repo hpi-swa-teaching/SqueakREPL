@@ -1,5 +1,5 @@
-print
+printing
 printInitialMessage 
 	"Print initial message to stdOut."
 
-	self print: 'Hello world!'
+	self print: 'Welcome. This is your Squeak REPL.'

@@ -1,4 +1,4 @@
-print
+printing
 lf
 	"Put line feed to stdOut."
 

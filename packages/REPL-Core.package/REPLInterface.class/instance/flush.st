@@ -1,4 +1,4 @@
-print
+printing
 flush
 	"Flush stdOut."
 

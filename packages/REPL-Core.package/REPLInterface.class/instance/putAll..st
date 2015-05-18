@@ -1,4 +1,4 @@
-print
+printing
 putAll: aString
 	"Write aString to stdOut."
 
