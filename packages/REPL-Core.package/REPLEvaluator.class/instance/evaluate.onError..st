@@ -8,10 +8,12 @@ evaluate: aString onError: aBlock
 		source: aString
 		workspace: self workspace.
 
-	^self workspace doItReceiver class evaluatorClass new
+	^ [ self workspace doItReceiver class evaluatorClass new
 		evaluate: aString
 		in: (self workspace doItContext)
 		to: (self workspace doItReceiver)
 		notifying: notificationReceiver
 		ifFail: [ ^aBlock value: notificationReceiver ]
-		logged: false.
+		logged: false. ]
+			on: MessageNotUnderstood
+			do: [ :ex | self handleException: ex ].
