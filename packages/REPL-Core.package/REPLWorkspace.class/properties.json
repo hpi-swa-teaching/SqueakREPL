@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"workspace",
-		"workspaceWindow" ],
-	"name" : "REPLEvaluator",
+		 ],
+	"name" : "REPLWorkspace",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Workspace",
 	"type" : "normal" }

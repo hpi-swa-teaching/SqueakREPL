@@ -6,13 +6,35 @@ startLoop
 		| input |
 		input := ''.
 		[ 
-			input := input , self read.
+		"	Transcript show: '?'."
+
+			"input := input , self read."
+			input := OSProcess thisOSProcess stdIn nextLine.
+			
+
+			"Transcript show: '!'."
+
+
 	
-			(self isExpression: input) 
-			ifTrue: [
-				self print: (self evaluate: input).
-				input := '' ] 
-			ifFalse: [ 
-				self putAll: self class continuationSymbol ]
+			"(input = Character lf) ifFalse: [
+
+				Transcript show: 'Moar!'.
+				Transcript show: input.
+				self putAll: '!'."
+
+"			] ifTrue: ["
+
+				(self isExpression: input) 
+				ifTrue: [
+					self print: (self evaluate: input).
+					input := '' ] 
+				ifFalse: [ 
+					self putAll: self class continuationSymbol ]
+
+		"	]."
+	
+Processor yield.
+
+
 		] repeat
 	] forkAt: (Processor userBackgroundPriority))

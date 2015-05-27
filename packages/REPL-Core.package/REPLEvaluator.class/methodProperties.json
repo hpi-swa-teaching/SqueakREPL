@@ -1,11 +1,13 @@
 {
 	"class" : {
-		 },
+		"handleException:" : "ar 5/27/2015 15:07" },
 	"instance" : {
 		"evaluate:" : "db 5/12/2015 20:39",
 		"evaluate:onError:" : "db 5/26/2015 18:45",
 		"handleException:" : "db 5/26/2015 18:48",
 		"initialize" : "db 5/12/2015 20:36",
-		"initializeWorkspace" : "db 5/12/2015 20:36",
+		"initializeWorkspace" : "ar 5/27/2015 14:15",
 		"workspace" : "db 5/12/2015 20:34",
-		"workspace:" : "db 5/12/2015 20:34" } }
+		"workspace:" : "db 5/12/2015 20:34",
+		"workspaceWindow" : "ar 5/27/2015 14:05",
+		"workspaceWindow:" : "ar 5/27/2015 14:05" } }
