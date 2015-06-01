@@ -1,0 +1,19 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"parser",
+		"evaluator",
+		"process",
+		"socket",
+		"port",
+		"input" ],
+	"name" : "REPLServer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
