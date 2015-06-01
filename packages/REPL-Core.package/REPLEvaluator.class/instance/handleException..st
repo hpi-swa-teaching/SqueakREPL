@@ -11,7 +11,7 @@ handleException: anException
 	args add: #context.
 	args addAll: anException message arguments.
 
-	shortcuts := REPLShortcuts new.
+	shortcuts := REPLShortcut new.
 	value := shortcuts perform: message asSymbol withArguments: args asArray.
 
 	anException resume: value.
