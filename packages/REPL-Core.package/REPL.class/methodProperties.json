@@ -1,11 +1,14 @@
 {
 	"class" : {
 		"REPLArgument" : "WR 5/12/2015 21:05",
-		"initialize" : "WR 5/12/2015 21:04",
-		"interfaceClass" : "WR 5/13/2015 14:06",
+		"initialize" : "wr 6/1/2015 15:01",
+		"instance" : "wr 6/1/2015 13:05",
+		"instance:" : "wr 6/1/2015 13:05",
+		"interfaceClass" : "wr 6/1/2015 12:59",
+		"new" : "wr 6/1/2015 13:05",
+		"newOn:" : "wr 6/1/2015 13:23",
 		"shutDown:" : "WR 5/12/2015 21:05",
-		"startUp:" : "WR 5/13/2015 14:55",
-		"thisInstance" : "WR 5/13/2015 14:54" },
+		"startUp:" : "wr 6/1/2015 13:05" },
 	"instance" : {
 		"barfoo" : "WR 5/12/2015 21:14",
 		"foobar" : "WR 5/12/2015 21:14" } }
