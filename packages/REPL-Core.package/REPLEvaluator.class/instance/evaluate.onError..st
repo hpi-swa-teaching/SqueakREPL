@@ -8,7 +8,7 @@ evaluate: aString onError: aBlock
 		source: aString
 		workspace: self workspace.
 
-	^ [ self workspace doItReceiver class evaluatorClass new
+	^ [ REPLCoreCompiler new
 		evaluate: aString
 		in: (self workspace doItContext)
 		to: (self workspace doItReceiver)
