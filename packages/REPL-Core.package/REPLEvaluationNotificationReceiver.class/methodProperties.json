@@ -3,6 +3,7 @@
 		"source:workspace:" : "db 5/12/2015 20:51" },
 	"instance" : {
 		"bindingOf:" : "db 5/12/2015 20:43",
+		"doesNotUnderstand:" : "db 6/1/2015 23:57",
 		"formatError" : "db 5/12/2015 20:45",
 		"lastError" : "db 5/12/2015 20:45",
 		"lastError:" : "db 5/12/2015 20:41",
@@ -15,6 +16,8 @@
 		"model" : "db 5/12/2015 20:41",
 		"model:" : "db 5/12/2015 20:41",
 		"notify:at:in:" : "db 5/12/2015 20:43",
+		"select" : "db 6/1/2015 18:11",
+		"selectFrom:to:" : "db 6/1/2015 18:11",
 		"selectionInterval" : "db 5/12/2015 20:44",
 		"text" : "db 5/12/2015 20:41",
 		"text:" : "db 5/12/2015 20:47" } }
