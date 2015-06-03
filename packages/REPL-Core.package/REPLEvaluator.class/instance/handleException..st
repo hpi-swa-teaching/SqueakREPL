@@ -4,7 +4,9 @@ handleException: anException
 
 	| args message shortcuts value |
 
-	"TODO: ! shortcuts"
+	anException message selector = #! ifTrue: [
+		anException message setSelector: #n:
+	].
 
 	message := (anException receiver asString) , ':', (anException message selector asString).
 	args := OrderedCollection new.
