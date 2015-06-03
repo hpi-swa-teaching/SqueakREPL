@@ -1,0 +1,14 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model" ],
+	"name" : "REPLOCompletion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
