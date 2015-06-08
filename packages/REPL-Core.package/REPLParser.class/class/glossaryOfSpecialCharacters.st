@@ -6,4 +6,6 @@ glossaryOfSpecialCharacters
 		at: $( put: $);
 		at: $[ put: $];
 		at: ${ put: $};
+		at: $< put: $>;
+		at: $' put: $';
 		yourself
