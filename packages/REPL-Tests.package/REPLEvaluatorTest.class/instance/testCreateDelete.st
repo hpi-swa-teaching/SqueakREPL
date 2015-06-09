@@ -14,6 +14,7 @@ testCreateDelete
 	Transcript show: Smalltalk; cr.
 	Transcript show: (SmalltalkImage current); cr.
 	Transcript show: (SmalltalkImage current classNames); cr.
+	Transcript show: (Smalltalk classNamed: #REPLTemporaryClass); cr.
 
 	self assert: (Smalltalk classNamed: #REPLTemporaryClass) notNil.
 
