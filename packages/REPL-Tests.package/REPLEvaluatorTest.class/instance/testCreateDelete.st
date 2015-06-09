@@ -11,6 +11,9 @@ testCreateDelete
 		evaluate: '#cc s:#REPLTemporaryClass c:#tests'.
 
 	Transcript show:'class created'; cr.
+	Transcript show: Smalltalk; cr.
+	Transcript show: (SmalltalkImage current); cr.
+	Transcript show: (SmalltalkImage current classNames); cr.
 
 	self assert: (Smalltalk classNamed: #REPLTemporaryClass) notNil.
 
