@@ -10,13 +10,12 @@ testCreateDelete
 	self evaluator
 		evaluate: '#cc s:#REPLTemporaryClass c:#tests'.
 
-	Transcript show:'class created'; cr.
-	Transcript show: Smalltalk; cr.
-	Transcript show: (SmalltalkImage current); cr.
-	Transcript show: (SmalltalkImage current classNames); cr.
-	Transcript show: (Smalltalk classNamed: #REPLTemporaryClass); cr.
+	Transcript show: (REPLTemporaryClass = nil); cr.
+	Transcript show: ((Smalltalk classNamed: #REPLTemporaryClass) = nil); cr.
+	Transcript show: (REPLTemporaryClass notNil); cr.
+	Transcript show: ((Smalltalk classNamed: #REPLTemporaryClass) notNil); cr.
 
-	self assert: (Smalltalk classNamed: #REPLTemporaryClass) notNil.
+	self assert: ((Smalltalk classNamed: #REPLTemporaryClass) notNil).
 
 	"Create a new method."
 	self evaluator
