@@ -1,0 +1,4 @@
+options
+TRAPSIG
+
+	^ 2

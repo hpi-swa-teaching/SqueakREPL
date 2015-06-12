@@ -1,0 +1,4 @@
+commands
+EC
+
+	^ 10.
