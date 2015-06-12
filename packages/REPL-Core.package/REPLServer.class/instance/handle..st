@@ -25,32 +25,62 @@ handle: aCharacter
 		^ self.
 	].
 
-	(aCharacter asciiValue > 19) ifTrue: [ 
+
+	(aCharacter == Character tab) ifTrue: [
+		
+		self send:
+			String lf, (self escapeCode: '[1A'),
+			(self escapeCode: '[s'),
+			self complete,
+			(self escapeCode: '[u').
+			"(self escapeCode: '[1A')."
+		^ self.
+	].
+
+	(aCharacter == Character delete) ifTrue: [
+		(self buffer size > 0) ifFalse: [
+			^ self.
+		].
+
+		self send:
+			(Character backspace) asString,
+			' ',
+			(Character backspace) asString.
+
+		self buffer: (self buffer copyFrom: 1 to: (self buffer size) - 1).
+		^ self.
+	 ].
+
+	((aCharacter asciiValue >= 32) and: (aCharacter asciiValue <= 126)) ifTrue: [ 
 		self appendInput: aCharacter.
 		self print: aCharacter asString.
 		^ self.
 	].
 
-	(aCharacter == Character tab) ifTrue: [
-		Transcript show: 'Tab pressed.' ; cr. ].
 
-	(aCharacter == Character delete) ifTrue: [
-		Transcript show: 'Backspace pressed.'; cr. ].
-
-	(aCharacter == Character null) ifTrue: [
-		Transcript show: 'Evaluating: ', self input ; cr.
-		history add: self input.
+	(aCharacter == Character cr) ifTrue: [
+		Transcript show: 'Evaluating: ', self buffer; cr.
+		history add: self buffer.
 		historyIndex := historyIndex + 1.
 		self 
 			print: String crlf;
-			print: (self evaluate: self input);
-			print: String crlf;
-			print: self lineSymbol;
+			print: (self evaluate: self buffer), (self escapeCode: '[K');
+			print: (String crlf, self lineSymbol);
 			clearInput.
+		
+		^ self.
+	].
+
+	(aCharacter == Character null) ifTrue: [
+		^ self.
 	].
 
 	
 	Transcript
 		show: 'Unhandled: ';
-		show: (aCharacter hex);
+		show: (aCharacter asciiValue);
 		cr. 
+
+
+	Transcript show: aCharacter.
+	Transcript show: aCharacter asciiValue.
