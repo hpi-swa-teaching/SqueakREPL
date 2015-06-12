@@ -16,11 +16,4 @@ evaluate: aString onError: aBlock
 		ifFail: [ ^aBlock value: notificationReceiver ]
 		logged: false. ]
 			on: MessageNotUnderstood
-			do: [ :ex | self handleException: ex ]
-			on: Error
-			do: [ :ex | | ntfy |
-						ntfy := REPLEvaluationNotificationReceiver
-							source: aString
-							workspace: self workspace.
-						ntfy lastError: ex.
-						aBlock value: ntfy. ].
+			do: [ :ex | self handleException: ex ].

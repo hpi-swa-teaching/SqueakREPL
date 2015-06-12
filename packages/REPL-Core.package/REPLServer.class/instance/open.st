@@ -4,9 +4,9 @@ open
 
 	self socket listenOn: port.
 	
-	[ 
-		[self socket isWaitingForConnection] whileTrue: [].
+	[
+		[ self socket isWaitingForConnection ] whileTrue: [].
 		self startLoop.
-	] forkAt: (Processor userBackgroundPriority)
+	] forkAt: (Processor userBackgroundPriority).
 
 	

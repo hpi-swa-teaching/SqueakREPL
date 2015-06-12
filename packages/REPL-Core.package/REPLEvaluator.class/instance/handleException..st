@@ -4,11 +4,7 @@ handleException: anException
 
 	| args message shortcuts value |
 
-	anException message selector = #! ifTrue: [
-		anException message setSelector: #n:
-	].
-
-	anException receiver isSymbol ifFalse: [^ anException signal.].
+	"TODO: ! shortcuts"
 
 	message := (anException receiver asString) , ':', (anException message selector asString).
 	args := OrderedCollection new.
@@ -16,8 +12,6 @@ handleException: anException
 	args addAll: anException message arguments.
 
 	shortcuts := REPLShortcut new.
-	[ value := shortcuts perform: message asSymbol withArguments: args asArray ]
-		on: MessageNotUnderstood 
-		do: [ ^anException signal ].
+	value := shortcuts perform: message asSymbol withArguments: args asArray.
 
 	anException resume: value.

@@ -3,10 +3,8 @@
 		 },
 	"instance" : {
 		"evaluate:" : "db 5/12/2015 20:39",
-		"evaluate:onError:" : "db 6/9/2015 16:09",
-		"findShortcut:" : "LW 6/9/2015 11:29",
-		"getSelectorFrom:" : "LW 6/9/2015 11:41",
-		"handleException:" : "db 6/9/2015 16:12",
+		"evaluate:onError:" : "db 6/2/2015 01:41",
+		"handleException:" : "tm 6/1/2015 17:12",
 		"initialize" : "db 5/12/2015 20:36",
 		"initializeWorkspace" : "db 5/12/2015 20:36",
 		"workspace" : "db 5/12/2015 20:34",

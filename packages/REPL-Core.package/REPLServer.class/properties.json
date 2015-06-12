@@ -11,7 +11,11 @@
 		"process",
 		"socket",
 		"port",
-		"input" ],
+		"input",
+		"nextIsEscapeCode",
+		"nextIsCSICode",
+		"history",
+		"historyIndex" ],
 	"name" : "REPLServer",
 	"pools" : [
 		 ],

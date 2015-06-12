@@ -5,5 +5,7 @@ loop
 	| i |
 	i := self read.
 	i size > 0 ifTrue: [
-		self handle: i last.
+		i do: [ :c | self handle: c. ].
+		"Transcript show: (i size); cr.
+		self handle: i last."
 	].

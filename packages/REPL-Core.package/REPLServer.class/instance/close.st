@@ -5,4 +5,4 @@ close
 	"self process terminate."
 
 	self print: self closingMessage.
-	self socket close 
+	self socket closeAndDestroy.

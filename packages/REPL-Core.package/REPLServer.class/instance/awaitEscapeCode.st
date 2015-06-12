@@ -1,0 +1,4 @@
+accessing
+awaitEscapeCode
+
+	nextIsEscapeCode := true.
