@@ -11,7 +11,9 @@
 		"process",
 		"socket",
 		"port",
-		"input" ],
+		"input",
+		"nextIsConfirmation",
+		"confirmed" ],
 	"name" : "REPLServer",
 	"pools" : [
 		 ],

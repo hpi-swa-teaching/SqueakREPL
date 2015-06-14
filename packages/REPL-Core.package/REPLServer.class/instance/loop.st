@@ -5,5 +5,9 @@ loop
 	| i |
 	i := self read.
 	i size > 0 ifTrue: [
-		self handle: i last.
+		self nextIsConfirmation 
+			ifTrue: [
+				self handleConfirmation: i last] 
+			ifFalse: [
+				self handle: i last. ].
 	].

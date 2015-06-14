@@ -6,4 +6,5 @@ initialize
 		socket: Socket newTCP;
 		clearInput;
 		parser: REPLParser new; 
-		evaluator: REPLEvaluator new.
+		evaluator: REPLEvaluator new;
+		nextIsConfirmation: false.
