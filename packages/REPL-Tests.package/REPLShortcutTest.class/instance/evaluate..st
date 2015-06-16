@@ -1,4 +1,4 @@
 running
 evaluate: aString
 
-	^ self evaluator evaluate: aString onError: [ :ex | self fail ].
+	^ self evaluator evaluate: aString onError: [ :ex | Transcript show: 'Shortcut failed: ', aString; cr. self fail ].
