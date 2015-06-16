@@ -2,11 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
+		"context" : "db 6/16/2015 17:46",
+		"context:" : "db 6/16/2015 17:46",
 		"evaluate:" : "db 5/12/2015 20:39",
 		"evaluate:onError:" : "db 6/9/2015 16:09",
 		"findShortcut:" : "LW 6/9/2015 11:29",
 		"getSelectorFrom:" : "LW 6/9/2015 11:41",
-		"handleException:" : "db 6/9/2015 16:12",
+		"handleException:" : "db 6/16/2015 17:51",
 		"initialize" : "db 5/12/2015 20:36",
 		"initializeWorkspace" : "db 5/12/2015 20:36",
 		"workspace" : "db 5/12/2015 20:34",

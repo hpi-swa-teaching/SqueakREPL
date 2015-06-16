@@ -10,9 +10,12 @@ handleException: anException
 
 	anException receiver isSymbol ifFalse: [^ anException signal.].
 
+	self context ifNil: [ self context: REPLContext new.
+						self context evaluator: self ].
+
 	message := (anException receiver asString) , ':', (anException message selector asString).
 	args := OrderedCollection new.
-	args add: #context.
+	args add: self context.
 	args addAll: anException message arguments.
 
 	shortcuts := REPLShortcut new.

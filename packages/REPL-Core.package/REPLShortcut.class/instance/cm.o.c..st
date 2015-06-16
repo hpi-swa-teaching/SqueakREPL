@@ -7,7 +7,7 @@ cm: aContext o: anObject c: aString
 
 	(parser  makesUseOfShortcuts: aString) 
 		ifTrue: [
-			server := REPL instance.
+			server := aContext server.
 			server
 				print: 'Warning: Please note that you have one or more shortcuts in your method declaration. Someone, who does not have the REPL package, may therefore not be able to use it.
 Do you want to proceed? Please enter y or n: ';

@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"workspace",
-		"context" ],
-	"name" : "REPLEvaluator",
+		"server",
+		"evaluator",
+		"parser" ],
+	"name" : "REPLContext",
 	"pools" : [
 		 ],
 	"super" : "Object",
