@@ -3,6 +3,7 @@ newOn: port
 	"Answer new server instance on port."
 
 	| server |
-	server := REPLServer new.
+	server := self basicNew.
+	server initialize.
 	server port: port.
 	^ server
