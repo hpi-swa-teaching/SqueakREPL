@@ -60,6 +60,11 @@ handle: aCharacter
 
 
 	(aCharacter == Character cr) ifTrue: [
+		(self isExpression: self buffer) ifFalse: [
+			self print: String crlf; print: self continuationSymbol.
+			self appendInput: String cr.
+			^self.
+		].
 		Transcript show: 'Evaluating: ', self buffer; cr.
 		history add: self buffer.
 		historyIndex := historyIndex + 1.
