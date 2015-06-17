@@ -8,6 +8,8 @@ evaluate: aString onError: aBlock
 		source: aString
 		workspace: self workspace.
 
+	(aString matchesRegex: '![a-z0-9_-]+') ifTrue: [ ^ self handleSpecialShortcut: aString ].
+
 	^ [ REPLCoreCompiler new
 		evaluate: aString
 		in: (self workspace doItContext)

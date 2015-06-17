@@ -23,4 +23,6 @@ handleException: anException
 		on: MessageNotUnderstood 
 		do: [ ^anException signal ].
 
+	(value isMemberOf: REPLShortcut) ifTrue: [ value := nil ].
+
 	anException resume: value.

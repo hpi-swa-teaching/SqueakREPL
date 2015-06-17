@@ -68,10 +68,13 @@ handle: aCharacter
 		result notNil ifTrue: [
 			self 
 				print: String crlf;
-				print: (result), (self escapeCode: '[K');
-				print: (String crlf, self lineSymbol);
-				clearInput.
+				print: (result), (self escapeCode: '[K').
+
 		].
+
+		self
+			print: (String crlf, self lineSymbol);
+			clearInput.
 		
 		^ self.
 	].

@@ -9,7 +9,7 @@ handleCSICode: aCharacter
 			
 			self print: String cr, '                     ', String cr, self lineSymbol.
 			historyIndex := historyIndex - 1.
-			self input: (history at: (historyIndex)). 
+			self buffer: (history at: (historyIndex)). 
 			self print: (history at: (historyIndex)).
 		].
 	].
