@@ -6,6 +6,4 @@ newOn: port
 
 	interface := self interfaceClass newOn: port.
 	interface port: port.
-	self instance: interface.
-
 	^ interface

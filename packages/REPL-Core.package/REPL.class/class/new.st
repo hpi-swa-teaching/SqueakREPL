@@ -4,5 +4,4 @@ new
 
 	| interface |
 	interface := self interfaceClass new.
-	self instance: interface.
 	^ interface
