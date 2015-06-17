@@ -8,7 +8,7 @@ startLoop
 	"self print: String lf."
 
 	self
-		sendCommands: 'IAC DO LINEMODE';
+		sendCommands: 'IAC DO ECHO';
 		sendCommands: 'IAC WILL ECHO';
 		"sendCommands: 'IAC SB LINEMODE MODE MODEEDIT|MODETRAPSIG IAC SE';"
 		sendCommands: 'IAC SB LINEMODE MODE 0 IAC SE'.

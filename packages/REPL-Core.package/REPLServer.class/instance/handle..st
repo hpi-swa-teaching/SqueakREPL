@@ -2,6 +2,7 @@ evaluating
 handle: aCharacter
 	"Handle input character."
 
+	| result |
 	(self awaitingCSICode) ifTrue: [
 		self finishCSICode.
 		self handleCSICode: aCharacter.
@@ -37,7 +38,7 @@ handle: aCharacter
 		^ self.
 	].
 
-	(aCharacter == Character delete) ifTrue: [
+	((aCharacter == Character delete) or: (aCharacter == Character backspace)) ifTrue: [
 		(self buffer size > 0) ifFalse: [
 			^ self.
 		].
@@ -62,11 +63,15 @@ handle: aCharacter
 		Transcript show: 'Evaluating: ', self buffer; cr.
 		history add: self buffer.
 		historyIndex := historyIndex + 1.
-		self 
-			print: String crlf;
-			print: (self evaluate: self buffer), (self escapeCode: '[K');
-			print: (String crlf, self lineSymbol);
-			clearInput.
+		result := self evaluate: self buffer.
+
+		result notNil ifTrue: [
+			self 
+				print: String crlf;
+				print: (result), (self escapeCode: '[K');
+				print: (String crlf, self lineSymbol);
+				clearInput.
+		].
 		
 		^ self.
 	].

@@ -1,4 +1,4 @@
-as yet unclassified
+repl
 help: aContext n: aNothing
 
 	(aContext server) print: 'Welcome to the Squeak REPL! 
