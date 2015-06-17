@@ -1,0 +1,4 @@
+commands
+SLCFLUSHOUT
+
+	^ 32

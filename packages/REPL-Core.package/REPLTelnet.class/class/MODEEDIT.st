@@ -1,0 +1,4 @@
+commands
+MODEEDIT
+
+	^ 1

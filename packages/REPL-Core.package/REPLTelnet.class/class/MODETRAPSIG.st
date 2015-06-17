@@ -1,0 +1,4 @@
+commands
+MODETRAPSIG
+
+	^ 2

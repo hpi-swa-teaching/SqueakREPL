@@ -1,0 +1,4 @@
+accessing
+awaitCSICode
+
+	nextIsCSICode := true.
