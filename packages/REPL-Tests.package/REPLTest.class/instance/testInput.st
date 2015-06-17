@@ -5,4 +5,4 @@ testInput
 		clearInput;
 		appendInput: 'Test'.
 
-	self assert: self repl input = 'Test'
+	self assert: self repl buffer = 'Test'
