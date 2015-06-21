@@ -7,10 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"completionDirection",
-		"evaluator",
 		"socket",
 		"nextIsConfirmation",
-		"parser",
 		"historyIndex",
 		"port",
 		"completionSize",
@@ -25,5 +23,5 @@
 	"name" : "REPLServer",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "REPLInterface",
 	"type" : "normal" }

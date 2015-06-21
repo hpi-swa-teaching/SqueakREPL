@@ -2,10 +2,12 @@
 	"class" : {
 		"REPLArgument" : "WR 5/12/2015 21:05",
 		"initialize" : "wr 6/1/2015 15:01",
+		"interface" : "wr 6/18/2015 20:58",
+		"interface:" : "wr 6/18/2015 20:58",
 		"interfaceClass" : "wr 6/1/2015 12:59",
 		"new" : "db 6/17/2015 16:40",
 		"newOn:" : "db 6/17/2015 16:41",
-		"shutDown:" : "db 6/17/2015 16:42",
-		"startUp:" : "db 6/17/2015 16:42" },
+		"shutDown:" : "wr 6/21/2015 21:32",
+		"startUp:" : "wr 6/21/2015 21:44" },
 	"instance" : {
 		 } }

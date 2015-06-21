@@ -1,4 +1,4 @@
-evaluation
+evaluating
 evaluate: aString
 	"Evaluate input and return as string."
 

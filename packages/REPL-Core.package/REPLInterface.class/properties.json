@@ -6,8 +6,6 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"stdOut",
-		"stdIn",
 		"parser",
 		"evaluator",
 		"loop" ],

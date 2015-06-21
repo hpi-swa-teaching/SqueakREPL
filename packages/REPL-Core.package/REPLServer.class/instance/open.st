@@ -1,4 +1,4 @@
-initialize-release
+life cycle
 open
 	"Wait for connection on port."
 

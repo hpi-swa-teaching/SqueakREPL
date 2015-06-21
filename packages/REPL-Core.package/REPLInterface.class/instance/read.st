@@ -1,5 +1,5 @@
 reading
 read
-	"Read from stdIn up to linefeed."
+	"Read from  input."
 	
-	^ self stdIn upTo: Character lf
+	^ self subclassResponsibility 

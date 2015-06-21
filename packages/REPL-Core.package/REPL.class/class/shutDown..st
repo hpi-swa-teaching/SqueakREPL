@@ -1,5 +1,8 @@
 system startup
 shutDown: quitting
-	"Remove singleton instance if one was created last startUp."
+	"Close interface on shutdown."
 
-	[ Instance close ] on: Exception do: []
+	self interface ifNotNil: [
+		self interface close.
+		self interface: nil.
+	]

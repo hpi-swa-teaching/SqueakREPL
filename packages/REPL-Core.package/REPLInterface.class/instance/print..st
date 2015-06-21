@@ -1,10 +1,5 @@
 printing
 print: aString
-	"Write aString and line feed to stdOut and flush."
+	"Print aString to output."
 
-	self 
-		cr;
-		putAll: aString;
-		lf;
-		putAll: self class startSymbol; 
-		flush
+	^ self subclassResponsibility 

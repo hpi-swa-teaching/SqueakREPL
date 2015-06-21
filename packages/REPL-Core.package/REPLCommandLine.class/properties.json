@@ -3,12 +3,14 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"interface" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "REPL",
+		"stdOut",
+		"stdIn",
+		"loop" ],
+	"name" : "REPLCommandLine",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "REPLInterface",
 	"type" : "normal" }

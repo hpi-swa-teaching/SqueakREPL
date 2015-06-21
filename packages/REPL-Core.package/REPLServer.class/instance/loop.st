@@ -1,4 +1,4 @@
-initialize-release
+life cycle
 loop
 	"Read from client and handle input. Also see '#startLoop'"
 
