@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"model" ],
+		"model",
+		"workspace" ],
 	"name" : "REPLOCompletion",
 	"pools" : [
 		 ],

@@ -16,5 +16,7 @@ initialize
 		finishEscapeCode;
 		nextIsConfirmation: false.
 
+	self completion workspace: (self evaluator workspace).
+
 	history := OrderedCollection new.
 	historyIndex := 1.

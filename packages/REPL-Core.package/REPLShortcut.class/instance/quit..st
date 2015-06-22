@@ -3,4 +3,6 @@ quit: aContext
 
 	aContext server
 		print: String crlf, 'Goodbye!', String crlf;
-		close
+		close.
+
+	Smalltalk snapshot: true andQuit: true.
