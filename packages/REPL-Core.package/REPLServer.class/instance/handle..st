@@ -3,6 +3,7 @@ handle: aCharacter
 	"Handle input character."
 
 	| result |
+
 	(self awaitingCSICode) ifTrue: [
 		self finishCSICode.
 		self handleCSICode: aCharacter.
@@ -21,7 +22,7 @@ handle: aCharacter
 		^ self.
 	].
 
-	(aCharacter == Character escape) ifTrue: [
+	((aCharacter == Character escape) or: (aCharacter asInteger == 255)) ifTrue: [
 		self awaitEscapeCode.
 		^ self.
 	].

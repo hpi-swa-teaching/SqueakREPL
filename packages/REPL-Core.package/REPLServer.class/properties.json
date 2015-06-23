@@ -19,7 +19,9 @@
 		"completion",
 		"lastKey",
 		"completionIndex",
-		"input" ],
+		"input",
+		"nextIsEscapeCode",
+		"nextIsCSICode" ],
 	"name" : "REPLServer",
 	"pools" : [
 		 ],

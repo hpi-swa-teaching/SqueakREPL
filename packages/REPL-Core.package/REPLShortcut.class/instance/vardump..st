@@ -1,8 +1,12 @@
 repl
 vardump: aContext
 
-	aContext server print: String crlf.
+	| bindings |
+	bindings := aContext evaluator workspace bindings.
 
-	aContext evaluator workspace bindings keys do: [ :eachBinding |  |value|
-		value := (aContext evaluator workspace bindings) at: eachBinding.
-		aContext server print: (eachBinding, Character tab, value asString, String crlf) ].
+	bindings
+		ifEmpty: [ aContext server print: String crlf, 'No local bindings found.' ]
+		ifNotEmpty: [ 	bindings keys do: [ :eachBinding |  |value|
+						value := (aContext evaluator workspace bindings) at: eachBinding.
+						aContext server print: String crlf, (eachBinding, Character tab, value asString) ].].
+

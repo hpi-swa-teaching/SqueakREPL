@@ -14,7 +14,9 @@ initialize
 		completionSize: 0;
 		finishCSICode;
 		finishEscapeCode;
-		nextIsConfirmation: false.
+		nextIsConfirmation: false;
+		nextIsEscapeCode: false;
+		nextIsCSICode: false.
 
 	self completion workspace: (self evaluator workspace).
 
