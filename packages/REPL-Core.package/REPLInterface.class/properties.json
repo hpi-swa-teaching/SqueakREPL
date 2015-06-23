@@ -8,7 +8,7 @@
 	"instvars" : [
 		"parser",
 		"evaluator",
-		"loop" ],
+		"process" ],
 	"name" : "REPLInterface",
 	"pools" : [
 		 ],

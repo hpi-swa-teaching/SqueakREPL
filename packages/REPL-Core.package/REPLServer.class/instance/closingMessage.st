@@ -2,4 +2,4 @@ printing
 closingMessage 
 	"Answer message to print on closing of REPL."
 
-	^ 'Closing REPL...', String lf
+	^ 'Closing REPL...', String crlf.

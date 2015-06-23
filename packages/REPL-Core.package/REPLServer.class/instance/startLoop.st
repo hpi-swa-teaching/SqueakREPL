@@ -1,4 +1,4 @@
-initialize-release
+life cycle
 startLoop
 	"Start process handling read-eval-print-loop."
 
@@ -16,15 +16,4 @@ startLoop
 		"sendCommands: 'IAC SB LINEMODE MODE MODEEDIT|MODETRAPSIG IAC SE';"
 		sendCommands: 'IAC SB LINEMODE MODE 0 IAC SE'.
 
-	self process: ([ [
-
-		
-		[ self socket waitForData ]
-			on: ConnectionClosed
-			do: [
-				self socket closeAndDestroy.
-				Transcript show: 'Fight Club is closed.'; cr.
-			].
-		self loop.
-
-		] repeat ] forkAt: (Processor userBackgroundPriority)).
+	self process: ([self loop repeat] forkAt: (Processor userBackgroundPriority)).

@@ -7,8 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"stdOut",
-		"stdIn",
-		"loop" ],
+		"stdIn" ],
 	"name" : "REPLCommandLine",
 	"pools" : [
 		 ],
