@@ -2,12 +2,15 @@ life cycle
 loop
 	"Anser block to be executed repeatedly for handling reading input. See #startLoop."
 
-	^[
-		[self socket waitForData ]
-			on: ConnectionClosed
-			do: [
+	[
+		self socket waitForDataIfClosed: [
+				"self socket closeAndDestroy."
+				Log info: 'Fight Club is closed.'.
 				self socket closeAndDestroy.
-				Transcript show: 'Fight Club is closed.'; cr.
-			].
+				self socket: Socket newTCP.
+				self socket listenOn: (self port).
+				self socket waitForConnectionFor: 10.
+				self sendOpeningMessage.
+		].
 		self read
-	]
+	] repeat.

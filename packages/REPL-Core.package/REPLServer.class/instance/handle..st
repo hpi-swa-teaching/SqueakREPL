@@ -2,7 +2,51 @@ evaluating
 handle: aCharacter
 	"Handle input character."
 
-	| result |
+
+
+	(aCharacter asciiValue == 255) ifTrue: [
+		self awaitTelnetCommand.
+		Log info: 'TELNET: IAC'.
+		^ self.
+	].
+
+	(self awaitingTelnetCommand) ifTrue: [
+
+		(aCharacter asciiValue == REPLTelnet SB) ifTrue: [
+			self awaitTelnetSubOption.
+			Log info: 'TELNET: SB'.
+			^ self.
+		].
+
+		(aCharacter asciiValue == REPLTelnet SE) ifTrue: [
+			self finishTelnetSubOption.
+			self finishTelnetCommand.
+			Log info: 'TELNET: SE'.
+			^ self.
+		].
+
+		Log info: 'TELNET: (operation) ', aCharacter asciiValue.
+		self awaitTelnetOperation.
+		self finishTelnetCommand.
+		^ self.
+
+	].
+
+	(self awaitingTelnetOperation) ifTrue: [
+
+		Log info: 'TELNET: (operation payload) ', aCharacter asciiValue.
+		self finishTelnetOperation.
+		^ self.
+
+	].
+
+	(self awaitingTelnetSubOption) ifTrue: [
+		Log info: 'TELNET: (SE payload) ', aCharacter asciiValue.
+		^ self.
+	].
+
+	Log info: aCharacter asciiValue.
+
 
 	(self awaitingCSICode) ifTrue: [
 		self finishCSICode.
@@ -22,7 +66,9 @@ handle: aCharacter
 		^ self.
 	].
 
-	((aCharacter == Character escape) or: (aCharacter asInteger == 255)) ifTrue: [
+
+
+	((aCharacter == Character escape)) ifTrue: [
 		self awaitEscapeCode.
 		^ self.
 	].
@@ -36,8 +82,14 @@ handle: aCharacter
 			self complete,
 			(self escapeCode: '[u').
 			"(self escapeCode: '[1A')."
+
+		completing := true.
+
 		^ self.
+	] ifFalse: [
+		completing := false.
 	].
+
 
 	((aCharacter == Character delete) or: (aCharacter == Character backspace)) ifTrue: [
 		(self buffer size > 0) ifFalse: [
@@ -66,21 +118,7 @@ handle: aCharacter
 			self appendInput: String cr.
 			^self.
 		].
-		Transcript show: 'Evaluating: ', self buffer; cr.
-		history add: self buffer.
-		historyIndex := historyIndex + 1.
-		result := self evaluate: self buffer.
-
-		result notNil ifTrue: [
-			self 
-				print: String crlf;
-				print: (result), (self escapeCode: '[K').
-
-		].
-
-		self
-			print: (String crlf, self lineSymbol);
-			clearInput.
+		self acceptCurrentLine.
 		
 		^ self.
 	].
@@ -94,7 +132,3 @@ handle: aCharacter
 		show: 'Unhandled: ';
 		show: (aCharacter asciiValue);
 		cr. 
-
-
-	Transcript show: aCharacter.
-	Transcript show: aCharacter asciiValue.
