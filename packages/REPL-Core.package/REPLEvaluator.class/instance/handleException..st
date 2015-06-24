@@ -18,11 +18,11 @@ handleException: anException
 	args add: self context.
 	args addAll: anException message arguments.
 
-	shortcuts := REPLShortcut new.
+	shortcuts := REPLShortcuts new.
 	[ value := shortcuts perform: message asSymbol withArguments: args asArray ]
 		on: MessageNotUnderstood 
-		do: [ ^anException signal ].
+		do: [ :e | ^e signal ].
 
-	(value isMemberOf: REPLShortcut) ifTrue: [ value := nil ].
+	(value isMemberOf: REPLShortcuts) ifTrue: [ value := nil ].
 
 	anException resume: value.

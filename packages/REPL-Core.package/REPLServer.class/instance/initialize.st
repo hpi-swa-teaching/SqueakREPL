@@ -13,6 +13,9 @@ initialize
 		completionDirection: 1;
 		completionSize: 0;
 		finishCSICode;
+		finishTelnetOperation;
+		finishTelnetSubOption;
+		finishTelnetCommand;
 		finishEscapeCode;
 		nextIsConfirmation: false;
 		nextIsEscapeCode: false;

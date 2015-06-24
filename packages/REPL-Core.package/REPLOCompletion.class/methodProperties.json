@@ -3,9 +3,11 @@
 		 },
 	"instance" : {
 		"complete:" : "db 6/22/2015 23:03",
-		"format:" : "db 6/22/2015 22:51",
+		"format:" : "db 6/24/2015 17:13",
 		"initialize" : "db 6/3/2015 20:46",
 		"model" : "db 6/3/2015 20:45",
 		"model:" : "db 6/3/2015 20:45",
+		"tryGetCommentFor:" : "db 6/24/2015 17:41",
+		"tryGetHeaderFor:" : "db 6/24/2015 17:41",
 		"workspace" : "db 6/22/2015 22:55",
 		"workspace:" : "db 6/22/2015 22:55" } }

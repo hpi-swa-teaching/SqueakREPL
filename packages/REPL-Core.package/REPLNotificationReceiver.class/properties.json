@@ -6,8 +6,13 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"commands" ],
-	"name" : "REPLShortcut",
+		"model",
+		"text",
+		"lastError",
+		"lastErrorPosition",
+		"lastErrorMessage",
+		"lastErrorStatement" ],
+	"name" : "REPLNotificationReceiver",
 	"pools" : [
 		 ],
 	"super" : "Object",
