@@ -1,4 +1,0 @@
-accessing
-finishTelnetSubOption
-
-	awaitingTelnetSubOption := false.

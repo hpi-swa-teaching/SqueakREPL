@@ -1,4 +1,0 @@
-accessing
-finishTelnetCommand
-
-	awaitingTelnetCommand := false.

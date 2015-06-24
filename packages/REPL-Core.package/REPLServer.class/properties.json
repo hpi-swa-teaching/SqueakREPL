@@ -20,11 +20,7 @@
 		"completionIndex",
 		"input",
 		"nextIsEscapeCode",
-		"nextIsCSICode",
-		"awaitingTelnetCommand",
-		"awaitingTelnetSubOption",
-		"awaitingTelnetOperation",
-		"completing" ],
+		"nextIsCSICode" ],
 	"name" : "REPLServer",
 	"pools" : [
 		 ],

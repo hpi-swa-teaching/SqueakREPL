@@ -1,11 +1,11 @@
 completion
 format: anOModelEntry
 
-	| contents index |
+	| contents |
 	contents := anOModelEntry contents asString.
-	index := contents asString indexOf: $:.
 
-	((index = 3) and: (REPLShortcuts new respondsTo: contents asSymbol)) ifTrue: [
+	(REPLShortcut new respondsTo: contents asSymbol) ifTrue: [ | index |
+		index := contents asString indexOf: $:.
 		^ '#', (contents copyFrom: 1 to: index - 1), ' ', (contents copyFrom: index+1 to: contents size) ].
 
 	^contents

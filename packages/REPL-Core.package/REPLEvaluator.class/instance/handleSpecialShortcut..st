@@ -5,10 +5,10 @@ handleSpecialShortcut: aString
 	| command value |
 	command := aString copyFrom: 2 to: aString size.
 
-	(REPLShortcuts canUnderstand: (command, ':') asSymbol) ifFalse: [ ^ 'Unknown command "', command, '"' ].
+	(REPLShortcut canUnderstand: (command, ':') asSymbol) ifFalse: [ ^ 'Unknown command "', command, '"' ].
 
-	value := REPLShortcuts new perform: (command, ':') asSymbol with: self context.
+	value := REPLShortcut new perform: (command, ':') asSymbol with: self context.
 
-	(value isMemberOf: REPLShortcuts)
+	(value isMemberOf: REPLShortcut)
 		ifTrue: [ ^nil ]
 		ifFalse: [ ^ value ].
