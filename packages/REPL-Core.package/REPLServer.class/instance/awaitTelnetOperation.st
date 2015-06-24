@@ -1,0 +1,4 @@
+accessing
+awaitTelnetOperation 
+
+	awaitingTelnetOperation := true.

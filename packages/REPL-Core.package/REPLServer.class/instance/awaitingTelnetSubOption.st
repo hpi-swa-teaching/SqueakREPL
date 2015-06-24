@@ -1,0 +1,4 @@
+accessing
+awaitingTelnetSubOption
+
+	^ awaitingTelnetSubOption.
