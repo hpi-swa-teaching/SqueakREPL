@@ -21,7 +21,7 @@ handleException: anException
 	shortcuts := REPLShortcut new.
 	[ value := shortcuts perform: message asSymbol withArguments: args asArray ]
 		on: MessageNotUnderstood 
-		do: [ ^anException signal ].
+		do: [ :e | ^e signal ].
 
 	(value isMemberOf: REPLShortcut) ifTrue: [ value := nil ].
 

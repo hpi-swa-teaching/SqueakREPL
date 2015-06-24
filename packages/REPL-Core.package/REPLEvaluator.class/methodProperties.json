@@ -8,7 +8,7 @@
 		"evaluate:onError:" : "db 6/17/2015 16:01",
 		"findShortcut:" : "LW 6/9/2015 11:29",
 		"getSelectorFrom:" : "LW 6/9/2015 11:41",
-		"handleException:" : "db 6/17/2015 16:15",
+		"handleException:" : "db 6/23/2015 18:54",
 		"handleSpecialShortcut:" : "db 6/17/2015 16:16",
 		"initialize" : "db 5/12/2015 20:36",
 		"initializeWorkspace" : "db 5/12/2015 20:36",
