@@ -6,7 +6,7 @@ open
 	
 	[
 		"[ self socket isWaitingForConnection ] whileTrue: []."
-		self socket waitForConnectionFor: 10.
+		self socket waitForConnectionFor: 60.
 		self startLoop.
 	] forkAt: (Processor userBackgroundPriority).
 

@@ -1,28 +1,27 @@
 evaluation
 evaluate: aString onError: aBlock
-	"Evaluates the aString and returns the result. If an error occurs aBlock will be executed and is passed a REPLEvaluationNotificationReceiver object with more information about the error."
+	"Evaluates the aString and returns the result. If an error occurs aBlock will be executed and is passed a REPLNotificationReceiver object with more information about the error."
 
 	| notificationReceiver |
 
-	notificationReceiver := REPLEvaluationNotificationReceiver 
+	notificationReceiver := REPLNotificationReceiver 
 		source: aString
 		workspace: self workspace.
 
-	(aString matchesRegex: '![a-z0-9_-]+') ifTrue: [ ^ self handleSpecialShortcut: aString ].
+	(aString matchesRegex: '![a-z0-9_-]+') 
+		ifTrue: [ ^self handleSpecialShortcut: aString ].
 
-	^ [ REPLCoreCompiler new
+	^[ REPLCoreCompiler new
 		evaluate: aString
 		in: (self workspace doItContext)
 		to: (self workspace doItReceiver)
 		notifying: notificationReceiver
 		ifFail: [ ^aBlock value: notificationReceiver ]
-		logged: false. ]
+		logged: false ]
+
 			on: MessageNotUnderstood
 			do: [ :ex | self handleException: ex ]
+
 			on: Error
-			do: [ :ex | | ntfy |
-						ntfy := REPLEvaluationNotificationReceiver
-							source: aString
-							workspace: self workspace.
-						ntfy lastError: ex.
-						aBlock value: ntfy. ].
+			do: [ :ex | notificationReceiver lastError: ex.
+						aBlock value: notificationReceiver ]

@@ -12,7 +12,7 @@
 		"lastErrorPosition",
 		"lastErrorMessage",
 		"lastErrorStatement" ],
-	"name" : "REPLEvaluationNotificationReceiver",
+	"name" : "REPLNotificationReceiver",
 	"pools" : [
 		 ],
 	"super" : "Object",
