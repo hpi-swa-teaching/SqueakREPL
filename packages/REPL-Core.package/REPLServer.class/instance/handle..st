@@ -67,7 +67,6 @@ handle: aCharacter
 	].
 
 
-
 	((aCharacter == Character escape)) ifTrue: [
 		self awaitEscapeCode.
 		^ self.
@@ -76,11 +75,11 @@ handle: aCharacter
 
 	(aCharacter == Character tab) ifTrue: [
 		
-		self send:
-			String lf, (self escapeCode: '[1A'),
-			(self escapeCode: '[s'),
-			self complete,
-			(self escapeCode: '[u').
+		self buffer size == 0 ifTrue: [
+			^ self.
+		].
+
+		self complete.
 			"(self escapeCode: '[1A')."
 
 		completing := true.
@@ -90,6 +89,23 @@ handle: aCharacter
 		completing := false.
 	].
 
+	(self completing) ifTrue: [
+		self send: (self escapeCode: '[J').
+		"self completionSize: 0."
+		self clearCompletion.
+	].
+
+	(aCharacter asciiValue == 3) ifTrue: [
+
+		(self completing) ifTrue: [
+			self clearCompletion.
+			^ self.
+		].
+		self
+			print: (String crlf, self lineSymbol);
+			clearInput.
+		
+	].
 
 	((aCharacter == Character delete) or: (aCharacter == Character backspace)) ifTrue: [
 		(self buffer size > 0) ifFalse: [
@@ -115,7 +131,7 @@ handle: aCharacter
 	(aCharacter == Character cr) ifTrue: [
 		(self isExpression: self buffer) ifFalse: [
 			self print: String crlf; print: self continuationSymbol.
-			self appendInput: String cr.
+			self appendInput: String crlf.
 			^self.
 		].
 		self acceptCurrentLine.

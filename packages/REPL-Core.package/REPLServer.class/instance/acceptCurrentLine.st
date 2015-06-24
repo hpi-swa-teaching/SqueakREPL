@@ -6,18 +6,16 @@ acceptCurrentLine
 
 		Log info: 'Evaulating: ', self buffer.
 
-
-		history add: self buffer.
-		historyIndex := history size.
+		"self send: (self escapeCode: '[J')."
+ 
+		(self buffer size = 0) ifFalse: [
+			history add: self buffer.
+			historyIndex := history size.
+		].
 
 		result := self evaluate: self buffer.
 
-		result notNil ifTrue: [
-			self 
-				print: String crlf, (result), (self escapeCode: '[K').
-
-		].
-
-		self
-			print: (String crlf, self lineSymbol);
+		self 
+			print: String crlf, (result), (self escapeCode: '[K'),
+			self lineSymbol;
 			clearInput.

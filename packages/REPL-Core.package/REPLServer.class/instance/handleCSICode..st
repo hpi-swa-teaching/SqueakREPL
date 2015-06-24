@@ -7,10 +7,9 @@ handleCSICode: aCharacter
 		"self print: (#(255 34 3 10) asByteArray)."
 		(historyIndex > 1) ifTrue: [
 			
-			self print: String cr, '                     ', String cr, self lineSymbol.
+			self send: (self escapeCode: '[A'), self lineSymbol, (history at: (historyIndex)), (self escapeCode: '[K').
 			historyIndex := historyIndex - 1.
-			self buffer: (history at: (historyIndex)). 
-			self print: (history at: (historyIndex)).
+			self buffer: (history at: (historyIndex)).
 		].
 	].
 	(aCharacter == $B) ifTrue: [
@@ -18,9 +17,9 @@ handleCSICode: aCharacter
 		"self print: (#(255 34 3 10) asByteArray)."
 		(historyIndex < (history size)) ifTrue: [
 			
-			self print: String cr, '                     ', String cr, self lineSymbol.
+			self print: self lineSymbol.
 			historyIndex := historyIndex + 1.
-			self input: (history at: (historyIndex)). 
+			self buffer: (history at: (historyIndex)). 
 			self print: (history at: (historyIndex)).
 		].
 	].

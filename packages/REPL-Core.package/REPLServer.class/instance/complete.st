@@ -1,18 +1,22 @@
 printing
 complete
 
-	| suggestions suggestionString completionTarget |
+	| suggestions suggestionString completionTarget changeString |
 
 	((self buffer) size = 0) ifTrue: [
 		Log info: 'Not completing empty buffer.'.
-		^ self.
+		^ ''.
 	].
+
+	suggestionString := ''.
 
 	completionTarget := (self buffer findTokens: ' ') last.
 
 	"Remove suggested part from buffer."
 	completionTarget := (completionTarget asString) copyFrom: 1 to: ((completionTarget size) - self completionSize).
 
+
+	changeString := ''.
 	Log info: 'Completing this term: ', completionTarget.
 
 	"If already completing something."
@@ -22,12 +26,13 @@ complete
 		
 		"clearingText := (Character backspace) asString, ' '."
 
-		self clearCompletion.
+		changeString := changeString, self clearCompletion.
 	].
 
 	suggestions := self completionSuggestionsFor: completionTarget.
 	
-	suggestionString := String crlf, (self escapeCode: '[2K').
+"	suggestionString := String crlf, (self escapeCode: '[2K')."
+	suggestionString := suggestionString, String crlf.
 
 	(suggestions size = 0) ifTrue: [
 
@@ -58,6 +63,7 @@ complete
 		].
 			
 
+
 			i := 0.
 			suggestions do: [ :suggestion |
 
@@ -65,11 +71,14 @@ complete
 				(i = self completionIndex) ifTrue: [ | completionFragment |
 
 					completionFragment := (suggestion asString allButFirst: (completionTarget size)).
+
+					Log info: 'Inline Completion size: ', (completionTarget size).
+					changeString := (self escapeCode: '[', (completionTarget size), 'D'), suggestion.
 					self completionSize: completionFragment size.
-					self send: completionFragment.
+					"self send: completionFragment."
 					self buffer: (self buffer), completionFragment.
 					
-					suggestion := ' [', suggestion, '] '.
+					suggestion := (self escapeCode: '[0;32m'), ' [',  suggestion, '] ', (self escapeCode: '[0m').
 
 				] ifFalse: [
 					suggestion := '  ', suggestion, '  '.
@@ -83,4 +92,36 @@ complete
 	Log info: 'Buffer after keypress: ', (self buffer).
 	Log info: 'Completion size: ', self completionSize.
 
-	^ suggestionString.
+	suggestionString :=
+		changeString,
+		(self escapeCode: '[s'),
+
+
+		"(self escapeCode: '[B'),
+		(self escapeCode: '[A'),"
+		"String crlf,	"
+		"String crlf,"
+		"(self escapeCode: '[A'),"
+		"String crlf,"
+		"(self escapeCode: '[B'),"
+		suggestionString,
+
+
+
+		(self escapeCode: '[K'),
+		
+		(self escapeCode: '[2B'),
+		(self escapeCode: '[A'),
+		(self escapeCode: '[u'),
+
+		"(self escapeCode: '[A'),"
+		"(self escapeCode: '[A'),"
+		"(self escapeCode: '[A'),"
+		''.
+
+
+		self send:
+			"String crlf, (self escapeCode: '[1A'),
+			(self escapeCode: '[s'),"
+			suggestionString.
+		"	(self escapeCode: '[u')."

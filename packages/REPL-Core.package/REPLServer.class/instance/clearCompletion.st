@@ -10,17 +10,19 @@ clearCompletion
 		"self completionSize timesRepeat: [
 			clearingText := clearingText, (Character backspace) asString.
 		]."
-		self send: (self escapeCode: '[J').
+		clearingText := clearingText, (self escapeCode: '[J').
 
 		Log info: 'Clearing completion chars: ', (self completionSize).
 
-		(self completionSize == 0) ifTrue: [
+		((self completionSize == 0) and: [self completing]) ifTrue: [
 			^ self.
 		].
-		self send: (self escapeCode: '[', ((self completionSize) asString),'D'), (self escapeCode: '[K').
+		clearingText := clearingText, (self escapeCode: '[', ((self completionSize) asString),'D'), (self escapeCode: '[K').
 
 
 		"Remove latest completion value from buffer."
 		self buffer: ((self buffer) copyFrom: 1 to: ((self buffer size) - self completionSize)).
 
 		self completionSize: 0.
+
+		^ clearingText.
