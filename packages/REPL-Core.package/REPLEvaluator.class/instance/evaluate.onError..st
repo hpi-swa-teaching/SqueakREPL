@@ -1,15 +1,10 @@
 evaluation
 evaluate: aString onError: aBlock
-	"Evaluates the aString and returns the result. If an error occurs aBlock will be executed and is passed a REPLEvaluationNotificationReceiver object with more information about the error."
+	"Evaluates the aString and returns the result. If an error occurs aBlock will be executed and is passed a REPLNotificationReceiver object with more information about the error."
 
 	| notificationReceiver |
 
-	"TODO: REPLNotificationReceiver,
-	!help
-      in [:ex ... gleichen notificationReceiver verwenden
-      "
-
-	notificationReceiver := REPLEvaluationNotificationReceiver 
+	notificationReceiver := REPLNotificationReceiver 
 		source: aString
 		workspace: self workspace.
 
@@ -22,15 +17,11 @@ evaluate: aString onError: aBlock
 		to: (self workspace doItReceiver)
 		notifying: notificationReceiver
 		ifFail: [ ^aBlock value: notificationReceiver ]
-		logged: false. ]
+		logged: false ]
 
 			on: MessageNotUnderstood
 			do: [ :ex | self handleException: ex ]
 
 			on: Error
-			do: [ :ex | | ntfy |
-						ntfy := REPLEvaluationNotificationReceiver
-							source: aString
-							workspace: self workspace.
-						ntfy lastError: ex.
-						aBlock value: ntfy. ].
+			do: [ :ex | notificationReceiver lastError: ex.
+						aBlock value: notificationReceiver ]
