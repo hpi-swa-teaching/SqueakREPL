@@ -10,7 +10,7 @@ clearCompletion
 		"self completionSize timesRepeat: [
 			clearingText := clearingText, (Character backspace) asString.
 		]."
-		clearingText := clearingText, (self escapeCode: '[J').
+		clearingText := clearingText", (self escapeCode: '[J')".
 
 		Log info: 'Clearing completion chars: ', (self completionSize).
 

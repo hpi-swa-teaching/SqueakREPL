@@ -98,11 +98,11 @@ handle: aCharacter
 	(aCharacter asciiValue == 3) ifTrue: [
 
 		(self completing) ifTrue: [
-			self clearCompletion.
+			self print: self clearCompletion.
 			^ self.
 		].
 		self
-			print: (String crlf, self lineSymbol);
+			print: self lineSymbol, (self clearLineUntilEnd);
 			clearInput.
 		
 	].

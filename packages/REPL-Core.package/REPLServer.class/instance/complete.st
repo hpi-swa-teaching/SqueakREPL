@@ -1,7 +1,7 @@
 printing
 complete
 
-	| suggestions suggestionString completionTarget changeString |
+	| suggestionString completionTarget changeString formattedSuggestion |
 
 	((self buffer) size = 0) ifTrue: [
 		Log info: 'Not completing empty buffer.'.
@@ -32,11 +32,11 @@ complete
 	suggestions := self completionSuggestionsFor: completionTarget.
 	
 "	suggestionString := String crlf, (self escapeCode: '[2K')."
-	suggestionString := suggestionString, String crlf.
+	"suggestionString := suggestionString, String crlf."
 
 	(suggestions size = 0) ifTrue: [
 
-		suggestionString := suggestionString, 'No completions found.'.
+		suggestionString := suggestionString, (self colorize: 'No completions found.' with: self class colorBad), (self clearLineUntilEnd).
 
 	] ifFalse: [ | i |
 
@@ -73,51 +73,38 @@ complete
 					completionFragment := (suggestion asString allButFirst: (completionTarget size)).
 
 					Log info: 'Inline Completion size: ', (completionTarget size).
-					changeString := (self escapeCode: '[', (completionTarget size), 'D'), suggestion.
+					changeString := (self escapeCode: '[', (completionTarget size), 'D'), changeString, suggestion.
 					self completionSize: completionFragment size.
 					"self send: completionFragment."
 					self buffer: (self buffer), completionFragment.
 					
-					suggestion := (self escapeCode: '[0;32m'), ' [',  suggestion, '] ', (self escapeCode: '[0m').
+					formattedSuggestion := self colorize: (' [',  suggestion, '] ')  with: '0;32'.
 
 				] ifFalse: [
-					suggestion := '  ', suggestion, '  '.
+					formattedSuggestion := '  ', suggestion, '  '.
 				].
 				"Transcript show: self lastKey."
-				suggestionString := suggestionString, '', suggestion asString.
+				suggestionString := suggestionString, '', formattedSuggestion.
 
 				i := i + 1.
 			].
 	].
+	
+	Log info: 'Suggestions:: ', self completionSize.
 	Log info: 'Buffer after keypress: ', (self buffer).
 	Log info: 'Completion size: ', self completionSize.
 
 	suggestionString :=
 		changeString,
-		(self escapeCode: '[s'),
-
-
-		"(self escapeCode: '[B'),
-		(self escapeCode: '[A'),"
-		"String crlf,	"
-		"String crlf,"
-		"(self escapeCode: '[A'),"
-		"String crlf,"
-		"(self escapeCode: '[B'),"
+		(String crlf),
 		suggestionString,
-
-
-
-		(self escapeCode: '[K'),
-		
-		(self escapeCode: '[2B'),
+		(String cr),
 		(self escapeCode: '[A'),
-		(self escapeCode: '[u'),
-
-		"(self escapeCode: '[A'),"
-		"(self escapeCode: '[A'),"
-		"(self escapeCode: '[A'),"
+		(self escapeCode: '[', (4 + (self buffer size)),  'C'),
+		(self escapeCode: '[K'),
 		''.
+
+		Log info: suggestionString.
 
 
 		self send:

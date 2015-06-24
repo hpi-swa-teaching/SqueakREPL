@@ -5,7 +5,7 @@ handleSpecialShortcut: aString
 	| command value |
 	command := aString copyFrom: 2 to: aString size.
 
-	(REPLShortcuts canUnderstand: (command, ':') asSymbol) ifFalse: [ ^ 'Unknown command "', command, '"' ].
+	(REPLShortcuts canUnderstand: (command, ':') asSymbol) ifFalse: [ ^ self context server colorize: 'Unknown command: "', command, '"'   with: self context server class colorBad. ].
 
 	value := REPLShortcuts new perform: (command, ':') asSymbol with: self context.
 

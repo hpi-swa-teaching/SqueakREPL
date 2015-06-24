@@ -24,7 +24,8 @@
 		"awaitingTelnetCommand",
 		"awaitingTelnetSubOption",
 		"awaitingTelnetOperation",
-		"completing" ],
+		"completing",
+		"suggestions" ],
 	"name" : "REPLServer",
 	"pools" : [
 		 ],

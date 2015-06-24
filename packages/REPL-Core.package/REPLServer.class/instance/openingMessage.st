@@ -2,4 +2,15 @@ printing
 openingMessage 
 	"Answer message to print on opening of REPL."
 
-	^ 'Welcome. This is your Squeak REPL.', String lf, String cr, self lineSymbol
+	^
+	String crlf,
+	String crlf,
+
+	(self colorize: ' *** ' with: self class colorGood),
+	'Welcome. This is your Squeak REPL',
+	(self colorize:	' *** ' with: self class colorGood),
+
+
+	String crlf,
+
+	self lineSymbol
