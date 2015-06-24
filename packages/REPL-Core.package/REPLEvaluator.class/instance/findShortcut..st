@@ -1,9 +1,9 @@
 evaluation
 findShortcut: aString
-	"Parses the code in aString to find a REPLShortcut."
+	"Parses the code in aString to find a REPLShortcuts."
 
 	| shortcuts selectors inputStream temp |
-	shortcuts := (REPLShortcut selectors).
+	shortcuts := (REPLShortcuts selectors).
 	selectors := OrderedCollection new.
 	inputStream := aString readStream. 
 	[inputStream atEnd] 
