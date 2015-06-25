@@ -1,7 +1,7 @@
 life cycle
 sendOpeningMessage
 
-	self send: self openingMessage.
+	self send: self openingMessage; lineSymbol.
 	"self print: (REPLTelnet).
 	self print: (#(16rFF 16rFD 16r22) asByteArray)."
 	"self print: String lf."

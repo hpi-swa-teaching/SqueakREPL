@@ -12,6 +12,7 @@ initialize
 		completionIndex: 0;
 		completionDirection: 1;
 		completionSize: 0;
+		debugging: false;
 		finishCSICode;
 		finishTelnetOperation;
 		finishTelnetSubOption;

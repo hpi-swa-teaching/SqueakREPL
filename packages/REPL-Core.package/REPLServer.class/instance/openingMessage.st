@@ -11,6 +11,4 @@ openingMessage
 	(self colorize:	' *** ' with: self class colorGood),
 
 
-	String crlf,
-
-	self lineSymbol
+	String crlf.

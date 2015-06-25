@@ -66,6 +66,20 @@ handle: aCharacter
 		^ self.
 	].
 
+	self debugging ifTrue: [
+
+		((aCharacter == Character escape)) ifTrue: [
+			self debugging: false.
+			^ self.
+		].
+		
+		Log info: 'Debugging!'.
+
+		self debug: aCharacter.
+
+		^self.
+	].
+
 
 	((aCharacter == Character escape)) ifTrue: [
 		self awaitEscapeCode.

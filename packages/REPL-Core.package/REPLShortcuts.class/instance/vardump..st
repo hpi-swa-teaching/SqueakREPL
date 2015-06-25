@@ -10,6 +10,6 @@ vardump: aContext
 		ifEmpty: [ output := output, 'No local bindings found.' ]
 		ifNotEmpty: [ 	bindings keys do: [ :eachBinding |  |value|
 						value := (aContext evaluator workspace bindings) at: eachBinding.
-						output := output, String crlf, (eachBinding, Character tab, value asString) ].].
+						output := output, String crlf, (((eachBinding asString) padded: #right to: 30 with: (Character space)), value asString) ].].
 
 	^ output.
