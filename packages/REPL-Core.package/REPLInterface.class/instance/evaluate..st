@@ -14,12 +14,8 @@ evaluate: aString
 		formattedValue := (self escapeCode: '[0;31m'), formattedValue, (self escapeCode: '[0m').
 	].
 
-
 	^formattedValue.  ]).
 
 	value ifNil: [ ^nil ].
-
-
-
-
-	^value asString.
+	value isString ifTrue: [ ^value ].
+	^value printString.
