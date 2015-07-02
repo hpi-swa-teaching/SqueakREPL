@@ -1,4 +1,4 @@
-completion
+as yet unclassified
 tryGetCommentFor: aSymbol
 
 	(REPLShortcut new respondsTo: aSymbol)

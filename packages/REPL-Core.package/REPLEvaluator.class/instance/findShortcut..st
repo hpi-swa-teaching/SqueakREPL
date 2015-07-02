@@ -3,7 +3,7 @@ findShortcut: aString
 	"Parses the code in aString to find a REPLShortcuts."
 
 	| shortcuts selectors inputStream temp |
-	shortcuts := (REPLShortcuts selectors).
+	shortcuts := (REPLShortcut selectors).
 	selectors := OrderedCollection new.
 	inputStream := aString readStream. 
 	[inputStream atEnd] 

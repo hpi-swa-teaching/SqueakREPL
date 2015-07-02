@@ -11,7 +11,7 @@ complete: aString
 
 	self workspace ifNotNilDo: [ :x | self workspace bindings keys reverseDo: [ :each | (each asString startsWith: aString) ifTrue: [ results addFirst: each ] ] ].
 
-	(REPLShortcuts selectors select: [ :each | (each count: [ :x | x = $: ]) = 1])
+	(REPLShortcut selectors select: [ :each | (each count: [ :x | x = $: ]) = 1])
 		do: [ :each | (each asString startsWith: aString) ifTrue: [ results addFirst: (each copyFrom: 1 to: (each size)) ] ].
 
 	^results.

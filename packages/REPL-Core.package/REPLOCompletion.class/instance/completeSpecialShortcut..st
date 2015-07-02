@@ -4,7 +4,7 @@ completeSpecialShortcut: aString
 
 	| selector shortcuts |
 
-	shortcuts := (REPLShortcuts selectors select: [ :each | (each count: [ :x | x = $: ]) = 1]).
+	shortcuts := (REPLShortcut selectors select: [ :each | (each count: [ :x | x = $: ]) = 1]).
 
 	(aString size > 1)
 		ifTrue: [ selector := aString copyFrom: 2 to: (aString size).
