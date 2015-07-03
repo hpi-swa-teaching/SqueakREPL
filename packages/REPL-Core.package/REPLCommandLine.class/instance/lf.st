@@ -2,4 +2,4 @@ printing
 lf
 	"Put line feed to stdOut."
 
-	self put: Character lf.
+	self put: Character lf

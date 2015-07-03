@@ -1,7 +1,5 @@
 completion
 tryGetCommentFor: aSymbol
-
 	(REPLShortcut new respondsTo: aSymbol)
-		ifTrue: [ ^REPLShortcut precodeCommentOrInheritedCommentFor: aSymbol ].
-
-	^nil
+		ifTrue: [ ^ REPLShortcut precodeCommentOrInheritedCommentFor: aSymbol ].
+	^ nil

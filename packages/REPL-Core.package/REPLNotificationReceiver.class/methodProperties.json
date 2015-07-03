@@ -2,9 +2,9 @@
 	"class" : {
 		"source:workspace:" : "db 5/12/2015 20:51" },
 	"instance" : {
-		"bindingOf:" : "db 5/12/2015 20:43",
-		"doesNotUnderstand:" : "db 6/1/2015 23:57",
-		"formatError" : "db 5/12/2015 20:45",
+		"bindingOf:" : "LW 7/3/2015 09:19",
+		"doesNotUnderstand:" : "LW 7/3/2015 09:19",
+		"formatError" : "LW 7/3/2015 09:19",
 		"lastError" : "db 5/12/2015 20:45",
 		"lastError:" : "db 5/12/2015 20:41",
 		"lastErrorMessage" : "db 5/12/2015 20:46",
@@ -15,9 +15,9 @@
 		"lastErrorStatement:" : "db 5/12/2015 20:41",
 		"model" : "db 5/12/2015 20:41",
 		"model:" : "db 5/12/2015 20:41",
-		"notify:at:in:" : "db 5/12/2015 20:43",
+		"notify:at:in:" : "LW 7/3/2015 09:20",
 		"select" : "db 6/1/2015 18:11",
 		"selectFrom:to:" : "db 6/1/2015 18:11",
-		"selectionInterval" : "db 5/12/2015 20:44",
+		"selectionInterval" : "LW 7/3/2015 09:12",
 		"text" : "db 5/12/2015 20:41",
 		"text:" : "db 5/12/2015 20:47" } }
