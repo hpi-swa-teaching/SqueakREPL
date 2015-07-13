@@ -2,7 +2,7 @@ life cycle
 open
 	"Wait for connection on port."
 
-	self socket listenOn: port.
+	self socket listenOn: self port.
 	
 	[
 		"[ self socket isWaitingForConnection ] whileTrue: []."

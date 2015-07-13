@@ -1,5 +1,5 @@
 accessing
 interfaceClass
-	"Return REPL class handling interface."
+	"Answer class to be used for repl interface. Relace it for use with command line or server respectively."
 
-	^ REPLServer   
+	^ REPLServer     

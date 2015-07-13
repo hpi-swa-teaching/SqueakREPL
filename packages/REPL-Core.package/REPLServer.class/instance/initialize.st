@@ -6,6 +6,7 @@ initialize
 
 	self 
 		socket: Socket newTCP;
+		port: self defaultPort;
 		clearInput;
 		completion: REPLOCompletion new;
 		lastKey: $_;
