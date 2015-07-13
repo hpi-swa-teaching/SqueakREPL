@@ -1,0 +1,24 @@
+#! /usr/bin/python
+
+import os, sys
+from subprocess import Popen
+from time import sleep
+
+
+port = sys.argv[1] if len(sys.argv) > 1 else '8080'
+
+image_cmd = """
+/Applications/SWT2015.app/Contents/MacOS/Squeak
+-headless
+/Applications/SWT2015.app/Contents/Resources/SWT2015.image
+-repl -p %s""" % port
+
+
+telnet_cmd = """
+telnet localhost %s
+""" % port
+
+image = Popen(image_cmd.split())
+sleep(1)
+os.system(telnet_cmd)
+image.wait()
