@@ -5,20 +5,21 @@ from subprocess import Popen
 from time import sleep
 
 
+squeak_path = "/Applications/SWT2015.app/Contents/MacOS/Squeak"
+image_path = "/Applications/SWT2015.app/Contents/Resources/SWT2015.image"
+
+file_not_found = False
+if not os.path.exists(squeak_path):
+    print('Couldn\'t find squeak. Please edit path in \'repl\' executable.')
+    file_not_found = True
+if not os.path.exists(image_path):
+    print('Couldn\'t find image. Please edit path in \'repl\' executable.')
+if file_not_found:
+    exit()
+
 port = sys.argv[1] if len(sys.argv) > 1 else '8080'
 
-image_cmd = """
-/Applications/SWT2015.app/Contents/MacOS/Squeak
--headless
-/Applications/SWT2015.app/Contents/Resources/SWT2015.image
--repl -p %s""" % port
-
-
-telnet_cmd = """
-telnet localhost %s
-""" % port
-
-image = Popen(image_cmd.split())
+image = Popen([squeak_path, '-headless', image_path, '-repl', '-p', port])
 sleep(1)
-os.system(telnet_cmd)
+os.system("telnet localhost " + port)
 image.wait()
