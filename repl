@@ -1,13 +1,23 @@
 #! /usr/bin/python
 
-import os, sys
+import os
+from sys import argv
 from subprocess import Popen
 from time import sleep
-
 
 squeak_path = "/Applications/SWT2015.app/Contents/MacOS/Squeak"
 image_path = "/Applications/SWT2015.app/Contents/Resources/SWT2015.image"
 
+# help
+if 'help' in argv or '-help' in argv:
+    print('Usage:')
+    print('\t./repl [-help] [-f] [port]\n')
+    print('\tDefault port: 8080')
+    print('-help\tprint this help message and exit')
+    print('-f\trun in headfull mode')
+    exit()
+
+# Check paths
 file_not_found = False
 if not os.path.exists(squeak_path):
     print('Couldn\'t find squeak. Please edit path in \'repl\' executable.')
@@ -17,9 +27,13 @@ if not os.path.exists(image_path):
 if file_not_found:
     exit()
 
-port = sys.argv[1] if len(sys.argv) > 1 else '8080'
+# Get port
+port = argv[-1] if isinstance(argv[-1], int) else '8080'
 
-image = Popen([squeak_path, '-headless', image_path, '-repl', '-p', port])
+# Headless or headfull
+head = '-headfull' if '-f' in argv else '-headless'
+
+image = Popen([squeak_path, head, image_path, '-repl', '-p', port])
 sleep(1)
 os.system("telnet localhost " + port)
 image.wait()

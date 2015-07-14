@@ -2,9 +2,9 @@ life cycle
 close
 	"Close server connection."
 
-	"self process terminate."
-      (self socket isUnconnectedOrInvalid 
+	(self socket isUnconnectedOrInvalid 
 		or: [self socket isWaitingForConnection ])
-		 ifFalse: [
+		ifFalse: [
 			self print: self closingMessage ].
+	"self process terminate."
 	self socket closeAndDestroy.

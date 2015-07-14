@@ -3,5 +3,4 @@ startLoop
 	"Start process handling read-eval-print-loop."
 
 	self sendOpeningMessage.
-
-	self process: ([self loop] forkAt: (Processor userBackgroundPriority)).
+	self process: ([self loop repeat] forkAt: (Processor userBackgroundPriority)).
