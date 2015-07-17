@@ -25,7 +25,6 @@ acceptCurrentLine
 			historyIndex := history size.
 		].
 
-		Log info: 'asd'.
 		self 
 			send: String crlf, (self escapeCode: '[K'),  (result), 
 			self lineSymbol;

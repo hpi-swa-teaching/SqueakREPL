@@ -1,7 +1,6 @@
 life cycle
 sendOpeningMessage
 
-	self send: self openingMessage; lineSymbol.
 	"self print: (REPLTelnet).
 	self print: (#(16rFF 16rFD 16r22) asByteArray)."
 	"self print: String lf."
@@ -14,5 +13,9 @@ sendOpeningMessage
 		sendCommands: 'IAC WILL ECHO';
 		"sendCommands: 'IAC SB LINEMODE MODE MODEEDIT|MODETRAPSIG IAC SE';"
 		sendCommands: 'IAC SB LINEMODE MODE 0 IAC SE'.
+
+
+	self send: self openingMessage.
+	self send: self lineSymbol.
 
 	self clearInput.

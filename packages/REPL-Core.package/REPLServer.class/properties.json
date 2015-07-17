@@ -27,7 +27,8 @@
 		"completing",
 		"suggestions",
 		"debugging",
-		"debugger" ],
+		"debugger",
+		"outputText" ],
 	"name" : "REPLServer",
 	"pools" : [
 		 ],

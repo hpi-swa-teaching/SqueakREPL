@@ -15,6 +15,7 @@ initialize
 		completionSize: 0;
 		debugging: false;
 		finishCSICode;
+		outputText: '';
 		finishTelnetOperation;
 		finishTelnetSubOption;
 		finishTelnetCommand;
