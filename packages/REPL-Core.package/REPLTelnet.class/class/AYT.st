@@ -1,3 +1,0 @@
-commands
-AYT
-	^ 246

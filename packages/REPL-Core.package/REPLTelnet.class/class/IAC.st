@@ -1,3 +1,0 @@
-commands
-IAC
-	^ 255

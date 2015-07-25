@@ -1,3 +1,0 @@
-commands
-NOP
-	^ 241

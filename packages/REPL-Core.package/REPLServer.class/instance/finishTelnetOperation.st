@@ -1,3 +1,0 @@
-accessing
-finishTelnetOperation
-	awaitingTelnetOperation := false

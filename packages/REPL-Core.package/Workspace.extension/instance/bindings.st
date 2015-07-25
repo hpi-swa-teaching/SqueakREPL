@@ -1,3 +1,0 @@
-*REPL-Core
-bindings
-	^bindings 
