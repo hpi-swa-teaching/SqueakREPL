@@ -1,0 +1,4 @@
+commands
+SLCFLUSHIN
+
+	^ 64

@@ -1,0 +1,4 @@
+options
+ECHO
+
+	^ 1.

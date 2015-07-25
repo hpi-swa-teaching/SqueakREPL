@@ -1,0 +1,15 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"stdOut",
+		"stdIn" ],
+	"name" : "REPLCommandLine",
+	"pools" : [
+		 ],
+	"super" : "REPLInterface",
+	"type" : "normal" }

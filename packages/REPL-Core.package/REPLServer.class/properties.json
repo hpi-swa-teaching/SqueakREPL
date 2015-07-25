@@ -1,0 +1,36 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"completionDirection",
+		"socket",
+		"nextIsConfirmation",
+		"historyIndex",
+		"port",
+		"completionSize",
+		"history",
+		"confirmed",
+		"buffer",
+		"completion",
+		"lastKey",
+		"completionIndex",
+		"input",
+		"nextIsEscapeCode",
+		"nextIsCSICode",
+		"awaitingTelnetCommand",
+		"awaitingTelnetSubOption",
+		"awaitingTelnetOperation",
+		"completing",
+		"suggestions",
+		"debugging",
+		"debugger",
+		"outputText" ],
+	"name" : "REPLServer",
+	"pools" : [
+		 ],
+	"super" : "REPLInterface",
+	"type" : "normal" }

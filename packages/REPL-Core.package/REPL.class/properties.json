@@ -1,0 +1,14 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Interface" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "REPL",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

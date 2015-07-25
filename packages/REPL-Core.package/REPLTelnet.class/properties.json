@@ -1,0 +1,14 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "REPLTelnet",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
