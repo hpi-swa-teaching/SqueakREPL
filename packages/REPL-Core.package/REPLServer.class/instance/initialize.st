@@ -1,10 +1,9 @@
 initialize-release
-initialize 
+initialize
 	"Initialize server."
 
 	super initialize.
-
-	self 
+	self
 		socket: Socket newTCP;
 		port: self defaultPort;
 		clearInput;
@@ -23,8 +22,6 @@ initialize
 		nextIsConfirmation: false;
 		nextIsEscapeCode: false;
 		nextIsCSICode: false.
-
-	self completion workspace: (self evaluator workspace).
-
+	self completion workspace: self evaluator workspace.
 	history := OrderedCollection new.
-	historyIndex := 1.
+	historyIndex := 1

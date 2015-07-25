@@ -1,4 +1,3 @@
 accessing
 output: aString
-
-	self outputText: self outputText, aString.
+	self outputText: self outputText , aString

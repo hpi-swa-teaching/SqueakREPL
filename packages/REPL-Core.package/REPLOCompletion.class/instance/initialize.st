@@ -1,4 +1,3 @@
 initialize-release
-initialize 
-	self model: OModel new expand.
-		
+initialize
+	self model: OModel new expand

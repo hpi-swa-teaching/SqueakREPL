@@ -1,4 +1,3 @@
 accessing
 outputText
-
-	^ outputText.
+	^ outputText

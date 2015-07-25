@@ -1,4 +1,3 @@
 as yet unclassified
 colorInfo
-
-	^ '0;36'.
+	^ '0;36'

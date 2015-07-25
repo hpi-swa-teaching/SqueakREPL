@@ -2,4 +2,8 @@ testing
 testParenthesesOutsideOfStrings
 	"Check whether parentheses outside of strings are recognized appropriately."
 
-	self deny: (self parser isCompletedExpression: 's := ''Parentheses ('', ), '' contain material that serves to clarify, or is aside from the main point.''')
+	self
+		deny:
+			(self parser
+				isCompletedExpression:
+					's := ''Parentheses ('', ), '' contain material that serves to clarify, or is aside from the main point.''')

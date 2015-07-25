@@ -1,4 +1,3 @@
 commands
 SLCFLUSHOUT
-
 	^ 32

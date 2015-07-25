@@ -6,9 +6,8 @@ areSpecialCharacters: aDictionary properlyNestedWithin: aString
 	typedTokens := [ (Scanner new typedScanTokens: aString) asBag ]
 		on: Exception
 		do: [ :exception | ^ self handleCompletingException: exception ].
-	aDictionary keysAndValuesDo:
-		[ :eachLeftSpecialCharacter :eachRightSpecialCharacter |
-			(typedTokens occurrencesOf: eachLeftSpecialCharacter)
-				= (typedTokens occurrencesOf: eachRightSpecialCharacter)
-					ifFalse: [ ^ false ] ].
+	aDictionary
+		keysAndValuesDo: [ :eachLeftSpecialCharacter :eachRightSpecialCharacter | 
+			(typedTokens occurrencesOf: eachLeftSpecialCharacter) = (typedTokens occurrencesOf: eachRightSpecialCharacter)
+				ifFalse: [ ^ false ] ].
 	^ true

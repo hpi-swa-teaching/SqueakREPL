@@ -4,4 +4,4 @@ testContextPersistency
 
 	self assert: (self evaluator evaluate: 'contextVar := 555') = 555.
 	self assert: (self evaluator evaluate: 'contextVar') = 555.
-	self assert: (self evaluator evaluate: 'contextVar * 2') = 1110.
+	self assert: (self evaluator evaluate: 'contextVar * 2') = 1110

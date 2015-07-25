@@ -1,4 +1,3 @@
 printing
 completionSize
-
 	^ completionSize

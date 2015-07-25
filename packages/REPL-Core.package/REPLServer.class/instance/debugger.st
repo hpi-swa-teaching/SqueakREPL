@@ -1,4 +1,3 @@
 accessing
 debugger
-
-	^ debugger.
+	^ debugger

@@ -4,4 +4,4 @@ print: aString
 
 	[ self socket sendData: aString ]
 		on: SocketPrimitiveFailed
-		do: []
+		do: [  ]
