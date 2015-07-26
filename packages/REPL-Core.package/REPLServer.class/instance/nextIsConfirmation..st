@@ -1,3 +1,3 @@
 accessing
-nextIsConfirmation: aBoolean 
+nextIsConfirmation: aBoolean
 	nextIsConfirmation := aBoolean

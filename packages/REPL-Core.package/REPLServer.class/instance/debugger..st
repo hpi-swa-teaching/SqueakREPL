@@ -1,3 +1,3 @@
 accessing
-debugger: anObject 
+debugger: anObject
 	debugger := anObject

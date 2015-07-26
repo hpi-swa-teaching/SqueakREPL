@@ -1,9 +1,11 @@
 notification handling
-notify: aString at: anInteger in: aStream 
+notify: aString at: anInteger in: aStream
 	"The compilation of text failed. The syntax error is noted as the
 	argument, 
 	aString. Insert it in the text at starting character position anInteger."
-	self lastError: 'Error: "' , aString , '" at position ' , anInteger;
-		 lastErrorMessage: aString;
-		 lastErrorPosition: anInteger;
-		 lastErrorStatement: aStream contents
+
+	self
+		lastError: 'Error: "' , aString , '" at position ' , anInteger;
+		lastErrorMessage: aString;
+		lastErrorPosition: anInteger;
+		lastErrorStatement: aStream contents

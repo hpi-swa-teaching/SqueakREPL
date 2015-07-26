@@ -2,15 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"context" : "tm 7/26/2015 18:45",
-		"context:" : "tm 7/26/2015 18:45",
-		"evaluate:" : "tm 7/26/2015 18:45",
-		"evaluate:onError:" : "tm 7/26/2015 18:45",
-		"findShortcut:" : "tm 7/26/2015 18:45",
-		"getSelectorFrom:" : "tm 7/26/2015 18:45",
-		"handleException:" : "tm 7/26/2015 18:45",
-		"handleSpecialShortcut:" : "tm 7/26/2015 18:45",
-		"initialize" : "tm 7/26/2015 18:45",
-		"initializeWorkspace" : "tm 7/26/2015 18:45",
-		"workspace" : "tm 7/26/2015 18:45",
-		"workspace:" : "tm 7/26/2015 18:45" } }
+		"context" : "tm 7/26/2015 18:54",
+		"context:" : "tm 7/26/2015 18:54",
+		"evaluate:" : "tm 7/26/2015 18:54",
+		"evaluate:onError:" : "tm 7/26/2015 18:54",
+		"findShortcut:" : "tm 7/26/2015 18:54",
+		"getSelectorFrom:" : "tm 7/26/2015 18:54",
+		"handleException:" : "tm 7/26/2015 18:54",
+		"handleSpecialShortcut:" : "tm 7/26/2015 18:54",
+		"initialize" : "tm 7/26/2015 18:54",
+		"initializeWorkspace" : "tm 7/26/2015 18:54",
+		"workspace" : "tm 7/26/2015 18:54",
+		"workspace:" : "tm 7/26/2015 18:54" } }

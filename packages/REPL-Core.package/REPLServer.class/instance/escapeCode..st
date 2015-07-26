@@ -1,3 +1,3 @@
 evaluating
-escapeCode: aString 
+escapeCode: aString
 	^ (Character escape asString , aString) asByteArray

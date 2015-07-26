@@ -1,6 +1,7 @@
 printing
-print: aString 
+print: aString
 	"Send aString to client."
-	[self socket sendData: aString]
+
+	[ self socket sendData: aString ]
 		on: SocketPrimitiveFailed
-		do: []
+		do: [  ]

@@ -1,3 +1,3 @@
 accessing
-outputText: aString 
+outputText: aString
 	outputText := aString

@@ -1,8 +1,6 @@
 running
 testInput
-
-	self repl 
+	self repl
 		clearInput;
 		appendInput: 'Test'.
-
 	self assert: self repl buffer = 'Test'

@@ -1,8 +1,9 @@
 completing
-isCompletedExpression: aString 
+isCompletedExpression: aString
 	"Check whether aString (an instance of String) may be a a completed
 	expression and answer a truth value (an instance of Boolean)
 	according to it."
+
 	| specialCharacters flattenedCharacters adjustedExpression |
 	specialCharacters := self class glossaryOfSpecialCharacters.
 	flattenedCharacters := specialCharacters keys , specialCharacters values.

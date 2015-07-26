@@ -1,3 +1,3 @@
 accessing
-nextIsCSICode: anObject 
+nextIsCSICode: anObject
 	nextIsCSICode := anObject

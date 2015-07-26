@@ -1,4 +1,5 @@
 printing
-print: aString 
+print: aString
 	"Print aString to output."
+
 	^ self subclassResponsibility

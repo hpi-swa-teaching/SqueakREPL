@@ -1,8 +1,7 @@
 repl
-attach: aContext n: anInteger 
+attach: aContext n: anInteger
 	| debugger |
-	debugger := Debugger allInstances at: anInteger.
-	"debugger contextStack ifNil: [
+	debugger := Debugger allInstances at: anInteger.	"debugger contextStack ifNil: [
 	^ (aContext server colorize: 'Debugger has no context stack.' with:
 	(aContext server class colorBad)) asString.
 	]."

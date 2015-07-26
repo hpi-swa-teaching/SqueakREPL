@@ -1,18 +1,18 @@
 {
 	"class" : {
-		"horizontalLine" : "tm 7/26/2015 18:45",
-		"width" : "tm 7/26/2015 18:45" },
+		"horizontalLine" : "tm 7/26/2015 18:54",
+		"width" : "tm 7/26/2015 18:54" },
 	"instance" : {
-		"close" : "tm 7/26/2015 18:45",
-		"evaluate:" : "tm 7/26/2015 18:45",
-		"evaluator" : "tm 7/26/2015 18:45",
-		"evaluator:" : "tm 7/26/2015 18:45",
-		"findShortcut:" : "tm 7/26/2015 18:45",
-		"initialize" : "tm 7/26/2015 18:45",
-		"isExpression:" : "tm 7/26/2015 18:45",
-		"open" : "tm 7/26/2015 18:45",
-		"parser" : "tm 7/26/2015 18:45",
-		"parser:" : "tm 7/26/2015 18:45",
-		"print:" : "tm 7/26/2015 18:45",
-		"read" : "tm 7/26/2015 18:45",
-		"startLoop" : "tm 7/26/2015 18:45" } }
+		"close" : "tm 7/26/2015 18:54",
+		"evaluate:" : "tm 7/26/2015 18:54",
+		"evaluator" : "tm 7/26/2015 18:54",
+		"evaluator:" : "tm 7/26/2015 18:54",
+		"findShortcut:" : "tm 7/26/2015 18:54",
+		"initialize" : "tm 7/26/2015 18:54",
+		"isExpression:" : "tm 7/26/2015 18:54",
+		"open" : "tm 7/26/2015 18:54",
+		"parser" : "tm 7/26/2015 18:54",
+		"parser:" : "tm 7/26/2015 18:54",
+		"print:" : "tm 7/26/2015 18:54",
+		"read" : "tm 7/26/2015 18:54",
+		"startLoop" : "tm 7/26/2015 18:54" } }

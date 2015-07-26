@@ -1,3 +1,3 @@
 class
-test: aContext n: n 
+test: aContext n: n
 	^ n * n

@@ -1,3 +1,3 @@
 accessing
-output: aString 
+output: aString
 	self outputText: self outputText , aString

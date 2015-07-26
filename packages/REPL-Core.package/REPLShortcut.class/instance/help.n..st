@@ -1,6 +1,8 @@
 repl
-help: aContext n: aNothing 
-	aContext server print: 'Welcome to the Squeak REPL! 
+help: aContext n: aNothing
+	aContext server
+		print:
+			'Welcome to the Squeak REPL! 
 		The Squeak REPL gives you the ability to use the Squeak Environment in the comforts of your terminal. To enhance the experience, the Squeak REPL offers the following nifty shortcuts, which can be called with a `#`
    !info - Version info, Copyright info etc.
    !help - Lists you all the shortcuts

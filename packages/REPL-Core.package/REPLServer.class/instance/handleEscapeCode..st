@@ -1,15 +1,19 @@
 evaluating
-handleEscapeCode: aCharacter 
+handleEscapeCode: aCharacter
 	"Handle CSI character."
-	Transcript show: 'ESCAPE ';
-		 show: aCharacter asInteger;
-		 cr.
+
+	Transcript
+		show: 'ESCAPE ';
+		show: aCharacter asInteger;
+		cr.
 	aCharacter asInteger = 7
-		ifTrue: [self debugging
-				ifTrue: [self debugging: false.
+		ifTrue: [ 
+			self debugging
+				ifTrue: [ 
+					self debugging: false.
 					self send: self startSymbol.
-					^ self].
+					^ self ].
 			self completing
-				ifTrue: [self clearCompletion]].
+				ifTrue: [ self clearCompletion ] ].
 	(REPLTelnet isEscapeCode: aCharacter asInteger)
-		ifTrue: [self awaitEscapeCode]
+		ifTrue: [ self awaitEscapeCode ]
