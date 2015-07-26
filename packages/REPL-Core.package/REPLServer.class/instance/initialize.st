@@ -7,7 +7,7 @@ initialize
 		socket: Socket newTCP;
 		port: self defaultPort;
 		clearInput;
-		completion: REPLOCompletion new;
+		completion: REPLObjectCompletion new;
 		lastKey: $_;
 		completionIndex: 0;
 		completionDirection: 1;

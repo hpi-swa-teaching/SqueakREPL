@@ -3,11 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Interface" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "REPL",
+		"model",
+		"workspace" ],
+	"name" : "REPLObjectCompletion",
 	"pools" : [
 		 ],
 	"super" : "Object",
