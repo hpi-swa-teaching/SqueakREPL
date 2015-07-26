@@ -1,4 +1,3 @@
 printing
 completionDirection
-
-	^ completionDirection.
+	^ completionDirection

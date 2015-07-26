@@ -1,4 +1,3 @@
 commands
-isEscapeCode: anInteger
-
-	^ (250 < anInteger)
+isEscapeCode: anInteger 
+	^ 250 < anInteger

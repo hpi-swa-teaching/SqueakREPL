@@ -1,4 +1,3 @@
 commands
 MODESOFTTAB
-
 	^ 8

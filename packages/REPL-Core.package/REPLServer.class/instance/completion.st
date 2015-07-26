@@ -1,4 +1,3 @@
 accessing
 completion
-
-	^ completion.
+	^ completion

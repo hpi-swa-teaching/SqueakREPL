@@ -1,4 +1,3 @@
 accessing
 finishCSICode
-
-	nextIsCSICode := false.
+	nextIsCSICode := false

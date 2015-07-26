@@ -1,3 +1,3 @@
 accessing
-lastErrorStatement: anObject
+lastErrorStatement: anObject 
 	lastErrorStatement := anObject

@@ -1,5 +1,5 @@
 completion
-tryGetHeaderFor: aSymbol
+tryGetHeaderFor: aSymbol 
 	(REPLShortcut new respondsTo: aSymbol)
-		ifTrue: [ ^ REPLShortcut methodHeaderFor: aSymbol ].
+		ifTrue: [^ REPLShortcut methodHeaderFor: aSymbol].
 	^ nil

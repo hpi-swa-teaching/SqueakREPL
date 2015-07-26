@@ -1,5 +1,4 @@
 printing
-send: aString
+send: aString 
 	"Send aString to client."
-
-	self print: aString.
+	self print: aString

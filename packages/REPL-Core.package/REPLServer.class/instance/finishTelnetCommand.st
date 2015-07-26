@@ -1,4 +1,3 @@
 accessing
 finishTelnetCommand
-
-	awaitingTelnetCommand := false.
+	awaitingTelnetCommand := false

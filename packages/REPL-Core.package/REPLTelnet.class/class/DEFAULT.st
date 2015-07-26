@@ -1,4 +1,3 @@
 commands
 DEFAULT
-
 	^ 3

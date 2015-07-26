@@ -1,5 +1,4 @@
 reading
 read
-	"Read from  input."
-	
-	^ self subclassResponsibility 
+	"Read from input."
+	^ self subclassResponsibility

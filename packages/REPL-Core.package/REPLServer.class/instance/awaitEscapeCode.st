@@ -1,4 +1,3 @@
 accessing
 awaitEscapeCode
-
-	nextIsEscapeCode := true.
+	nextIsEscapeCode := true

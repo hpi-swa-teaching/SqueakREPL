@@ -1,4 +1,3 @@
 commands
 MODETRAPSIG
-
 	^ 2

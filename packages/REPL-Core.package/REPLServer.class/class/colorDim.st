@@ -1,4 +1,3 @@
 as yet unclassified
 colorDim
-
-	^ '0;90'.
+	^ '0;90'

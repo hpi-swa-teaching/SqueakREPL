@@ -1,5 +1,4 @@
 accessing
-port: aPort
+port: aPort 
 	"Set server port."
-
-	port := aPort.
+	port := aPort

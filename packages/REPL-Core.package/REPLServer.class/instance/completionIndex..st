@@ -1,4 +1,3 @@
 printing
-completionIndex: aNumber
-
-	completionIndex := aNumber.
+completionIndex: aNumber 
+	completionIndex := aNumber

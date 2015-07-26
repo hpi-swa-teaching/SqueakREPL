@@ -1,3 +1,3 @@
 accessing
-nextIsEscapeCode: anObject
+nextIsEscapeCode: anObject 
 	nextIsEscapeCode := anObject

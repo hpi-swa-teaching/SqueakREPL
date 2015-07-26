@@ -1,4 +1,3 @@
 commands
 EC
-
-	^ 10.
+	^ 10

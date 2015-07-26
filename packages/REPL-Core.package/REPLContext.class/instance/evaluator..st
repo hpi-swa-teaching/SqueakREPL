@@ -1,3 +1,3 @@
 accessing
-evaluator: anObject
+evaluator: anObject 
 	evaluator := anObject

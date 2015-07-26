@@ -1,5 +1,4 @@
 printing
-sendCommands: aString
+sendCommands: aString 
 	"Send aString as commands to client."
-
-	self send: (REPLTelnet parse: aString) asByteArray.
+	self send: (REPLTelnet parse: aString) asByteArray

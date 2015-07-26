@@ -1,4 +1,3 @@
 accessing
-completion: anObject
-
-	completion := anObject.
+completion: anObject 
+	completion := anObject

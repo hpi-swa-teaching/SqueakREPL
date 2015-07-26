@@ -1,4 +1,3 @@
 evaluating
-lastKey: anObject
-
-	lastKey := anObject.
+lastKey: anObject 
+	lastKey := anObject

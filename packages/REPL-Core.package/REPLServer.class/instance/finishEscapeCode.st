@@ -1,4 +1,3 @@
 accessing
 finishEscapeCode
-
-	nextIsEscapeCode := false.
+	nextIsEscapeCode := false
