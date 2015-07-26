@@ -1,3 +1,4 @@
 as yet unclassified
 colorGood
-	^ '0;32'
+
+	^ '0;32'.

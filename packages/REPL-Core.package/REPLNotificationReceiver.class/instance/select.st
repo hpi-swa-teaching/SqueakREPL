@@ -1,3 +1,3 @@
 notification handling
 select
-	^ self
+	

@@ -1,3 +1,4 @@
 accessing
 awaitingTelnetCommand
-	^ awaitingTelnetCommand
+
+	^ awaitingTelnetCommand.

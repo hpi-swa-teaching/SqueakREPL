@@ -1,3 +1,4 @@
 options
 MODE
-	^ 1
+
+	^ 1.

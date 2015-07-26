@@ -1,3 +1,4 @@
 accessing
 nextIsConfirmation
+
 	^ nextIsConfirmation

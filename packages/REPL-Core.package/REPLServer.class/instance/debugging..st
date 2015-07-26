@@ -1,3 +1,4 @@
 accessing
 debugging: aBoolean
-	debugging := aBoolean
+
+	debugging := aBoolean.

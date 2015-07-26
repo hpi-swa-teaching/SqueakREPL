@@ -1,3 +1,4 @@
 evaluating
 lastKey
-	^ lastKey
+
+	^ lastKey.

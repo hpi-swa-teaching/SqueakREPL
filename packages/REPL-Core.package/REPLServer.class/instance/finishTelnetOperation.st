@@ -1,3 +1,4 @@
 accessing
 finishTelnetOperation
-	awaitingTelnetOperation := false
+
+	awaitingTelnetOperation := false.

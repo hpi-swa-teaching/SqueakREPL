@@ -1,3 +1,4 @@
 commands
 IAC
-	^ 255
+
+	^ 255.

@@ -1,3 +1,4 @@
 options
 FORWARDMASK
-	^ 2
+
+	^ 2.

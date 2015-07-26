@@ -1,3 +1,4 @@
 accessing
 awaitingCSICode
-	^ nextIsCSICode
+
+	^ nextIsCSICode.

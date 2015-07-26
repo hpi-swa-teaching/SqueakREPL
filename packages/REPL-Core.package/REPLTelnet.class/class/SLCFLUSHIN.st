@@ -1,3 +1,4 @@
 commands
 SLCFLUSHIN
+
 	^ 64

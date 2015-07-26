@@ -1,3 +1,4 @@
 printing
 clearLineUntilEnd
-	^ self escapeCode: '[K'
+
+	^ (self escapeCode: '[K')

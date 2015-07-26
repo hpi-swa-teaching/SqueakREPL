@@ -1,3 +1,4 @@
 accessing
 awaitingEscapeCode
-	^ nextIsEscapeCode
+
+	^ nextIsEscapeCode.

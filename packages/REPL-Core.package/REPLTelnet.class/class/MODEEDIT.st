@@ -1,3 +1,4 @@
 commands
 MODEEDIT
+
 	^ 1

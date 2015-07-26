@@ -1,3 +1,4 @@
 options
 LINEMODE
-	^ 34
+
+	^ 34.

@@ -4,5 +4,5 @@ port
 
 	| arguments index |
 	arguments := Smalltalk commandLine arguments.
-	index := arguments indexOf: self portArgument ifAbsent: [ ^ nil ].
-	^ (arguments at: index + 1) asNumber
+	index  := arguments indexOf: (self portArgument) ifAbsent: [ ^nil ].
+	^ (arguments at: (index + 1)) asNumber 
