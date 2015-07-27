@@ -4,8 +4,10 @@ completeSpecialShortcut: aString
 
 	| selector shortcuts |
 	shortcuts := REPLShortcut selectors select: [ :each | (each count: [ :x | x = $: ]) = 1 ].
+
 	aString size > 1
 		ifTrue: [ 
-			selector := aString copyFrom: 2 to: aString size.
+			selector := aString allButFirst.
 			shortcuts := shortcuts select: [ :each | each startsWith: selector ] ].
-	^ (shortcuts collect: [ :each | '!' , (each copyFrom: 1 to: each size - 1) ]) asOrderedCollection
+
+	^ (shortcuts collect: [ :each | '!' , (each allButLast) ]) asOrderedCollection

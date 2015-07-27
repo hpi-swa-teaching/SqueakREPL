@@ -13,6 +13,6 @@ Usage:
 		do: [ :eachBinding | 
 			| value paddedBindingName |
 			value := aContext evaluator workspace bindings at: eachBinding.
-			paddedBindingName := ((eachBinding asString padded: #right to: 30 with: Character space)).
+			paddedBindingName := ((eachBinding asString padded: #right to: self class vardumpColumnWidth with: Character space)).
 			output := output , String crlf, paddedBindingName, value asString ].
 	^ output

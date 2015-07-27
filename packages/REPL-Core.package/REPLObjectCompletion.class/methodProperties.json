@@ -2,13 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"complete:" : "tm 7/26/2015 18:54",
-		"completeSpecialShortcut:" : "tm 7/26/2015 18:54",
-		"format:" : "tm 7/26/2015 18:54",
+		"complete:" : "db 7/28/2015 00:46",
+		"completeLocalBindings:" : "db 7/28/2015 00:44",
+		"completeShortcuts:" : "db 7/28/2015 00:51",
+		"completeSpecialShortcut:" : "db 7/28/2015 00:47",
+		"format:" : "db 7/28/2015 00:56",
 		"initialize" : "tm 7/26/2015 18:54",
 		"model" : "tm 7/26/2015 18:54",
 		"model:" : "tm 7/26/2015 18:54",
-		"tryGetCommentFor:" : "tm 7/26/2015 18:54",
-		"tryGetHeaderFor:" : "tm 7/26/2015 18:54",
 		"workspace" : "tm 7/26/2015 18:54",
 		"workspace:" : "tm 7/26/2015 18:54" } }

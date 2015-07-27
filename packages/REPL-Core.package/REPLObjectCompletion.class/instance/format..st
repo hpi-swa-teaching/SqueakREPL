@@ -1,8 +1,12 @@
 completion
 format: anOModelEntry
-	| contents index |
+	"Format anOModelEntry depending on it's context."
+
+	| contents index count |
 	contents := anOModelEntry contents asString.
 	index := contents asString indexOf: $:.
-	(index = 3 and: (REPLShortcut new respondsTo: contents asSymbol))
-		ifTrue: [ ^ '#' , (contents copyFrom: 1 to: index - 1) , ' ' , (contents copyFrom: index + 1 to: contents size) ].
+	count := contents asString count: [ :c | c = $: ].
+
+	(count > 1 and: (REPLShortcut new respondsTo: contents asSymbol))
+		ifTrue: [ ^ '#' , (contents first: index - 1) , ' ' , (contents allButFirst: index) ].
 	^ contents
