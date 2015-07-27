@@ -1,4 +1,4 @@
 running
 setUp
 	super setUp.
-	self repl: REPL new
+	self repl: REPLStarter new

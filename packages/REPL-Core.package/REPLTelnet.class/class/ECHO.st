@@ -1,4 +1,3 @@
 options
 ECHO
-
-	^ 1.
+	^ 1

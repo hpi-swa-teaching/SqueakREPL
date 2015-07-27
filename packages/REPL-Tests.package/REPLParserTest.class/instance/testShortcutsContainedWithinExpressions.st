@@ -4,4 +4,6 @@ testShortcutsContainedWithinExpressions
 
 	| randomlyChosenSelector |
 	randomlyChosenSelector := (REPLShortcut selectors atRandom subStrings: #($:)) first.
-	self assert: (self parser makesUseOfShortcuts: 'self doPreprocessing. #' , randomlyChosenSelector , '. self doPostprocessing')
+	self
+		assert:
+			(self parser makesUseOfShortcuts: 'self doPreprocessing. #' , randomlyChosenSelector , '. self doPostprocessing')

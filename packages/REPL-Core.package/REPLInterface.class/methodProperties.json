@@ -1,18 +1,18 @@
 {
 	"class" : {
-		"horizontalLine" : "ar 7/17/2015 04:57",
-		"width" : "ar 7/17/2015 04:57" },
+		"horizontalLine" : "tm 7/26/2015 18:54",
+		"width" : "tm 7/26/2015 18:54" },
 	"instance" : {
-		"close" : "wr 6/17/2015 21:19",
-		"evaluate:" : "db 7/14/2015 23:29",
-		"evaluator" : "WR 5/18/2015 16:24",
-		"evaluator:" : "WR 5/18/2015 16:24",
-		"findShortcut:" : "LW 6/7/2015 11:02",
-		"initialize" : "wr 6/17/2015 21:29",
-		"isExpression:" : "wr 6/23/2015 22:49",
-		"open" : "wr 6/17/2015 21:20",
-		"parser" : "WR 5/18/2015 16:23",
-		"parser:" : "WR 5/18/2015 16:23",
-		"print:" : "wr 6/17/2015 21:40",
-		"read" : "wr 6/17/2015 21:24",
-		"startLoop" : "wr 6/17/2015 21:48" } }
+		"close" : "tm 7/26/2015 18:54",
+		"evaluate:" : "tm 7/26/2015 18:54",
+		"evaluator" : "tm 7/26/2015 18:54",
+		"evaluator:" : "tm 7/26/2015 18:54",
+		"findShortcut:" : "tm 7/26/2015 18:54",
+		"initialize" : "tm 7/26/2015 18:54",
+		"isExpression:" : "tm 7/26/2015 18:54",
+		"open" : "tm 7/26/2015 18:54",
+		"parser" : "tm 7/26/2015 18:54",
+		"parser:" : "tm 7/26/2015 18:54",
+		"print:" : "tm 7/26/2015 18:54",
+		"read" : "tm 7/26/2015 18:54",
+		"startLoop" : "tm 7/26/2015 18:54" } }

@@ -1,4 +1,3 @@
 accessing
 awaitTelnetSubOption
-
-	awaitingTelnetSubOption := true.
+	awaitingTelnetSubOption := true

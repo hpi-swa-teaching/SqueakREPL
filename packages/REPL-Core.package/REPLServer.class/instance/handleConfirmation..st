@@ -1,8 +1,6 @@
 evaluating
 handleConfirmation: aCharacter
-
-
-	self 
+	self
 		nextIsConfirmation: false;
-		confirmed: (aCharacter == 'y');
-		clearInput.
+		confirmed: aCharacter == 'y';
+		clearInput

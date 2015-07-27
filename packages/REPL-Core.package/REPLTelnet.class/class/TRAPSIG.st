@@ -1,4 +1,3 @@
 options
 TRAPSIG
-
 	^ 2

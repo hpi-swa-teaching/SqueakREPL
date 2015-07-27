@@ -1,5 +1,3 @@
 printing
 completionIndex
-
-
-	^ completionIndex.
+	^ completionIndex

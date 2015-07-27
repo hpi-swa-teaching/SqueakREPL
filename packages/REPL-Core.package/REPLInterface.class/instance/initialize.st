@@ -1,13 +1,12 @@
 initialize-release
-initialize 
+initialize
 	"Initialize REPL interface."
 
-	self 
+	self
 		parser: REPLParser new;
 		evaluator: REPLEvaluator new.
-
 	self evaluator context: REPLContext new.
 	self evaluator context
 		evaluator: self evaluator;
 		server: self;
-		parser: self parser.
+		parser: self parser
