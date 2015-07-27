@@ -5,20 +5,23 @@ handleCSICode: aCharacter
 	aCharacter == $A
 		ifTrue: [ 
 			"self print: (#(255 34 3 10) asByteArray)."
-			historyIndex > 1
-				ifTrue: [ 
-					self send: (self escapeCode: '[A') , self lineSymbol , (history at: historyIndex) , (self escapeCode: '[K').
-					self buffer: (history at: historyIndex).
-					historyIndex := historyIndex - 1 ] ].
+			self historyIndex >= 1
+				ifTrue: [
+					self send: (self escapeCode: '[A') , self lineSymbol , (self history at: self historyIndex) , (self escapeCode: '[K').
+					self buffer: (self history at: self historyIndex).
+					self historyIndex: self historyIndex - 1 ] ].
 	aCharacter == $B
-		ifTrue: [ 
+		ifTrue: [
 			"self print: (#(255 34 3 10) asByteArray)."
-			historyIndex < history size
+			(self historyIndex < (self history size - 1))
 				ifTrue: [ 
-					"self print: self lineSymbol."
-					historyIndex := historyIndex + 1.
-					self buffer: (history at: historyIndex).
-					self print: (history at: historyIndex) ] ].
+					self historyIndex: self historyIndex + 1.
+					self send: (self escapeCode: '[A') , self lineSymbol , (self history at: (self historyIndex + 1)) , (self escapeCode: '[K').
+					self buffer: (self history at: self historyIndex) ]
+				ifFalse: [
+					self historyIndex: self history size.
+					self send: (self escapeCode: '[A') , self lineSymbol , (self escapeCode: '[K').
+					self buffer: String empty ]].
 	aCharacter == $Z
 		ifTrue: [ 
 			self
