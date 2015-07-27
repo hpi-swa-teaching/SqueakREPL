@@ -1,13 +1,18 @@
 repl
 debuggers: aContext
-	| result i debuggerInstances |
+	"List all available debugger instances and assign an identifying number.
+
+Usage:
+!debuggers"
+
+	| result index debuggerInstances |
 	debuggerInstances := Debugger allInstances.
 	result := ''.
-	i := 1.
+	index := 1.
 	debuggerInstances
-		do: [ :m | 
-			result := result , String crlf , ' ' , (aContext server colorize: '(' , i , ') ' with: aContext server class colorGood)
-				, m contextStackList first.
-			i := i + 1 ].
+		do: [ :eachDebugger | 
+			result := result , String crlf , ' ' , (aContext interface colorize: '(' , index , ') ' with: aContext interface class colorGood)
+				, eachDebugger contextStackList first.
+			index := index + 1 ].
 	result := result , String crlf.
 	^ result

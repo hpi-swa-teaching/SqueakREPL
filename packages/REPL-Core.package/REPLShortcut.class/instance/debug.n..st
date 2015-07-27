@@ -1,9 +1,13 @@
 repl
 debug: aContext n: anInteger
+
+"TODO: brauchen wir das?"
 	| window |
-	window := (World submorphs select: [ :m | m respondsTo: #label ]) at: anInteger.
+	window := (World submorphs select: [ :eachMorph | eachMorph respondsTo: #label ]) at: anInteger.
 	window model class = Debugger
-		ifFalse: [ ^ aContext server colorize: 'This is not a debugger.' with: aContext server class colorBad ].
-	aContext server debugger: window.
-	aContext server debugging: true.
-	^ (aContext server colorize: 'Debugger attached!' with: aContext server class colorGood) , String crlf
+		ifFalse: [ ^ aContext interface colorize: 'This is not a debugger.' with: aContext interface class colorBad ].
+
+	aContext interface debugger: window.
+	aContext interface debugging: true.
+
+	^ (aContext interface colorize: 'Debugger attached!' with: aContext interface class colorGood) , String crlf

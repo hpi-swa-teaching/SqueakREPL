@@ -1,3 +1,3 @@
 notification handling
 selectFrom: anInteger to: anotherInteger
-	^ self
+	"Select text beginning at anInteger to anotherInteger."

@@ -3,7 +3,7 @@
 		"source:workspace:" : "tm 7/26/2015 18:54" },
 	"instance" : {
 		"bindingOf:" : "tm 7/26/2015 18:54",
-		"doesNotUnderstand:" : "tm 7/26/2015 18:54",
+		"doesNotUnderstand:" : "db 7/27/2015 19:36",
 		"formatError" : "tm 7/26/2015 18:54",
 		"lastError" : "tm 7/26/2015 18:54",
 		"lastError:" : "tm 7/26/2015 18:54",
@@ -17,7 +17,7 @@
 		"model:" : "tm 7/26/2015 18:54",
 		"notify:at:in:" : "tm 7/26/2015 18:54",
 		"select" : "tm 7/26/2015 18:54",
-		"selectFrom:to:" : "tm 7/26/2015 18:54",
+		"selectFrom:to:" : "db 7/27/2015 19:37",
 		"selectionInterval" : "tm 7/26/2015 18:54",
 		"text" : "tm 7/26/2015 18:54",
 		"text:" : "tm 7/26/2015 18:54" } }

@@ -1,5 +1,10 @@
 repl
 shortcuts: aContext
+	"List all available shortcuts.
+
+Usage:
+!shortcuts"
+
 	| shortcuts result |
 	shortcuts := Dictionary new.
 	self class selectors
@@ -13,7 +18,7 @@ shortcuts: aContext
 	result := ''.
 	shortcuts
 		keysAndValuesDo: [ :eachKey :eachValue | 
-			result := result , String crlf , (aContext server colorize: eachKey with: aContext server class colorGood).
+			result := result , String crlf , (aContext interface colorize: eachKey with: aContext interface class colorGood).
 			eachValue ifNotNil: [ result := result , String crlf , eachValue ].
 			result := result , String crlf ].
 	^ result

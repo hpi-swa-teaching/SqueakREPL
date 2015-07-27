@@ -4,15 +4,9 @@ cm: aContext o: anObject c: aString
 	Object) and whose source code is set according to aString (an
 	instance of String)."
 
-	| parser server |
+	| parser |
 	parser := REPLParser new.
 	(parser makesUseOfShortcuts: aString)
-		ifTrue: [ 
-			server := aContext server.
-			server
-				print:
-					String crlf
-						,
-							'Warning: Please note that you have one or more shortcuts in your method declaration. Someone, who does not have the REPL package, may therefore not be able to use it.'
-						, String crlf ].
+		ifTrue: [ aContext interface
+					print: String crlf	, self class shortcutWarningMessage, String crlf ].
 	anObject compile: aString

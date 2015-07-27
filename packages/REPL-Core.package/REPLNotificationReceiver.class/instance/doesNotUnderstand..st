@@ -1,6 +1,4 @@
 notification handling
 doesNotUnderstand: aMessage
-	"TODO: This is currently a workaround to fix randomly occuring errors
-	when working with shortcuts."
+	"Catch doesNotUnderstand exceptions for this doit receiver."
 
-	^ #workaround

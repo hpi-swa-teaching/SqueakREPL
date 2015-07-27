@@ -1,13 +1,17 @@
 repl
 windows: aContext
-	| result wins i |
-	wins := World submorphs select: [ :m | m respondsTo: #label ].
-	i := 1.
+	"List all available windows that are opened in the image.
+
+Usage:
+!windows"
+
+	| result windows index |
+	windows := World submorphs select: [ :eachMorph | eachMorph respondsTo: #label ].
+	index := 1.
 	result := ''.
-	wins
-		do: [ :m | 
-			result := result , String crlf , ' ' , (aContext server colorize: '(' , i , ') ' with: aContext server class colorGood)
-				, m label.
-			i := i + 1 ].
-	result := result , String crlf.
-	^ result
+	windows
+		do: [ :eachWindow | 
+			result := result , String crlf , ' ' , (aContext interface colorize: '(' , index , ') ' with: aContext interface class colorGood)
+				, eachWindow label.
+			index := index + 1 ].
+	^result , String crlf.

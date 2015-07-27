@@ -1,15 +1,18 @@
 repl
 vardump: aContext
+	"List all variables in the local context.
+
+Usage:
+!vardump"
+
 	| bindings output |
 	bindings := aContext evaluator workspace bindings.
 	output := ''.
-	bindings
-		ifEmpty: [ output := output , 'No local bindings found.' ]
-		ifNotEmpty: [ 
-			bindings keys
-				do: [ :eachBinding | 
-					| value |
-					value := aContext evaluator workspace bindings at: eachBinding.
-					output := output , String crlf
-						, ((eachBinding asString padded: #right to: 30 with: Character space) , value asString) ] ].
+	bindings ifEmpty: [ ^ 'No local bindings found.' ].
+	bindings keys
+		do: [ :eachBinding | 
+			| value paddedBindingName |
+			value := aContext evaluator workspace bindings at: eachBinding.
+			paddedBindingName := ((eachBinding asString padded: #right to: 30 with: Character space)).
+			output := output , String crlf, paddedBindingName, value asString ].
 	^ output
