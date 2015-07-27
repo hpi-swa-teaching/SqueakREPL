@@ -1,10 +1,10 @@
 {
 	"class" : {
-		 },
+		"newFor:on:with:" : "tm 7/27/2015 18:58" },
 	"instance" : {
-		"evaluator" : "tm 7/26/2015 18:54",
-		"evaluator:" : "tm 7/26/2015 18:54",
-		"parser" : "tm 7/26/2015 18:54",
-		"parser:" : "tm 7/26/2015 18:54",
-		"server" : "tm 7/26/2015 18:54",
-		"server:" : "tm 7/26/2015 18:54" } }
+		"evaluator" : "tm 7/27/2015 19:08",
+		"evaluator:" : "tm 7/27/2015 19:08",
+		"interface" : "tm 7/27/2015 18:34",
+		"interface:" : "tm 7/27/2015 18:34",
+		"parser" : "tm 7/27/2015 18:34",
+		"parser:" : "tm 7/27/2015 18:34" } }

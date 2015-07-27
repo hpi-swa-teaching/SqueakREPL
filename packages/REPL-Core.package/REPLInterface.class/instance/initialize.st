@@ -5,8 +5,4 @@ initialize
 	self
 		parser: REPLParser new;
 		evaluator: REPLEvaluator new.
-	self evaluator context: REPLContext new.
-	self evaluator context
-		evaluator: self evaluator;
-		server: self;
-		parser: self parser
+	self evaluator context: (REPLContext newFor: self evaluator on: self with: self parser)

@@ -1,16 +1,17 @@
 {
-	"category" : "REPL-Core",
+	"category" : "REPL-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
+		"interface",
 		"evaluator",
 		"parser",
-		"interface" ],
-	"name" : "REPLContext",
+		"context" ],
+	"name" : "REPLContextTest",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TestCase",
 	"type" : "normal" }

@@ -8,10 +8,12 @@ handleException: anException
 		ifTrue: [ anException message setSelector: #n: ].
 	anException receiver isSymbol
 		ifFalse: [ ^ anException signal ].
+		"Bitte von hier ..."
 	self context
 		ifNil: [ 
 			self context: REPLContext new.
 			self context evaluator: self ].
+		"... bis hier herausnehmen und für die Tests einmal REPLContext newFor:on:with in der startUp Methode einrichten. Das ist dann deutlich sauberer."
 	message := anException receiver asString , ':' , anException message selector asString.
 	args := OrderedCollection new.
 	args add: self context.
