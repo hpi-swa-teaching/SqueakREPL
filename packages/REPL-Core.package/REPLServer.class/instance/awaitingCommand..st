@@ -1,3 +1,3 @@
 accessing
-awaitingTelnetCommand: anObject
+awaitingCommand: anObject
 	awaitingTelnetCommand := anObject

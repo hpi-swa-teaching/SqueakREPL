@@ -1,7 +1,6 @@
 system startup
 startUp: resuming
-	"If image is newly started, check arguments if a REPL was requested.
-	If so, provide an interface."
+	"Provide REPL interface if requested."
 
 	(resuming and: [ Smalltalk commandLine arguments includes: self replArgument ])
 		ifTrue: [ 

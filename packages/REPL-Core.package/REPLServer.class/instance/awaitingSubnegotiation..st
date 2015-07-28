@@ -1,3 +1,3 @@
 accessing
-awaitingTelnetSubOption: anObject
+awaitingSubnegotiation: anObject
 	awaitingTelnetSubOption := anObject

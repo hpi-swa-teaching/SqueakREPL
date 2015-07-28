@@ -1,5 +1,5 @@
 accessing
 replArgument
-	"Answer argument that requests REPL."
+	"Answer argument to request REPL."
 
 	^ '-repl'

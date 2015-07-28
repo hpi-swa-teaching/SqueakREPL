@@ -1,3 +1,3 @@
 accessing
-awaitingTelnetSubOption
+awaitingSubnegotiation
 	^ awaitingTelnetSubOption

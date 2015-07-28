@@ -1,3 +1,3 @@
 accessing
-awaitTelnetCommand
+awaitCommand
 	awaitingTelnetCommand := true

@@ -1,7 +1,7 @@
 evaluating
 acceptCurrentLine
 	| result |
-	Log info: 'Evaulating: ' , self buffer.	"self send: (self escapeCode: '[J')."
+
 	result := self evaluate: self buffer.
 	result
 		ifNil: [ 

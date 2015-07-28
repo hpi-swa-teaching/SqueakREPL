@@ -1,3 +1,3 @@
 accessing
-awaitingTelnetOperation
+awaitingOperation
 	^ awaitingTelnetOperation

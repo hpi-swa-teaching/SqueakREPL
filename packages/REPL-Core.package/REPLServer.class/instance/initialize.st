@@ -15,9 +15,9 @@ initialize
 		debugging: false;
 		finishCSICode;
 		outputText: '';
-		finishTelnetOperation;
-		finishTelnetSubOption;
-		finishTelnetCommand;
+		finishOperation;
+		finishSubnegotiation;
+		finishCommand;
 		finishEscapeCode;
 		nextIsConfirmation: false;
 		nextIsEscapeCode: false;

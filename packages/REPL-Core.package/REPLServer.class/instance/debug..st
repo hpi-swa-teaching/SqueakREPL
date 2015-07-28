@@ -7,6 +7,9 @@ debug: aCharacter
 	first. "
 
 	| result item from s lines interval known ui |
+	aCharacter = Character escape 
+		ifTrue: [ self debugging: false. ^self ].
+
 	self output: String crlf.	"buttons do: [ :b | sendString := sendString, ' [', b label, '] '. ]."	"result := (self colorize: 'asd' with: self class colorGood), (String crlf)."	"result := result, asString."	"(text asString) linesDo: [ :line |
 	result := result, line, String crlf.
 	]."

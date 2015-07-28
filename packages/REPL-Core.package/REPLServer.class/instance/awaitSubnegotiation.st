@@ -1,3 +1,3 @@
 accessing
-awaitTelnetSubOption
+awaitSubnegotiation
 	awaitingTelnetSubOption := true

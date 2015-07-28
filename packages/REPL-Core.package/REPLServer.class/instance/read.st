@@ -1,6 +1,6 @@
 reading
 read
-	"Read from client and handle input. Also see '#startLoop'"
+	"Read from client and handle input."
 
 	| inputString |
 	inputString := self socket receiveAvailableData.

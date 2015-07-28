@@ -28,7 +28,5 @@ handleCSICode: aCharacter
 				send:
 					String lf , (self escapeCode: '[1A') , (self escapeCode: '[s') , self completeReverse , (self escapeCode: '[u').
 			^ self ].
-	Transcript
-		show: 'CSI ';
-		show: aCharacter;
-		cr
+	
+	self finishCSICode.

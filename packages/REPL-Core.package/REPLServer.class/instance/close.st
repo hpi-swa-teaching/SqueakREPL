@@ -5,5 +5,5 @@ close
 	(self socket isUnconnectedOrInvalid or: [ self socket isWaitingForConnection ])
 		ifFalse: [ self print: self closingMessage ].
 	self socket closeAndDestroy.
-	self process terminate.
+	self process ifNotNil: [ self process terminate ]
 

@@ -1,0 +1,4 @@
+accessing
+beginCompletion
+	
+	completing := true
