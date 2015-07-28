@@ -1,5 +1,5 @@
 life cylce
 startLoop
-	"Start loop that reads and prints."
+	"Start process handling read-eval-print-loop."
 
-	^ self subclassResponsibility
+	self process: ([[self loop] repeat ] forkAt: Processor userBackgroundPriority)

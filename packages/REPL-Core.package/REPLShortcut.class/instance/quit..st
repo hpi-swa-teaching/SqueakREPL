@@ -5,8 +5,5 @@ quit: aContext
 Usage:
 !quit"
 
-	aContext interface
-		print:
-			String crlf , String crlf , (aContext interface colorize: 'Goodbye!' with: aContext interface class colorGood) , String crlf
-				, String crlf.
-	Smalltalk snapshot: true andQuit: true
+
+	[Smalltalk snapshot: true andQuit: true] fork
