@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"coreCompilerClass" : "tm 7/29/2015 19:40",
+		"coreCompilerClass:" : "tm 7/29/2015 19:41",
+		"coreParserClass" : "tm 7/29/2015 19:42",
+		"coreParserClass:" : "tm 7/29/2015 19:43",
+		"setUp" : "tm 7/29/2015 19:39",
+		"testLazyInitialization" : "tm 7/29/2015 19:44" } }

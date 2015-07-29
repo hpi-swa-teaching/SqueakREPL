@@ -1,0 +1,14 @@
+{
+	"category" : "REPL-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"coreParserClass" ],
+	"name" : "REPLCoreParserTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
