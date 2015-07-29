@@ -1,6 +1,6 @@
 completing
 completeSpecialShortcut: aString
-	"Answer a collection of suggestions on how to complete the possibly incomplete expression aString by using special shortcuts."
+	"Answer a collection of suggestions on how to complete the possibly incomplete expression aString by using special expression shortcuts."
 
 	| selectors suggestions |
 	selectors := self class classOfExpressionShortcut selectors

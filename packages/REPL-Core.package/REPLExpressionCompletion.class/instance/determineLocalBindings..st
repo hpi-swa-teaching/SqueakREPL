@@ -6,4 +6,5 @@ determineLocalBindings: aString
 		inject: OrderedCollection new
 		into: [ :suggestions :eachBindingKey | 
 			(eachBindingKey startsWith: aString)
-				ifTrue: [ suggestions addLast: eachBindingKey ] suggestions ]
+				ifTrue: [ suggestions addLast: eachBindingKey ].
+			suggestions ]

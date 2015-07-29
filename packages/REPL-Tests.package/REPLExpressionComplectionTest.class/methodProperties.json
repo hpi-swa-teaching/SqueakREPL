@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"bindings" : "tm 7/30/2015 00:22",
+		"expressionCompletion" : "tm 7/29/2015 23:23",
+		"expressionCompletion:" : "tm 7/29/2015 23:23",
+		"setUp" : "tm 7/29/2015 23:24",
+		"testCorrectCommonExpressionCompletion" : "tm 7/30/2015 00:15",
+		"testCorrectLocalBindingDetermination" : "tm 7/30/2015 00:22",
+		"testCorrectOrdinaryShortcutCompletion" : "tm 7/30/2015 00:19",
+		"testCorrectSpecialShortcutCompletion" : "tm 7/30/2015 00:20",
+		"testIncorrectCommonExpressionCompletion" : "tm 7/30/2015 00:15",
+		"testIncorrectLocalBindingDetermination" : "tm 7/30/2015 00:22",
+		"testIncorrectOrdinaryShortcutCompletion" : "tm 7/30/2015 00:20",
+		"testIncorrectSpecialShortcutCompletion" : "tm 7/30/2015 00:21" } }

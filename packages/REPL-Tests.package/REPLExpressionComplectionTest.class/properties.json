@@ -1,14 +1,14 @@
 {
-	"category" : "REPL-Core",
+	"category" : "REPL-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "REPLCoreCompiler",
+		"expressionCompletion" ],
+	"name" : "REPLExpressionComplectionTest",
 	"pools" : [
 		 ],
-	"super" : "Compiler",
+	"super" : "TestCase",
 	"type" : "normal" }
