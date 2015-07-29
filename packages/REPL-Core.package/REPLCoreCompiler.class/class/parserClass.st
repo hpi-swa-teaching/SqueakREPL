@@ -1,3 +1,5 @@
-as yet unclassified
+accessing
 parserClass
-	^ REPLCoreParser
+	"Answer the class parsing expressions for the receiver."
+
+	^ ParserClass ifNil: [ self parserClass: REPLCoreParser ]
