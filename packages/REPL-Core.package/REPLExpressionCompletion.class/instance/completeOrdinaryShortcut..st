@@ -13,4 +13,4 @@ completeOrdinaryShortcut: aString
 						copyReplaceFrom: indexOfSeparator
 						to: indexOfSeparator
 						with: ' ')].
-	^ suggestions
+	^ suggestions asOrderedCollection
