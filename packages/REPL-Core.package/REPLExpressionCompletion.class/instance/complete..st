@@ -1,15 +1,7 @@
-completion
+completing
 complete: aString
-	"Answers a list of suggestions for completing aString."
+	"Answer a collection of suggestions on how to complete the possibly incomplete expression aString."
 
-	| results |
-	(aString startsWith: '!')
-		ifTrue: [ ^ self completeSpecialShortcut: aString ].
-
-	self model narrowWith: aString.
-
-	results := self model entries collect: [ :eachEntry | self format: eachEntry ].
-	results addAll: (self completeLocalBindings: aString).
-	results addAll: (self completeShortcuts: aString).
-
-	^ results
+	(self isOrdinaryExpressionShortcut: aString) ifTrue: [ ^ self completeOrdinaryShortcut: aString ].
+	(self isSpecialExpressionShortcut: aString) ifTrue: [ ^ self completeSpecialShortcut: aString ].
+	^ self completeExpression: aString

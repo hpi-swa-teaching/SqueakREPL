@@ -1,5 +1,7 @@
 {
 	"class" : {
+		"characterOfOrdinaryExpressionShortcut" : "tm 7/29/2015 22:48",
+		"characterOfSpecialExpressionShortcut" : "tm 7/29/2015 22:48",
 		"compilerClass" : "db 7/27/2015 19:26" },
 	"instance" : {
 		"context" : "tm 7/26/2015 18:54",

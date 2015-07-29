@@ -1,13 +1,10 @@
-completion
+completing
 completeSpecialShortcut: aString
-	"Answers a list of suggestions for completing aString."
+	"Answer a collection of suggestions on how to complete the possibly incomplete expression aString by using special shortcuts."
 
-	| selector shortcuts |
-	shortcuts := REPLExpressionShortcut selectors select: [ :each | (each count: [ :x | x = $: ]) = 1 ].
-
-	aString size > 1
-		ifTrue: [ 
-			selector := aString allButFirst.
-			shortcuts := shortcuts select: [ :each | each startsWith: selector ] ].
-
-	^ (shortcuts collect: [ :each | '!' , (each allButLast) ]) asOrderedCollection
+	| selectors suggestions |
+	selectors := self class classOfExpressionShortcut selectors
+		select: [ :eachSelector | ((eachSelector occurrencesOf: $:) = 1) and: [ eachSelector startsWith: aString allButFirst ] ].
+	suggestions := selectors
+		collect: [ :eachSelector | self class classOfExpressionEvaluator characterOfSpecialExpressionShortcut asString, eachSelector allButLast ].
+	^ suggestions

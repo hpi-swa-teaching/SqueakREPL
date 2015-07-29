@@ -1,3 +1,6 @@
-initialize-release
+initializing
 initialize
-	self model: OModel new expand
+	"Initialize a newly created instance of the receiver."
+
+	super initialize.
+	self optimisticModel: OModel new expand

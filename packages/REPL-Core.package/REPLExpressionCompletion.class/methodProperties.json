@@ -1,14 +1,18 @@
 {
 	"class" : {
-		 },
+		"classOfExpressionEvaluator" : "tm 7/29/2015 22:46",
+		"classOfExpressionShortcut" : "tm 7/29/2015 22:46",
+		"newWith:" : "tm 7/29/2015 22:55" },
 	"instance" : {
-		"complete:" : "db 7/28/2015 00:46",
-		"completeLocalBindings:" : "db 7/28/2015 00:44",
-		"completeShortcuts:" : "tm 7/29/2015 17:40",
-		"completeSpecialShortcut:" : "tm 7/29/2015 17:40",
-		"format:" : "tm 7/29/2015 17:40",
-		"initialize" : "tm 7/26/2015 18:54",
-		"model" : "tm 7/26/2015 18:54",
-		"model:" : "tm 7/26/2015 18:54",
-		"workspace" : "tm 7/26/2015 18:54",
-		"workspace:" : "tm 7/26/2015 18:54" } }
+		"complete:" : "tm 7/29/2015 22:57",
+		"completeExpression:" : "tm 7/29/2015 22:42",
+		"completeOrdinaryShortcut:" : "tm 7/29/2015 23:06",
+		"completeSpecialShortcut:" : "tm 7/29/2015 23:01",
+		"determineLocalBindings:" : "tm 7/29/2015 21:38",
+		"initialize" : "tm 7/29/2015 22:43",
+		"isOrdinaryExpressionShortcut:" : "tm 7/29/2015 22:58",
+		"isSpecialExpressionShortcut:" : "tm 7/29/2015 22:58",
+		"optimisticModel" : "tm 7/29/2015 20:17",
+		"optimisticModel:" : "tm 7/29/2015 20:18",
+		"workspace" : "tm 7/29/2015 21:06",
+		"workspace:" : "tm 7/29/2015 21:06" } }

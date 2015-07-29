@@ -7,7 +7,7 @@ initialize
 		socket: Socket newTCP;
 		port: self defaultPort;
 		clearInput;
-		completion: REPLExpressionCompletion new;
+		completion: (REPLExpressionCompletion newWith: self evaluator workspace);
 		lastKey: $_;
 		completionIndex: 0;
 		completionDirection: 1;
@@ -22,6 +22,5 @@ initialize
 		nextIsConfirmation: false;
 		nextIsEscapeCode: false;
 		nextIsCSICode: false.
-	self completion workspace: self evaluator workspace.
 	history := OrderedCollection new.
 	historyIndex := 1
