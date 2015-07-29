@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"horizontalLine" : "tm 7/26/2015 18:54",
+		"width" : "tm 7/26/2015 18:54" },
+	"instance" : {
+		"close" : "tm 7/26/2015 18:54",
+		"evaluate:" : "tm 7/26/2015 18:54",
+		"evaluator" : "tm 7/26/2015 18:54",
+		"evaluator:" : "tm 7/26/2015 18:54",
+		"findShortcut:" : "tm 7/26/2015 18:54",
+		"initialize" : "tm 7/29/2015 17:39",
+		"isExpression:" : "tm 7/26/2015 18:54",
+		"open" : "tm 7/26/2015 18:54",
+		"parser" : "tm 7/26/2015 18:54",
+		"parser:" : "tm 7/26/2015 18:54",
+		"print:" : "tm 7/26/2015 18:54",
+		"read" : "tm 7/26/2015 18:54",
+		"startLoop" : "wr 7/28/2015 16:43" } }

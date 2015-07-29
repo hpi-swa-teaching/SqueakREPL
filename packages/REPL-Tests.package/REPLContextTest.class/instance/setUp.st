@@ -4,7 +4,7 @@ setUp
 
 	super setUp.
 	self
-		evaluator: REPLEvaluator new;
-		interface: REPLServer new;
-		parser: REPLParser new;
-		context: (REPLContext newFor: self evaluator on: self interface with: self parser)
+		evaluator: REPLExpressionEvaluator new;
+		interface: REPLTelnetServer new;
+		parser: REPLExpressionParser new;
+		context: (REPLEvaluationContext newFor: self evaluator on: self interface with: self parser)

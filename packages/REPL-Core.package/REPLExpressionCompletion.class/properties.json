@@ -1,0 +1,15 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"model",
+		"workspace" ],
+	"name" : "REPLExpressionCompletion",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
