@@ -5,7 +5,7 @@
 		"colorGood" : "tm 7/26/2015 18:54",
 		"colorInfo" : "tm 7/26/2015 18:54" },
 	"instance" : {
-		"acceptCurrentLine" : "wr 7/28/2015 21:21",
+		"acceptCurrentLine" : "db 7/30/2015 10:13",
 		"appendInput:" : "tm 7/26/2015 18:54",
 		"awaitCSICode" : "tm 7/26/2015 18:54",
 		"awaitCommand" : "wr 7/28/2015 19:35",
@@ -72,6 +72,7 @@
 		"initialize" : "tm 7/29/2015 22:56",
 		"input" : "tm 7/26/2015 18:54",
 		"input:" : "tm 7/26/2015 18:54",
+		"isRepeatableStatement:" : "db 7/30/2015 10:13",
 		"lastKey" : "tm 7/26/2015 18:54",
 		"lastKey:" : "tm 7/26/2015 18:54",
 		"lineSymbol" : "tm 7/26/2015 18:54",

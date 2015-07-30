@@ -8,8 +8,8 @@ acceptCurrentLine
 			self clearInput.
 			self print: self lineSymbol , self clearLineUntilEnd.
 			^ self ].
-	self buffer size = 0
-		ifFalse: [ 
+	(self isRepeatableStatement: self buffer)
+		ifTrue: [ 
 			history add: self buffer.
 			historyIndex := history size ].
 	self
