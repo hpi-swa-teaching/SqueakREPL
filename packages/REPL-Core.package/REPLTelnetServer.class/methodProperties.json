@@ -11,6 +11,7 @@
 		"colorBad" : "tm 7/26/2015 18:54",
 		"colorDim" : "tm 7/26/2015 18:54",
 		"colorGood" : "tm 7/26/2015 18:54",
+		"colorGoodInverted" : "ar 7/30/2015 21:30",
 		"colorInfo" : "tm 7/26/2015 18:54",
 		"colorize:with:" : "wr 7/30/2015 20:23",
 		"cursorBackward:" : "wr 7/30/2015 21:37",
@@ -30,6 +31,7 @@
 	"instance" : {
 		"acceptControlC" : "wr 7/30/2015 19:59",
 		"acceptDelete" : "wr 7/30/2015 18:09",
+		"acceptForDebugging:" : "ar 7/30/2015 21:40",
 		"acceptRegular:" : "wr 7/30/2015 19:38",
 		"acceptReturn" : "wr 7/30/2015 18:11",
 		"acceptTab" : "wr 7/30/2015 18:08",
