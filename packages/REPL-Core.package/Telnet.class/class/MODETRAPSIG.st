@@ -1,3 +1,0 @@
-commands
-MODETRAPSIG
-	^ 2

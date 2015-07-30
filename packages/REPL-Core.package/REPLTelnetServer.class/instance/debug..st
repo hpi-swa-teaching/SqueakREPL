@@ -1,4 +1,4 @@
-handling
+debugging
 debug: aCharacter
 	"buttons := ((self debugger submorphs at: 3) submorphs at: 1)
 	submorphs. text := ((self debugger submorphs at: 3) submorphs at: 2)
@@ -7,14 +7,11 @@ debug: aCharacter
 	first. "
 
 	| result item from s lines interval known ui |
-	aCharacter = Character escape 
-		ifTrue: [ self debugging: false. ^self ].
-
 	self output: String crlf.	"buttons do: [ :b | sendString := sendString, ' [', b label, '] '. ]."	"result := (self colorize: 'asd' with: self class colorGood), (String crlf)."	"result := result, asString."	"(text asString) linesDo: [ :line |
 	result := result, line, String crlf.
 	]."
-	self output: (self escapeCode: '[H').
-	self output: (self escapeCode: '[J').
+	self output: self class cursorHome.
+	self output: self class eraseDown.
 	self output: (Character value: 12) asString.
 	ui := '    '.
 	self output: REPLUserInterface horizontalLine.

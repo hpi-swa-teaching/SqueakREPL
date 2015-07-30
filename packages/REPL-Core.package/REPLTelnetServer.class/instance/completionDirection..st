@@ -1,3 +1,3 @@
-printing
+accessing
 completionDirection: aNumber
 	completionDirection := aNumber

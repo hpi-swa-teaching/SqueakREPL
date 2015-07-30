@@ -1,4 +1,4 @@
-states
+tab completion
 beginCompletion
 	
 	completing := true

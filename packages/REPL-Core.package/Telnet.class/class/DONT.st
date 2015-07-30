@@ -1,3 +1,0 @@
-commands
-DONT
-	^ 254

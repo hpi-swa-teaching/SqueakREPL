@@ -8,7 +8,7 @@ read: aCharacter
 		add: #regular->[ self handleRegular: aCharacter ];
 		add: #command->[ self handleCommand: aCharacter ];
 		add: #operation->[ self readMode: #regular ];
-		add: #subnegotiation->[ self handleCommand: aCharacter ];
+		add: #subCommand->[ self handleSubCommand: aCharacter ];
 		add: #escapeCode->[self handleEscapeCode: aCharacter ];
 		add: #csiCode->[self handleCSICode: aCharacter].
 
@@ -21,7 +21,9 @@ read: aCharacter
 
 	self completing
 		ifTrue: [
-			self send: (self escapeCode: '[J').
+			self send: self class eraseDown.
 			self clearCompletion "???" ].
+
+	"self print: 'Char: ', aCharacter asciiValue, '        Mode: ', self readMode asString,  String crlf."
 
 	

@@ -1,4 +1,4 @@
-printing
+tab completion
 complete
 	| suggestionString completionTarget changeString formattedSuggestion |
 	
@@ -12,11 +12,11 @@ complete
 	self completing
 		ifTrue: [ 
 			changeString := changeString , self clearCompletion ].
-	suggestions := self completionSuggestionsFor: completionTarget.	
-	suggestions size = 0
+	self suggestions: (self completionSuggestionsFor: completionTarget).
+	self suggestions isEmpty
 		ifTrue: [ 
 			suggestionString := suggestionString , (self colorize: 'No completions found.' with: self class colorBad)
-				, self clearLineUntilEnd ]
+				, self class eraseLineUntilEnd ]
 		ifFalse: [ 
 			| i |
 			self completing
@@ -31,13 +31,13 @@ complete
 					self completionIndex: 0.
 					self completionSize: 0 ].
 			i := 0.
-			suggestions
+			self suggestions
 				do: [ :suggestion | 
 					i = self completionIndex
 						ifTrue: [ 
 							| completionFragment |
 							completionFragment := suggestion asString allButFirst: completionTarget size.
-							changeString := (self escapeCode: '[' , completionTarget size , 'D') , changeString , suggestion.
+							changeString := self class cursorBackward: completionTarget size , changeString , suggestion.
 							self completionSize: completionFragment size.
 							self buffer: self buffer , completionFragment.
 							formattedSuggestion := self colorize: ' [' , suggestion , '] ' with: '0;32' ]
@@ -45,6 +45,5 @@ complete
 					suggestionString := suggestionString , '' , formattedSuggestion.
 					i := i + 1 ] ].
 
-	suggestionString := changeString , String crlf , suggestionString , String cr , (self escapeCode: '[A')
-		, (self escapeCode: '[' , (4 + self buffer size) , 'C') , (self escapeCode: '[K') , ''.
+	suggestionString := changeString , String crlf , suggestionString , String cr , self class cursorUp, self class cursorForward: 4 + self buffer size, self class eraseLineUntilEnd.
 	self send: suggestionString

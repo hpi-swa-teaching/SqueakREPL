@@ -19,7 +19,8 @@
 		"debugging",
 		"debugger",
 		"outputText",
-		"readMode" ],
+		"readMode",
+		"suggestions" ],
 	"name" : "REPLTelnetServer",
 	"pools" : [
 		 ],

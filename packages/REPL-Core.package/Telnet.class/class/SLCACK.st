@@ -1,3 +1,0 @@
-commands
-SLCACK
-	^ 128

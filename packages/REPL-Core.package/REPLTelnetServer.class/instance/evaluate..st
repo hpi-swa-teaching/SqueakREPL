@@ -8,9 +8,10 @@ evaluate: aString
 		onError: [ :err | 
 			(err lastError isKindOf: Error)
 				ifTrue: [ 
-					formattedValue := (self class escapeCode: '[0;31m') , err lastError description , (self escapeCode: '[0m') , String crlfcrlf
+					
+					formattedValue := self class colorize: err lastError description with: self class colorBad, String crlfcrlf
 						, err lastError signalerContext longStack ]
-				ifFalse: [ formattedValue := (self escapeCode: '[0;31m') , err lastError asString , (self escapeCode: '[0m') ].
+				ifFalse: [ formattedValue := self class colorize: err lastError asString with: self class colorBad ].
 			^ formattedValue ].
 	value ifNil: [ ^ nil ].
 	(value isString and: value isSymbol not)

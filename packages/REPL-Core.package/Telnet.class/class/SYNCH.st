@@ -1,3 +1,0 @@
-options
-SYNCH
-	^ 1

@@ -1,3 +1,0 @@
-options
-MODE
-	^ 1

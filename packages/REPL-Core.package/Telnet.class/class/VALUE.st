@@ -1,3 +1,0 @@
-options
-VALUE
-	^ 2

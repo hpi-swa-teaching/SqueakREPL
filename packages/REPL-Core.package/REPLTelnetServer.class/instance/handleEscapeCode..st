@@ -9,7 +9,7 @@ handleEscapeCode: aCharacter
 			self readMode: #csiCode.
 			^ self ].
 
-	aCharacter asciiValue = 7
+	aCharacter asciiValue = 7 
 		ifTrue: [ 
 			self debugging
 				ifTrue: [ 
@@ -20,6 +20,6 @@ handleEscapeCode: aCharacter
 			self completing
 				ifTrue: [ self clearCompletion ] ].
 
-	(TelnetCharacter from: aCharacter) isEscapeCode
+	(REPLTelnetCharacter from: aCharacter) isEscapeCode
 		ifTrue: [ 
 			self readMode: #escapeCode ]

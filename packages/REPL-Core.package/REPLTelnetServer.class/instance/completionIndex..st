@@ -1,3 +1,3 @@
-printing
+accessing
 completionIndex: aNumber
 	completionIndex := aNumber

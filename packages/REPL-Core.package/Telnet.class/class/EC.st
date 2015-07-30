@@ -1,3 +1,0 @@
-commands
-EC
-	^ 10

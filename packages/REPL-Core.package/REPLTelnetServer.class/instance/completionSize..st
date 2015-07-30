@@ -1,3 +1,3 @@
-printing
+accessing
 completionSize: aNumber
 	completionSize := aNumber
