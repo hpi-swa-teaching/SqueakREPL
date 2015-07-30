@@ -1,3 +1,0 @@
-accessing
-finishSubnegotiation
-	awaitingTelnetSubOption := false

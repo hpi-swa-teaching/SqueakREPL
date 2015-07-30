@@ -1,4 +1,4 @@
-evaluating
+handling
 acceptCurrentLine
 	| result |
 

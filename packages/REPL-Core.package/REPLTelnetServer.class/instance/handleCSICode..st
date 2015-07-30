@@ -1,4 +1,4 @@
-evaluating
+handling
 handleCSICode: aCharacter
 	"Handle CSI character."
 
@@ -29,4 +29,5 @@ handleCSICode: aCharacter
 					String lf , (self escapeCode: '[1A') , (self escapeCode: '[s') , self completeReverse , (self escapeCode: '[u').
 			^ self ].
 	
-	self finishCSICode.
+	"self finishCSICode."
+	self readMode: #regular

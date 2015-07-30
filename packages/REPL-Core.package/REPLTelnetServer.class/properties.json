@@ -15,7 +15,6 @@
 		"buffer",
 		"completion",
 		"completionIndex",
-		"input",
 		"nextIsEscapeCode",
 		"nextIsCSICode",
 		"awaitingTelnetCommand",
@@ -25,7 +24,8 @@
 		"suggestions",
 		"debugging",
 		"debugger",
-		"outputText" ],
+		"outputText",
+		"readMode" ],
 	"name" : "REPLTelnetServer",
 	"pools" : [
 		 ],

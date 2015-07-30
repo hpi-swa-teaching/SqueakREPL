@@ -1,4 +1,4 @@
-accessing
+handling
 debug: aCharacter
 	"buttons := ((self debugger submorphs at: 3) submorphs at: 1)
 	submorphs. text := ((self debugger submorphs at: 3) submorphs at: 2)

@@ -1,3 +1,0 @@
-accessing
-finishEscapeCode
-	nextIsEscapeCode := false

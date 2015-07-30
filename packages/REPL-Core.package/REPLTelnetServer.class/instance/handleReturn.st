@@ -1,4 +1,4 @@
-evaluating
+handling
 handleReturn
 	"Handle return key."
 

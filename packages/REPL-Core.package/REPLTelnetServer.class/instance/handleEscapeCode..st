@@ -1,12 +1,12 @@
-evaluating
+handling
 handleEscapeCode: aCharacter
 	"Handle aCharacter as escape code."
 	
-	self finishEscapeCode.
+	self readMode: #regular.
 
 	aCharacter = $[
 		ifTrue: [ 
-			self awaitCSICode.
+			self readMode: #csiCode.
 			^ self ].
 
 	aCharacter asciiValue = 7
@@ -21,4 +21,5 @@ handleEscapeCode: aCharacter
 				ifTrue: [ self clearCompletion ] ].
 
 	(TelnetCharacter from: aCharacter) isEscapeCode
-		ifTrue: [ self awaitEscapeCode ]
+		ifTrue: [ 
+			self readMode: #escapeCode ]

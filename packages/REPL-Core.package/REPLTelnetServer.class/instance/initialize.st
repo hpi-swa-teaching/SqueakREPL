@@ -12,13 +12,9 @@ initialize
 		completionDirection: 1;
 		completionSize: 0;
 		debugging: false;
-		finishCSICode;
 		outputText: '';
-		finishOperation;
-		finishSubnegotiation;
-		finishCommand;
-		finishEscapeCode;
-		nextIsEscapeCode: false;
-		nextIsCSICode: false.
+		endCompletion;
+		readMode: #regular.
+
 	history := OrderedCollection new.
 	historyIndex := 1

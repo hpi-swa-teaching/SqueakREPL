@@ -1,3 +1,0 @@
-accessing
-awaitingCommand
-	^ awaitingTelnetCommand

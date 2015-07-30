@@ -1,3 +1,3 @@
-accessing
+states
 debugging: aBoolean
 	debugging := aBoolean
