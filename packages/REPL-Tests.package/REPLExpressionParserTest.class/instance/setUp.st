@@ -3,4 +3,4 @@ setUp
 	"Set up a newly created instance of the receiver."
 
 	super setUp.
-	self parser: REPLExpressionParser new
+	self expressionParser: self class classOfExpressionParser new

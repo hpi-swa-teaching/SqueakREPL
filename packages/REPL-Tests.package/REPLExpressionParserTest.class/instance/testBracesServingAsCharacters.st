@@ -4,4 +4,4 @@ testBracesServingAsCharacters
 
 	self
 		assert:
-			(self parser isCompletedExpression: 's := ''Braces '', $}, ${, '' are used in specialized ways in poetry and music.''')
+			(self expressionParser isCompletedExpression: 's := ''Braces '', $}, ${, '' are used in specialized ways in poetry and music.''')

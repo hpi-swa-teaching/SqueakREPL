@@ -1,11 +1,11 @@
 {
 	"class" : {
-		 },
+		"classOfExpressionCompletion" : "tm 7/30/2015 22:43" },
 	"instance" : {
-		"bindings" : "tm 7/30/2015 00:22",
+		"bindings" : "tm 7/30/2015 21:38",
 		"expressionCompletion" : "tm 7/29/2015 23:23",
 		"expressionCompletion:" : "tm 7/29/2015 23:23",
-		"setUp" : "tm 7/29/2015 23:24",
+		"setUp" : "tm 7/30/2015 22:27",
 		"testCorrectCommonExpressionCompletion" : "tm 7/30/2015 00:15",
 		"testCorrectLocalBindingDetermination" : "tm 7/30/2015 00:22",
 		"testCorrectOrdinaryShortcutCompletion" : "tm 7/30/2015 00:19",

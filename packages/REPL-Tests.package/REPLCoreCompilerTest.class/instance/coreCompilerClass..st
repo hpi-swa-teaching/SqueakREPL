@@ -1,5 +1,5 @@
 accessing
-coreCompilerClass: aCoreCompiler
-	"Set the class of the core compiler to be tested corresponding to aCoreCompiler."
+coreCompilerClass: aCoreCompilerClass
+	"Set the class of the core compiler to be tested corresponding to aCoreCompilerClass."
 
-	coreCompilerClass := aCoreCompiler
+	coreCompilerClass := aCoreCompilerClass

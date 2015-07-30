@@ -1,8 +1,8 @@
 {
 	"class" : {
-		 },
+		"classOfCoreParser" : "tm 7/30/2015 22:43" },
 	"instance" : {
 		"coreParserClass" : "tm 7/29/2015 19:48",
-		"coreParserClass:" : "tm 7/29/2015 19:48",
-		"setUp" : "tm 7/29/2015 19:48",
+		"coreParserClass:" : "tm 7/30/2015 21:35",
+		"setUp" : "tm 7/30/2015 22:26",
 		"testExistence" : "tm 7/29/2015 20:09" } }

@@ -1,5 +1,5 @@
 accessing
-coreParserClass: aCoreParser
-	"Set the class of the core parser to be tested corresponding to aCoreParser."
+coreParserClass: aCoreParserClass
+	"Set the class of the core parser to be tested corresponding to aCoreParserClass."
 	
-	coreParserClass := aCoreParser
+	coreParserClass := aCoreParserClass

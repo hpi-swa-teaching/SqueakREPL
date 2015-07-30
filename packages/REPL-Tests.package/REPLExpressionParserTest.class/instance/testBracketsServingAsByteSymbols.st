@@ -2,4 +2,4 @@ testing
 testBracketsServingAsByteSymbols
 	"Check whether brackets serving as byte symbols are recognized appropriately."
 
-	self assert: (self parser isCompletedExpression: 'c := #''{''')
+	self assert: (self expressionParser isCompletedExpression: 'c := #''{''')

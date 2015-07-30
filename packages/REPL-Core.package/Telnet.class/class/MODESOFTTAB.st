@@ -1,0 +1,3 @@
+commands
+MODESOFTTAB
+	^ 8

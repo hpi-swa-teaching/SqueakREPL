@@ -4,5 +4,5 @@ setUp
 
 	super setUp.
 	self
-		coreCompilerClass: REPLCoreCompiler;
-		coreParserClass:REPLCoreParser
+		coreCompilerClass: self class classOfCoreCompiler;
+		coreParserClass: self class classOfCoreParser
