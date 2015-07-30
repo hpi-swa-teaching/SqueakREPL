@@ -19,7 +19,7 @@
 		"testBracketsWithinInvalidBlockClosures" : "tm 7/30/2015 21:54",
 		"testBracketsWithinValidBlockClosures" : "tm 7/30/2015 21:54",
 		"testOrdinaryShortcutsContainedWithinExpressions" : "tm 7/30/2015 22:11",
-		"testOrdinaryShortcutsOmittedFromExpressions" : "tm 7/30/2015 22:15",
+		"testOrdinaryShortcutsOmittedFromExpressions" : "tm 7/30/2015 22:56",
 		"testParenthesesInsideOfStrings" : "tm 7/30/2015 21:54",
 		"testParenthesesOutsideOfStrings" : "tm 7/30/2015 21:54",
 		"testParenthesesServingAsCharacters" : "tm 7/30/2015 21:54",
@@ -28,4 +28,4 @@
 		"testParenthesesWithinInvalidMathematicalExpressions" : "tm 7/30/2015 21:54",
 		"testParenthesesWithinValidMathematicalExpressions" : "tm 7/30/2015 21:54",
 		"testSpecialShortcutsContainedWithinExpressions" : "tm 7/30/2015 22:11",
-		"testSpecialShortcutsOmittedFromExpressions" : "tm 7/30/2015 22:16" } }
+		"testSpecialShortcutsOmittedFromExpressions" : "tm 7/30/2015 22:56" } }
