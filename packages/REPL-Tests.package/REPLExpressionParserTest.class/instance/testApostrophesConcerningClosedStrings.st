@@ -4,6 +4,6 @@ testApostrophesConcerningClosedStrings
 
 	self
 		assert:
-			(self parser
+			(self expressionParser
 				isCompletedExpression:
 					's := ''The apostrophe ('', $'', '') was introduced into English in the 16th century in imitation of French practice.''')

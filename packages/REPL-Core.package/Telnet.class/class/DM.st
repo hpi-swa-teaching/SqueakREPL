@@ -1,0 +1,3 @@
+commands
+DM
+	^ 242

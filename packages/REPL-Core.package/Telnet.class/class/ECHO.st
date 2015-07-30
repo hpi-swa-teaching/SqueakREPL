@@ -1,0 +1,3 @@
+options
+ECHO
+	^ 1

@@ -1,0 +1,3 @@
+commands
+SLCDEFAULT
+	^ 3

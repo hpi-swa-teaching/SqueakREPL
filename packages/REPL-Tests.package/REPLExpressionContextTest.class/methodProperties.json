@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"classOfEvaluationContext" : "tm 7/30/2015 22:44",
+		"classOfExpressionEvaluator" : "tm 7/30/2015 22:44",
+		"classOfExpressionParser" : "tm 7/30/2015 22:44",
+		"classOfTelnetServer" : "tm 7/30/2015 22:44" },
+	"instance" : {
+		"evaluationContext" : "tm 7/30/2015 21:43",
+		"evaluationContext:" : "tm 7/30/2015 21:44",
+		"expressionEvaluator" : "tm 7/30/2015 21:48",
+		"expressionEvaluator:" : "tm 7/30/2015 21:48",
+		"expressionParser" : "tm 7/30/2015 21:48",
+		"expressionParser:" : "tm 7/30/2015 21:48",
+		"setUp" : "tm 7/30/2015 22:28",
+		"testExpressionEvaluator" : "tm 7/30/2015 21:47",
+		"testExpressionParser" : "tm 7/30/2015 21:50",
+		"testUserInterface" : "tm 7/30/2015 21:50",
+		"userInterface" : "tm 7/30/2015 21:53",
+		"userInterface:" : "tm 7/30/2015 21:53" } }

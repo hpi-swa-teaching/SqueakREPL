@@ -1,6 +1,6 @@
 accessing
 bindings
-	"Pretend to be an ordinary workpace by answering a dictionary of existing local bindings."
+	"Pretend to be an ordinary workpace by answering a dictionary of local bindings."
 
 	^ Dictionary new
 		at: 'aValue' put: 1;

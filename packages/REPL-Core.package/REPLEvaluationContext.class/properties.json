@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "tm 7/30/2015 20:18",
 	"instvars" : [
-		"evaluator",
-		"parser",
-		"interface" ],
+		"expressionEvaluator",
+		"userInterface",
+		"expressionParser" ],
 	"name" : "REPLEvaluationContext",
 	"pools" : [
 		 ],

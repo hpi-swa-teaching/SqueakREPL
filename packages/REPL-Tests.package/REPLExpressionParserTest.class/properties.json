@@ -4,9 +4,9 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "tm 7/30/2015 22:17",
 	"instvars" : [
-		"parser" ],
+		"expressionParser" ],
 	"name" : "REPLExpressionParserTest",
 	"pools" : [
 		 ],

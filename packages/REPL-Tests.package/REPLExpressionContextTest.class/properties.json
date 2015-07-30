@@ -1,0 +1,17 @@
+{
+	"category" : "REPL-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "tm 7/30/2015 22:17",
+	"instvars" : [
+		"evaluationContext",
+		"expressionEvaluator",
+		"userInterface",
+		"expressionParser" ],
+	"name" : "REPLExpressionContextTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
