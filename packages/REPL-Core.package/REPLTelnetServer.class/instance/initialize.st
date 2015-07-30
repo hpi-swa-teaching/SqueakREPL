@@ -8,7 +8,6 @@ initialize
 		port: self defaultPort;
 		clearInput;
 		completion: (REPLExpressionCompletion newWith: self evaluator workspace);
-		lastKey: $_;
 		completionIndex: 0;
 		completionDirection: 1;
 		completionSize: 0;
@@ -19,7 +18,6 @@ initialize
 		finishSubnegotiation;
 		finishCommand;
 		finishEscapeCode;
-		nextIsConfirmation: false;
 		nextIsEscapeCode: false;
 		nextIsCSICode: false.
 	history := OrderedCollection new.

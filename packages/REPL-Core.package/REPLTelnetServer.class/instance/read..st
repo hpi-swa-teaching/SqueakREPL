@@ -1,5 +1,5 @@
-evaluating
-handle: aCharacter
+reading
+read: aCharacter
 	"Handle input character."
 
 	aCharacter = TelnetCharacter IAC

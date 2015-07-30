@@ -9,4 +9,4 @@ loop
 			^ self]
 		ifFalse: [
 			self socket waitForData.
-			self read]
+			self socket receiveAvailableData do: [ :char | self read: char ]]
