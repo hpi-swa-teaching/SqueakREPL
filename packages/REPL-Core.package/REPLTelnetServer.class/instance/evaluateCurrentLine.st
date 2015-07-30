@@ -12,7 +12,7 @@ evaluateCurrentLine
 	(self isRepeatableStatement: self buffer)
 		ifTrue: [ 
 			history add: self buffer.
-			historyIndex := history size ].
+			historyIndex := history size + 1].
 	self
 		send: String crlf , self class eraseLineUntilEnd , result , self lineSymbol;
 		clearInput

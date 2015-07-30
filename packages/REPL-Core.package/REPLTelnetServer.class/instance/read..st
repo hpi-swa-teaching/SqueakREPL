@@ -14,11 +14,6 @@ read: aCharacter
 
 	(handles at: self readMode) value.
 
-	self debugging
-		ifTrue: [
-			self debug: aCharacter.
-			^ self ].
-
 	self completing
 		ifTrue: [
 			self send: self class eraseDown.

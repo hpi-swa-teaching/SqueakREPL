@@ -1,5 +1,8 @@
 keys
 acceptRegular: aCharacter 
-	(aCharacter = $q and: [self isDebugging]) ifTrue: [ self endDebugging. self print: self lineSymbol. ^self ].
+
+	self isDebugging 
+		ifTrue: [ self acceptForDebugging: aCharacter ].
+
 	self appendInput: aCharacter.
 	self print: aCharacter asString.
