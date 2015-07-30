@@ -1,15 +1,14 @@
 {
-	"category" : "REPL-Core",
+	"category" : "REPL-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"model",
-		"text",
-		"lastError" ],
-	"name" : "REPLNotificationReceiver",
+		"output",
+		"closed" ],
+	"name" : "REPLUserInterfaceMock",
 	"pools" : [
 		 ],
 	"super" : "Object",

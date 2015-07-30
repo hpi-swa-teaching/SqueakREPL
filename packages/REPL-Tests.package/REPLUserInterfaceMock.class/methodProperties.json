@@ -1,0 +1,17 @@
+{
+	"class" : {
+		"colorBad" : "db 7/30/2015 11:56",
+		"colorDim" : "db 7/30/2015 11:56",
+		"colorGood" : "db 7/30/2015 11:56",
+		"colorInfo" : "db 7/30/2015 11:56" },
+	"instance" : {
+		"close" : "db 7/30/2015 12:44",
+		"closed" : "db 7/30/2015 12:44",
+		"closed:" : "db 7/30/2015 12:44",
+		"colorize:with:" : "db 7/30/2015 12:28",
+		"containsOutput:" : "db 7/30/2015 11:51",
+		"initialize" : "db 7/30/2015 12:45",
+		"openingMessage" : "db 7/30/2015 12:53",
+		"output" : "db 7/30/2015 11:50",
+		"output:" : "db 7/30/2015 11:50",
+		"print:" : "db 7/30/2015 12:03" } }
