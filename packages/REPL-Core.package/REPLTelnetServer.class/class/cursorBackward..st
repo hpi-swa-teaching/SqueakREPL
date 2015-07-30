@@ -1,4 +1,4 @@
 escape codes
 cursorBackward: aNumber
 	
-	^self escapeCode: '[', self aNumber asString, 'D'
+	^self escapeCode: '[', aNumber asString, 'D'

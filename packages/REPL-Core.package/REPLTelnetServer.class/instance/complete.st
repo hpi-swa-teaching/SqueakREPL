@@ -37,7 +37,7 @@ complete
 						ifTrue: [ 
 							| completionFragment |
 							completionFragment := suggestion asString allButFirst: completionTarget size.
-							changeString := self class cursorBackward: completionTarget size , changeString , suggestion.
+							changeString := (self class cursorBackward: completionTarget size), changeString , suggestion.
 							self completionSize: completionFragment size.
 							self buffer: self buffer , completionFragment.
 							formattedSuggestion := self colorize: ' [' , suggestion , '] ' with: '0;32' ]
@@ -45,5 +45,5 @@ complete
 					suggestionString := suggestionString , '' , formattedSuggestion.
 					i := i + 1 ] ].
 
-	suggestionString := changeString , String crlf , suggestionString , String cr , self class cursorUp, self class cursorForward: 4 + self buffer size, self class eraseLineUntilEnd.
+	suggestionString := changeString , String crlf , suggestionString , String cr , self class cursorUp, (self class cursorForward: 4 + self buffer size), self class eraseLineUntilEnd.
 	self send: suggestionString

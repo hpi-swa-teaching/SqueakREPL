@@ -2,5 +2,5 @@ handling
 handleSubCommand: aCharacter 
 	"Handle character as Telnet sub command."
 
-	aCharacter = REPLTelnetCharacter SE
+	aCharacter = self class SE
 		ifTrue: [ self readMode: #regular ].

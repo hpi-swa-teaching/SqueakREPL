@@ -2,7 +2,7 @@ handling
 handleRegular: aCharacter
 	"Handle aCharacter as regular character."
 	
-	aCharacter = REPLTelnetCharacter IAC
+	aCharacter = self class IAC
 		ifTrue: [ self readMode: #command ].
 
 	aCharacter = Character escape
@@ -19,7 +19,7 @@ handleRegular: aCharacter
 	(aCharacter = Character delete or: aCharacter = Character backspace)
 		ifTrue: [ self acceptDelete ].
 
-	(REPLTelnetCharacter from: aCharacter) isRegular
+	(self class isRegular: aCharacter)
 		ifTrue: [ self acceptRegular: aCharacter ].
 
 	aCharacter == Character cr

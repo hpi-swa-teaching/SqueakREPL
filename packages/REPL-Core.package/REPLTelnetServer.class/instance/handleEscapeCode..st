@@ -20,6 +20,6 @@ handleEscapeCode: aCharacter
 			self completing
 				ifTrue: [ self clearCompletion ] ].
 
-	(REPLTelnetCharacter from: aCharacter) isEscapeCode
+	(self class isEscapeCode: aCharacter)
 		ifTrue: [ 
 			self readMode: #escapeCode ]

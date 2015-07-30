@@ -1,5 +1,5 @@
-commands
+telnet codes
 SE
 	"End of subnegotiation parameters"
 
-	^ self value: 240
+	^ Character value: 240

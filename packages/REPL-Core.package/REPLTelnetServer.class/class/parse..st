@@ -1,4 +1,4 @@
-options
+telnet codes
 parse: aString
 	| commands commandValues |
 	commands := aString findTokens: ' '.
@@ -8,11 +8,11 @@ parse: aString
 				ifTrue: [ command asInteger ]
 				ifFalse: [ 
 					(command indexOf: $|) = 0
-						ifTrue: [ REPLCoreCompiler new evaluate: 'REPLTelnetCharacter ' , command, ' asciiValue' ]
+						ifTrue: [ REPLCoreCompiler new evaluate: 'REPLTelnetServer ' , command, ' asciiValue' ]
 						ifFalse: [ 
 							| masks sum |
 							masks := command findTokens: '|'.
 							sum := 0.
-							masks do: [ :mask | sum := sum + (REPLCoreCompiler new evaluate: 'REPLTelnetCharacter ' , mask, ' asciiValue') ].
+							masks do: [ :mask | sum := sum + (REPLCoreCompiler new evaluate: 'REPLTelnetServer ' , mask, ' asciiValue') ].
 							sum ] ] ].
 	^ commandValues

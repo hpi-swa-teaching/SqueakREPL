@@ -2,4 +2,4 @@ printing
 sendCommands: aString
 	"Send aString as commands to client."
 	
-	self send: (REPLTelnetCharacter parse: aString) asByteArray
+	self send: (self class parse: aString) asByteArray
