@@ -1,5 +1,5 @@
-handling
-handleReturn
+keys
+acceptReturn
 	"Handle return key."
 
 	(self isExpression: self buffer)
@@ -9,4 +9,4 @@ handleReturn
 				print: self continuationSymbol;
 				appendInput: String cr ]
 		ifTrue: [
-			self acceptCurrentLine ]
+			self evaluateCurrentLine ]

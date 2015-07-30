@@ -3,51 +3,27 @@ handleRegular: aCharacter
 	"Handle aCharacter as regular character."
 	
 	aCharacter = TelnetCharacter IAC
-		ifTrue: [
-			self readMode: #command.
-			"self awaitCommand."
-			^ self ].
+		ifTrue: [ self readMode: #command ].
 
 	aCharacter = Character escape
-		ifTrue: [
-			self readMode: #escapeCode.
-			"self awaitEscapeCode."
-			^ self ].
+		ifTrue: [ self readMode: #escapeCode ].
 
 	aCharacter = Character tab
-		ifTrue: [
-			self complete.
-			^ self ]
+		ifTrue: [ self acceptTab ]
 		ifFalse: [
-			self endCompletion ].
+			self endCompletion ]. "self handleAll"
 
 	aCharacter asciiValue = 3 "^C ???"
-		ifTrue: [
-			self completing
-				ifTrue: [
-					self print: self clearCompletion.
-					^ self ].
-			self
-				print: self lineSymbol , self clearLineUntilEnd;
-				clearInput ].
+		ifTrue: [ self acceptControlC ].
 
 	(aCharacter = Character delete or: aCharacter = Character backspace)
-		ifTrue: [
-			self buffer ifNotEmpty: [
-				self send: Character backspace asString , ' ' , Character backspace asString.
-				self buffer: (self buffer copyFrom: 1 to: self buffer size - 1). ].
-			^ self ].
+		ifTrue: [ self acceptDelete ].
 
 	(TelnetCharacter from: aCharacter) isRegular
-		ifTrue: [
-			self appendInput: aCharacter.
-			self print: aCharacter asString.
-			^ self ].
+		ifTrue: [ self acceptRegular: aCharacter ].
 
 	aCharacter == Character cr
-		ifTrue: [
-			self handleReturn.
-			^ self ].
+		ifTrue: [ self acceptReturn ].
 
 	aCharacter == Character null
 		ifTrue: [ ^ self ].

@@ -1,5 +1,6 @@
-handling
-acceptCurrentLine
+evaluating
+evaluateCurrentLine
+
 	| result |
 
 	result := self evaluate: self buffer.

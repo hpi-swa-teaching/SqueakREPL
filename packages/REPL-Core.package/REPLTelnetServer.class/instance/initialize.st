@@ -5,7 +5,7 @@ initialize
 	super initialize.
 	self
 		socket: Socket newTCP;
-		port: self defaultPort;
+		port: self class defaultPort;
 		clearInput;
 		completion: (REPLExpressionCompletion newWith: self evaluator workspace);
 		completionIndex: 0;
