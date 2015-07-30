@@ -1,0 +1,16 @@
+{
+	"category" : "REPL-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"context",
+		"evaluator",
+		"userInterfaceMock" ],
+	"name" : "REPLExpressionEvaluatorTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

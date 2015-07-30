@@ -1,0 +1,16 @@
+{
+	"category" : "REPL-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"userInterfaceMock",
+		"context",
+		"shortcuts" ],
+	"name" : "REPLExpressionShortcutTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

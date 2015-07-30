@@ -5,7 +5,4 @@ notify: aString at: anInteger in: aStream
 	aString. Insert it in the text at starting character position anInteger."
 
 	self
-		lastError: 'Error: "' , aString , '" at position ' , anInteger;
-		lastErrorMessage: aString;
-		lastErrorPosition: anInteger;
-		lastErrorStatement: aStream contents
+		lastError: 'Error: "' , aString , '" at position ' , anInteger
