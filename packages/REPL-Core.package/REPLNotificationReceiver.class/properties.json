@@ -4,10 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "db 7/31/2015 11:59",
 	"instvars" : [
 		"model",
-		"text",
+		"source",
 		"lastError" ],
 	"name" : "REPLNotificationReceiver",
 	"pools" : [

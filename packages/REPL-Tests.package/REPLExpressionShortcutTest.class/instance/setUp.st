@@ -1,5 +1,6 @@
 running
 setUp
+	"Set up a newly created instance of the receiver."
 
 	self
 		userInterfaceMock: REPLUserInterfaceMock new;

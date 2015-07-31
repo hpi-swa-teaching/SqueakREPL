@@ -4,9 +4,7 @@ cm: aContext o: anObject c: aString
 	Object) and whose source code is set according to aString (an
 	instance of String)."
 
-	| parser |
-	parser := REPLExpressionParser new.
-	(parser makesUseOfShortcuts: aString)
+	(aContext expressionParser makesUseOfShortcuts: aString)
 		ifTrue: [ aContext userInterface
 					print: String crlf	, self class shortcutWarningMessage, String crlf ].
 	anObject compile: aString

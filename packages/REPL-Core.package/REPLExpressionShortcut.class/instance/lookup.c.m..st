@@ -14,4 +14,4 @@ lookup: aContext c: aClassOrSymbol m: aSymbol
 		ifNil: [ 'No comment specified.' ]
 		ifNotNil: [ comment asString copyReplaceAll: String cr with: String crlf ].
 
-	^header, String crlf, (aContext userInterface colorize: comment with: aContext interface class colorGood).
+	^header, String crlf, (aContext userInterface colorize: comment with: aContext userInterface class colorGood)

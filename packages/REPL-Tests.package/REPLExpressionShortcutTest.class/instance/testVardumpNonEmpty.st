@@ -3,7 +3,7 @@ testVardumpNonEmpty
 	"Test the vardump shortcut with variables assigned."
 
 	| result |
-	self context evaluator evaluate: 'a := 5'.
+	self context expressionEvaluator evaluate: 'a := 5'.
 
 	result := self shortcuts vardump: self context.
 

@@ -10,8 +10,8 @@ Usage:
 	index := 1.
 	result := ''.
 	windows
-		do: [ :eachWindow | 
-			result := result , String crlf , ' ' , (aContext userInterface colorize: '(' , index , ') ' with: aContext interface class colorGood)
+		do: [ :eachWindow |
+			result := result , String crlf , ' ' , (aContext userInterface class colorize: '(' , index , ') ' with: aContext userInterface class colorGood)
 				, eachWindow label.
 			index := index + 1 ].
 	^result , String crlf.

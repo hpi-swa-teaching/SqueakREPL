@@ -1,6 +1,6 @@
 running
 deregisterShortcuts
-	"deregister shortcuts for testing."
+	"Deregister shortcuts for testing."
 
 	REPLExpressionShortcut
 		removeSelector: self class shortcut1name;

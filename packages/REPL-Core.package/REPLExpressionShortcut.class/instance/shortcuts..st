@@ -8,7 +8,7 @@ Usage:
 	| shortcuts result |
 	shortcuts := Dictionary new.
 	self class selectors
-		collect: [ :each | 
+		collect: [ :each |
 			shortcuts
 				at:
 					((each count: [ :x | x = $: ]) = 1
@@ -17,8 +17,8 @@ Usage:
 				put: (self class tryGetCommentFor: each) ].
 	result := ''.
 	shortcuts
-		keysAndValuesDo: [ :eachKey :eachValue | 
-			result := result , String crlf , (aContext userInterface colorize: eachKey with: aContext interface class colorGood).
+		keysAndValuesDo: [ :eachKey :eachValue |
+			result := result , String crlf , (aContext userInterface class colorize: eachKey with: aContext userInterface class colorGood).
 			eachValue ifNotNil: [ result := result , String crlf , (eachValue copyReplaceAll: String cr with: String crlf) ].
 			result := result , String crlf ].
 	^ result
