@@ -10,4 +10,4 @@ debug: aContext n: anInteger
 	aContext userInterface debugger: window.
 	aContext userInterface debugging: true.
 
-	^ (aContext userInterface colorize: 'Debugger attached!' with: aContext userInterface class colorGood) , String crlf
+	^ (aContext userInterface class colorize: 'Debugger attached!' with: aContext userInterface class colorGood) , String crlf

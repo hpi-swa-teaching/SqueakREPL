@@ -6,7 +6,7 @@ handleSpecialShortcut: aString
 	command := aString allButFirst , ':'.
 
 	(self class shortcutClass canUnderstand: command asSymbol)
-		ifFalse: [ ^ (self context userInterface colorize: 'Unknown command: "' , command allButLast , '"' with: self context userInterface class colorBad) asString ].
+		ifFalse: [ ^ (self context userInterface class colorize: 'Unknown command: "' , command allButLast , '"' with: self context userInterface class colorBad) asString ].
 
 	value := self class shortcutClass new
 				perform: command asSymbol
