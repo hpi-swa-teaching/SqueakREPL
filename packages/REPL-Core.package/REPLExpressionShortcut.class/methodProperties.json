@@ -1,7 +1,8 @@
 {
 	"class" : {
-		"formatSelector:" : "db 7/31/2015 14:23",
+		"formatSelector:" : "db 7/31/2015 15:20",
 		"isSpecialShortcutSelector:" : "db 7/31/2015 14:21",
+		"replEvaluatorClass" : "db 7/31/2015 15:19",
 		"shortcutWarningMessage" : "db 7/27/2015 19:21",
 		"tryGetCommentFor:" : "db 7/31/2015 15:01",
 		"vardumpColumnWidth" : "db 7/28/2015 01:01" },

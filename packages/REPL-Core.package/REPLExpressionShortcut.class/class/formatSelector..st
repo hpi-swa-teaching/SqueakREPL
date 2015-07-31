@@ -3,5 +3,5 @@ formatSelector: aString
 	"Format a selector to be displayed in the shortcut list."
 
 	^ (self isSpecialShortcutSelector: aString)
-		ifTrue: [ REPLExpressionEvaluator characterOfSpecialExpressionShortcut asString, aString allButLast ]
-		ifFalse: [ REPLExpressionEvaluator characterOfOrdinaryExpressionShortcut asString, aString ]
+		ifTrue: [ self replEvaluatorClass characterOfSpecialExpressionShortcut asString, aString allButLast ]
+		ifFalse: [ self replEvaluatorClass characterOfOrdinaryExpressionShortcut asString, aString ]
