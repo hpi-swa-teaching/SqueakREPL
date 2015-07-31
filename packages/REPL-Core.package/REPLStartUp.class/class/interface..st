@@ -1,5 +1,5 @@
 accessing
 interface: aREPLInterface
-	"Set REPL interface."
+	"Set the interface interacting with the user corresponding to aREPLInterface."
 
 	Interface := aREPLInterface

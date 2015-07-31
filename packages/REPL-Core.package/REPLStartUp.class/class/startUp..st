@@ -1,8 +1,8 @@
-system startup
-startUp: resuming
-	"Provide REPL interface if requested."
+living
+startUp: aBoolean
+	"Start the REPL up dependent on aBoolean."
 
-	(resuming and: [ Smalltalk commandLine arguments includes: self replArgument ])
+	(aBoolean and: [ Smalltalk commandLine arguments includes: self replArgument ])
 		ifTrue: [ 
 			self interface: self new.
 			self isPortRequested

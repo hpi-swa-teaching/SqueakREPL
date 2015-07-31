@@ -1,5 +1,5 @@
 accessing
 interface
-	"Answer REPL interface."
+	"Answer the interface interacting with the user."
 
 	^ Interface

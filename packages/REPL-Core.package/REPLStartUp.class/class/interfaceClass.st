@@ -1,5 +1,5 @@
 accessing
 interfaceClass
-	"Answer class to be used for repl interface.."
+	"Answer the class acting as interface for the REPL."
 
 	^ REPLTelnetServer 

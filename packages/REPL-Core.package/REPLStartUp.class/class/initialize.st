@@ -1,6 +1,6 @@
-class initialization
+initializing
 initialize
-	"Initialize main REPL class."
+	"Initialize the main class of the REPL."
 
 	Smalltalk
 		addToStartUpList: REPLStartUp;
