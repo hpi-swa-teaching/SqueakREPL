@@ -1,4 +1,4 @@
-living
+initializing
 open
 	"Wait for connection on port."
 

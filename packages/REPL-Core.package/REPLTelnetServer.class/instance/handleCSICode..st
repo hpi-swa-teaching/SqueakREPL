@@ -10,4 +10,4 @@ handleCSICode: aCharacter
 		at: $D put: #acceptArrowLeft;
 		yourself.
 	self readMode: #regular.
-	self shell perform: (characterBindings at: aCharacter)
+	self shell perform: (characterBindings at: aCharacter ifAbsent: [ #yourself ])

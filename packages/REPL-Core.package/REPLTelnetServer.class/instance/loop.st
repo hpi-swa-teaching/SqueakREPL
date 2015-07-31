@@ -1,4 +1,4 @@
-living
+initializing
 loop
 	"Anser block to be executed repeatedly for handling reading input."
 

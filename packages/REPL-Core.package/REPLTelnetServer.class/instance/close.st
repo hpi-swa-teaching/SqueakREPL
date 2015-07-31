@@ -1,4 +1,4 @@
-living
+initializing
 close
 	"Close server connection."
 

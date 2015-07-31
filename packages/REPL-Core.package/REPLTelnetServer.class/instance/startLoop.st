@@ -1,4 +1,4 @@
-living
+initializing
 startLoop
 	"Start process handling read-eval-print-loop."
 
