@@ -7,7 +7,7 @@ handleException: anException
 	(self isShortcutReceiver: anException)
 		ifFalse: [ ^ anException signal ].
 
-	anException message selector = #!
+	anException message selector = self class characterOfSpecialExpressionShortcut asSymbol 
 		ifTrue: [ anException message setSelector: self class defaultParameterName ].
 
 	self context ifNil: [ self initializeContext].
@@ -18,12 +18,14 @@ handleException: anException
 	args add: self context.
 	args addAll: anException message arguments.
 
-	shortcuts := REPLExpressionShortcut new.
-	[ value := shortcuts perform: message asSymbol withArguments: args asArray ]
+	shortcuts := self class shortcutClass new.
+	[ value := shortcuts
+				perform: message asSymbol
+				withArguments: args asArray ]
 		on: MessageNotUnderstood
 		do: [ :e | ^ e signal ].
 
-	(value isMemberOf: REPLExpressionShortcut)
+	(value isMemberOf: self class shortcutClass)
 		ifTrue: [ value := nil ].
 
 	anException resume: value

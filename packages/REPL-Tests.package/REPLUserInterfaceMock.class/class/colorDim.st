@@ -1,4 +1,4 @@
-as yet unclassified
+colorization
 colorDim
 
 	^ #mock
