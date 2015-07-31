@@ -1,5 +1,5 @@
 class name
 debuggerClass
-	"Answer debugger class."
+	"Answer class responsible for debugging."
 
 	^ REPLDebugger 

@@ -12,4 +12,5 @@ code using the #evaluate: and #evaluate:onError: messages.
 
 Collaboration
 --------------------------------------------------------------------------------
-ExpressionShortcut, NotificationReceiver, EvaluationContext
+ExpressionShortcut, NotificationReceiver, EvaluationContext,
+CoreCompiler

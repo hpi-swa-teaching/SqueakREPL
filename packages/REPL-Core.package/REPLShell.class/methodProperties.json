@@ -1,6 +1,6 @@
 {
 	"class" : {
-		"debuggerClass" : "wr 7/31/2015 15:16" },
+		"debuggerClass" : "db 7/31/2015 20:06" },
 	"instance" : {
 		"acceptArrowDown" : "wr 7/31/2015 15:16",
 		"acceptArrowLeft" : "ar 7/31/2015 18:21",
@@ -9,7 +9,7 @@
 		"acceptControlC" : "wr 7/31/2015 16:50",
 		"acceptDelete" : "ar 7/31/2015 18:27",
 		"acceptRegular:" : "ar 7/31/2015 19:17",
-		"acceptReturn" : "ar 7/31/2015 17:53",
+		"acceptReturn" : "db 7/31/2015 20:07",
 		"acceptTab" : "wr 7/31/2015 15:16",
 		"appendInput:" : "ar 7/31/2015 19:19",
 		"attachDebuggerInstanceAt:" : "wr 7/31/2015 15:16",
