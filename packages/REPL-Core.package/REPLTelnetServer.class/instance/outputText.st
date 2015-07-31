@@ -1,0 +1,4 @@
+reading
+outputText
+
+	^ outputText.
