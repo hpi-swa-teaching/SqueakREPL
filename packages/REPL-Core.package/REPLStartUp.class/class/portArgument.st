@@ -1,5 +1,5 @@
 accessing
 portArgument
-	"Answer argument that is used to set port. (E.g.: -p 8080)."
+	"Answer the argument used to set the port."
 
 	^ '-p'

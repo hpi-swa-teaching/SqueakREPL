@@ -1,4 +1,4 @@
-telnet codes
+interpreting
 isEscapeCode: aCharacter
 	"Answer if character is to be treated as escape code."
 

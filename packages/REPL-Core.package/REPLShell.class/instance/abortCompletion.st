@@ -1,4 +1,4 @@
-tab completion
+completing
 abortCompletion
 	"Abort completion process without changing input buffer."
 

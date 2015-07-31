@@ -1,4 +1,4 @@
-evaluation
+evaluating
 isShortcutReceiver: anException
 	"Check if anException was received by a valid shortcut receiver."
 

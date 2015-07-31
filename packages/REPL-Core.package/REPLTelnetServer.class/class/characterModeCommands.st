@@ -1,4 +1,4 @@
-telnet codes
+interpreting
 characterModeCommands
 	"Answer command string to be sent to telnet client to turn off line buffering."
 

@@ -1,6 +1,8 @@
-as yet unclassified
+configuring
 horizontalLine
-	| result |
-	result := ''.
-	(1 to: self width) do: [ :x | result := result , '-' ].
-	^ result , String crlf
+ 	"Answer horizontal line in ASCII representation."
+
+	| assembledLine |
+	assembledLine := ''.
+	(1 to: self width) do: [ :x | assembledLine := assembledLine, '-' ].
+	^ assembledLine, String crlf.

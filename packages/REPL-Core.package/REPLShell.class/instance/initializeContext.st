@@ -1,4 +1,4 @@
-initialize-release
+initializing
 initializeContext
 	"Initialize evaluator's context object with pointer to self."
 

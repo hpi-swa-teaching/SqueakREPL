@@ -1,4 +1,4 @@
-evaluation
+evaluating
 handleMessageNotUnderstood: anException
 	"Handle anException and try to resolve
 	MessageNotUnderstood-exceptions in order to allow special shortcuts."

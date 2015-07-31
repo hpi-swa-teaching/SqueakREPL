@@ -1,4 +1,4 @@
-shortcuts
+shortening
 isSpecialShortcutSelector: aString
 	"Answer whether or not aString is a selector for a special shortcut."
 

@@ -1,4 +1,4 @@
-tab completion
+completing
 completionSuggestionsFor: aString
 	"Answer suggestions to complete aString."
 

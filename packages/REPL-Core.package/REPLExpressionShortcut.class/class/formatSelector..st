@@ -1,4 +1,4 @@
-shortcuts
+shortening
 formatSelector: aString
 	"Format a selector to be displayed in the shortcut list."
 

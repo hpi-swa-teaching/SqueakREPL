@@ -1,4 +1,4 @@
-evaluation
+evaluating
 handleWarning: aWarning
 	"Handle a warning and notify the user."
 

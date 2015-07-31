@@ -1,8 +1,8 @@
-system startup
-shutDown: quitting
-	"Close interface on shutdown."
+living
+shutDown: aBoolean
+	"Shut the REPL down dependent on aBoolean."
 
-	quitting ifFalse: [ ^self ].
-	self interface ifNotNil: [ 
-		self interface close.
-		self interface: nil ]
+	(aBoolean and: [ self hasInterface ])
+		ifTrue: [ 
+			self interface close.
+			self interface: nil ]

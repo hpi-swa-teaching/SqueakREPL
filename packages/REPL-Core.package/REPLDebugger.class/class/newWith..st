@@ -1,4 +1,4 @@
-class initialization
+initializing
 newWith: aDebugger
 	"Create a new instance of the receiver using aDebugger."
 

@@ -1,4 +1,4 @@
-history
+navigating
 loadRelativeHistoryEntry: aNumber
 	"Move history index by aNumber and load entry at resulting index."
 

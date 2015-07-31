@@ -1,8 +1,8 @@
 accessing
 port
-	"Answer port if requested by user."
+	"Answer the port potentially requested by the user."
 
 	| arguments index |
 	arguments := Smalltalk commandLine arguments.
-	index := arguments indexOf: self portArgument ifAbsent: [ ^ nil ].
+	index := arguments indexOf: self portArgument.
 	^ (arguments at: index + 1) asNumber

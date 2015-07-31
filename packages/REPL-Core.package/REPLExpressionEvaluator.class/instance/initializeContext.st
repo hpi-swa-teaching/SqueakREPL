@@ -1,4 +1,4 @@
-initialize-release
+initializing
 initializeContext
 	"Initialize a new instance of the evaluation context."
 

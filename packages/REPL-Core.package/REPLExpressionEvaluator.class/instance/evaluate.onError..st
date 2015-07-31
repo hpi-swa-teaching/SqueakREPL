@@ -1,4 +1,4 @@
-evaluation
+evaluating
 evaluate: aString onError: aBlock
 	"Evaluate the code given in aString and return the result. If an error occurs aBlock
 	will be executed and is passed a REPLNotificationReceiver object

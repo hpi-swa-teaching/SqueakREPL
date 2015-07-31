@@ -1,5 +1,5 @@
-instance creation
+initializing
 new
-	"Create new REPL interface."
+	"Answer a newly created and fully initialized instance of the receiver."
 
 	^ self interfaceClass new

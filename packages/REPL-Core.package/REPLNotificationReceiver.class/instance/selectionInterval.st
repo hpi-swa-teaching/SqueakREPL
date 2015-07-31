@@ -1,4 +1,4 @@
-notification handling
+notifying
 selectionInterval
 	"Return the interval for the current selected code."
 

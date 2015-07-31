@@ -1,4 +1,4 @@
-initialize-release
+initializing
 intitalize
 	"Initialize a newly created instance of the receiver."
 

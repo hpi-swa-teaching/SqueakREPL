@@ -1,4 +1,4 @@
-tab completion
+completing
 complete
 	"Print suggestions to complete completion target."	
 

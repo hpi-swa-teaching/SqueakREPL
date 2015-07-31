@@ -1,4 +1,4 @@
-initialize-release
+initializing
 initialize
 	"Initialize server."
 
@@ -8,5 +8,6 @@ initialize
 		readMode: #regular;
 		shell: REPLShell new.
 
-	self shell interface: self.
-	self shell initializeContext.
+	self shell
+		interface: self;
+		initializeContext.

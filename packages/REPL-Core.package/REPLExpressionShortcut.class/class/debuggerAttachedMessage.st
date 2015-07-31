@@ -1,4 +1,4 @@
-messages
+messaging
 debuggerAttachedMessage 
 
 	^ 'Debugger attached!'

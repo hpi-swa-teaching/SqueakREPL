@@ -3,7 +3,6 @@ handleRegular: aCharacter
 	"Handle aCharacter as regular character."
 	
 	| regularCharacterHandles |
-	"self halt."
 	regularCharacterHandles := Dictionary new
 		add: self class IAC	->[ self readMode: #command ];
 		add: Character escape 	->[ self readMode: #escapeCode. self shell acceptEscape. ];

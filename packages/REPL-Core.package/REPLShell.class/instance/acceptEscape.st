@@ -1,4 +1,4 @@
-keys
+accepting
 acceptEscape
 	"Accept escape code or escape key."
 

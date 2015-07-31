@@ -1,4 +1,4 @@
-evaluation
+evaluating
 buildShortcutArguments: anException
 	"Answer a collection of parameters that can be used for evaluating a shortcut based on anException."
 

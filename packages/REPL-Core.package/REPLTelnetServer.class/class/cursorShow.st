@@ -1,4 +1,6 @@
-escape codes
+escaping
 cursorShow
+
+	"Answer escape code to show the cursor."
 
 	^self escape: '[?25h'

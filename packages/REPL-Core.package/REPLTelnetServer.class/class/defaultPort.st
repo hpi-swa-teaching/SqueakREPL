@@ -1,4 +1,4 @@
-defaults
+configuring
 defaultPort
 	"Answer default port to be used for server."
 

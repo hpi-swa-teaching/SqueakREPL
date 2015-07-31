@@ -1,4 +1,4 @@
-keys
+accepting
 acceptDelete
 	"Accept delete or backspace key."
 

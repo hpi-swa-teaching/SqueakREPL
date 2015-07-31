@@ -1,4 +1,4 @@
-tab completion
+completing
 clearCompletion
 	"Reset visuals and completion state."
 

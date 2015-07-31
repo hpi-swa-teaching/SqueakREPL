@@ -1,5 +1,5 @@
-telnet codes
+interpreting
 SE
-	"End of subnegotiation parameters"
+	"Answer the character representing the SE command according to Telnet."
 
 	^ Character value: 240

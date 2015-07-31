@@ -1,4 +1,4 @@
-key handling
+debugging
 performDebuggingActionFor: aCharacter
 	"Execute debugging command according to aCharacter and answer the textual representation of the debugger's buttons."
 
@@ -7,7 +7,7 @@ performDebuggingActionFor: aCharacter
 	buttonLine := '    '.
 
 	self debugger customButtonSpecs
-		do: [ :aButtonSpec | 
+		do: [ :aButtonSpec |
 			| shortcutLetter buttonBlock buttonLabel labelWithHint labelBeforeHint labelAfterHint |
 			buttonLabel := aButtonSpec first.
 			buttonBlock := aButtonSpec second.
@@ -17,7 +17,7 @@ performDebuggingActionFor: aCharacter
 				ifFalse: [
 					labelBeforeHint := ''.
 					labelAfterHint := (buttonLabel copyFrom: 2 to: buttonLabel size) ]
-				ifTrue: [ 
+				ifTrue: [
 					shortcutLetter := buttonLabel second asString asLowercase.
 					labelBeforeHint := buttonLabel first asString.
 					labelAfterHint := (buttonLabel copyFrom: 3 to: buttonLabel size) ].

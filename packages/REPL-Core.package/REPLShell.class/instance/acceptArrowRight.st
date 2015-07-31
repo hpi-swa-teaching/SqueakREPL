@@ -1,4 +1,4 @@
-keys
+accepting
 acceptArrowRight
 	"Accept arrow right key."
 
