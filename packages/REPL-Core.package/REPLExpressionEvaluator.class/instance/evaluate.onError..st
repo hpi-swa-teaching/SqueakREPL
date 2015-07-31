@@ -12,18 +12,12 @@ evaluate: aString onError: aBlock
 	self context ifNil: [ self initializeContext ].
 
 	(self isSpecialShortcut: aString)
-		ifTrue: [ ^ self handleSpecialShortcut: aString ].
+		ifTrue: [ ^ self evaluateSpecialShortcut: aString ].
 
-	^ [ self class compilerClass new
-			evaluate: aString
-			in: self workspace doItContext
-			to: self workspace doItReceiver
-			notifying: notificationReceiver
-			ifFail: [ ^ aBlock value: notificationReceiver ]
-			logged: false ]
+	^ [ self evaluateCode: aString notifying: aBlock with: notificationReceiver ]
 
 				on: MessageNotUnderstood
-				do: [ :ex | self handleException: ex ]
+				do: [ :ex | self handleMessageNotUnderstood: ex ]
 
 				on: Warning
 				do: [ :ex | self handleWarning: ex ]

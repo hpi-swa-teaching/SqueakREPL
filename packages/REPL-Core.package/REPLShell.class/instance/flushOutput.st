@@ -1,4 +1,4 @@
 accessing
 flushOutput
-	self send: self outputText.
+	self interface print: self outputText.
 	self outputText: ''

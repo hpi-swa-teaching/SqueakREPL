@@ -1,6 +1,6 @@
 running
 testInput
-	self repl
+	self repl shell
 		clearInput;
 		appendInput: 'Test'.
-	self assert: self repl input = 'Test'
+	self assert: self repl shell input = 'Test'

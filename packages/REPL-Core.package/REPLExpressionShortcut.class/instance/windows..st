@@ -7,7 +7,7 @@ Usage:
 
 	| windows interface |
 	interface := aContext userInterface.
-	windows := World submorphs select: [ :eachMorph | eachMorph respondsTo: #label ].
+	windows := World submorphsSatisfying: [ :eachSubMorph | eachSubMorph isKindOf: SystemWindow ].
 	^ windows
 		inject: String empty
 		into: [ :result :eachWindow | result , String crlf , ' '

@@ -1,9 +1,9 @@
 evaluation
-handleException: anException
+handleMessageNotUnderstood: anException
 	"Handle anException and try to resolve
 	MessageNotUnderstood-exceptions in order to allow special shortcuts."
 
-	| arguments message shortcuts value |
+	| arguments message value |
 
 	(self isShortcutReceiver: anException)
 		ifFalse: [ ^ anException signal ].
@@ -14,15 +14,9 @@ handleException: anException
 	(self class classOfExpressionShortcut canUnderstand: message)
 		ifFalse: [ ^ anException signal ].
 
-	shortcuts := self class classOfExpressionShortcut new.
-	[ value := shortcuts
-				perform: message
-				withArguments: arguments ]
+	value := [ self performShortcut: message with: arguments ]
 
 		on: MessageNotUnderstood
 		do: [ :ex | ^ ex signal ].
-
-	(value isMemberOf: self class classOfExpressionShortcut)
-		ifTrue: [ value := nil ].
 
 	anException resume: value

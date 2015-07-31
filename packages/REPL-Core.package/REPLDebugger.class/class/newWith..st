@@ -1,8 +1,8 @@
-as yet unclassified
+class initialization
 newWith: aDebugger
+	"Create a new instance of the receiver using aDebugger."
 
-	| debugger |
-	debugger := self basicNew.
-	debugger debugger: aDebugger.
-	debugger initialize.
-	^debugger
+	^ self basicNew
+		debugger: aDebugger;
+		initialize;
+		yourself

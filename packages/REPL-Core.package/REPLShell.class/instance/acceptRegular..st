@@ -7,5 +7,4 @@ acceptRegular: aCharacter
 	self isCompleting 
 		ifTrue: [ self abortCompletion ].  
 
-	self appendInput: aCharacter.
-	self interface print: aCharacter asString.
+	self appendInput: aCharacter asString.

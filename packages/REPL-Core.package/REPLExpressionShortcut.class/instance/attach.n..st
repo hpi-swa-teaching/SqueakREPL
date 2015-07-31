@@ -6,5 +6,8 @@ Usage:
 !debuggers
 #attach!4"
 
-	aContext userInterface attachDebuggerInstanceAt: anInteger.
-	^ (aContext userInterface class colorize: 'Debugger attached!' with: aContext userInterface class colorGood) asString , String crlf
+	| interface |
+	interface := aContext userInterface.
+
+	interface shell attachDebuggerInstanceAt: anInteger.
+	^ (interface class colorize: self class debuggerAttachedMessage with: interface class colorGood) asString , String crlf
