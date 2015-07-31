@@ -1,3 +1,5 @@
 accessing
-workspace: anObject
-	workspace := anObject
+workspace: aWorkspace
+	"Set aWorkspace as evaluation workspace."
+
+	workspace := aWorkspace

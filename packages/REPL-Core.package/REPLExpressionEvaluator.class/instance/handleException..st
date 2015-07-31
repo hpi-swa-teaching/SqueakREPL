@@ -8,7 +8,7 @@ handleException: anException
 		ifFalse: [ ^ anException signal ].
 
 	anException message selector = #!
-		ifTrue: [ anException message setSelector: #n: ].
+		ifTrue: [ anException message setSelector: self class defaultParameterName ].
 
 	self context ifNil: [ self initializeContext].
 

@@ -6,8 +6,8 @@ evaluate: aString onError: aBlock
 
 	| notificationReceiver |
 	notificationReceiver := REPLNotificationReceiver
-								source: aString
-								workspace: self workspace.
+								newFor: aString
+								with: self workspace.
 
 	(self isSpecialShortcut: aString)
 		ifTrue: [ ^ self handleSpecialShortcut: aString ].
