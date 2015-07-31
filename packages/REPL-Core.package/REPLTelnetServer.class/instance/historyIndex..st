@@ -1,3 +1,5 @@
 accessing
-historyIndex: anObject
-	historyIndex := anObject
+historyIndex: anInteger
+	"Set index to history element to anInteger."
+
+	historyIndex := anInteger

@@ -1,3 +1,5 @@
 accessing
-history: anObject
-	history := anObject
+history: aCollection
+	"Set history to aCollection."
+
+	history := aCollection

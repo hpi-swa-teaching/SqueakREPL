@@ -2,9 +2,6 @@ initialize-release
 initialize
 	"Initialize server."
 
-	"TODO: " 
-	super initialize.
-
 	self
 		socket: Socket newTCP;
 		port: self class defaultPort;
@@ -18,8 +15,9 @@ initialize
 		debugging: false;
 		outputText: '';
 		endCompletion;
-		readMode: #regular.
+		readMode: #regular;
+		clearHistory;
+		clearHistoryIndex.
+		
 
-	self evaluator context: (REPLEvaluationContext newFor: self evaluator on: self with: self parser).
-	history := OrderedCollection new.
-	historyIndex := 1
+	self evaluator context: (REPLEvaluationContext newOn: self).

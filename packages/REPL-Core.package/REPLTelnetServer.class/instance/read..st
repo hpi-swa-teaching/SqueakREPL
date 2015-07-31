@@ -13,12 +13,3 @@ read: aCharacter
 		add: #csiCode->[self handleCSICode: aCharacter].
 
 	(handles at: self readMode) value.
-
-	self completing
-		ifTrue: [
-			self send: self class eraseDown.
-			self clearCompletion "???" ].
-
-	"self print: 'Char: ', aCharacter asciiValue, '        Mode: ', self readMode asString,  String crlf."
-
-	

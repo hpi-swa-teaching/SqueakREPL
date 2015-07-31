@@ -11,7 +11,7 @@ handleRegular: aCharacter
 	aCharacter = Character tab
 		ifTrue: [ self acceptTab ]
 		ifFalse: [
-			self endCompletion ]. "self handleAll"
+			self clearCompletion ]. "self handleAll"
 
 	aCharacter asciiValue = 3 "^C ???"
 		ifTrue: [ self acceptControlC ].
