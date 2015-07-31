@@ -5,5 +5,4 @@ close: aContext
 Usage:
 !close"
 
-	aContext userInterface
-		close
+	aContext userInterface close

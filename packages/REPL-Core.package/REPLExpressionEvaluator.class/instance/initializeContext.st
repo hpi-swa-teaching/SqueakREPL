@@ -2,7 +2,7 @@ initialize-release
 initializeContext
 	"Initialize a new instance of the evaluation context."
 
-	self context: (REPLEvaluationContext
+	self context: (self class classOfEvaluationContext
 					newFor: self
 					on: nil
-					with: REPLExpressionParser new)
+					with: self class classOfExpressionParser new)

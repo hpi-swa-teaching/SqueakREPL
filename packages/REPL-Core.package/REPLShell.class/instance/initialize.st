@@ -6,6 +6,7 @@ initialize
 		parser: REPLExpressionParser new;
 		evaluator: REPLExpressionEvaluator new;
 		clearInput;
+		cursorPosition: 1;
 		completion: (REPLExpressionCompletion newWith: self evaluator workspace);
 		completionIndex: 0;
 		completionDirection: 1;
