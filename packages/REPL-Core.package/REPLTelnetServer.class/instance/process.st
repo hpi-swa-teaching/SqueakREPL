@@ -1,5 +1,5 @@
 accessing
 process
-	"Answer process handling to read-eval-print-loop."
+	"Answer process handling read-eval-print-loop."
 
 	^ process

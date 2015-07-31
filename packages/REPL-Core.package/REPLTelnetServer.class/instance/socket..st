@@ -1,5 +1,5 @@
 accessing
 socket: aSocket
-	"Set socket handling interface."
+	"Set server socket to communicate with telnet."
 
 	socket := aSocket

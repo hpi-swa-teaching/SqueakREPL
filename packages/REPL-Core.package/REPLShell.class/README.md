@@ -1,7 +1,7 @@
 Class
 --------------------------------------------------------------------------------
 The Shell provides the core of the REPL as it represents
-the bridge between all components.
+the bridge between all components and its logic state.
 
 Responsibility
 --------------------------------------------------------------------------------

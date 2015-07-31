@@ -1,5 +1,5 @@
 accessing
 port
-	"Answer server port."
+	"Answer socket port."
 
 	^ port
