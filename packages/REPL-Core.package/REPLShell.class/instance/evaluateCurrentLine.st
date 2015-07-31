@@ -5,14 +5,13 @@ evaluateCurrentLine
 	result := self evaluate: self buffer.
 	result
 		ifNil: [ 
-			self print: self class lineSymbol.
-			self print: self class eraseLineUntilEnd.
+			self interface printNewline.
 			self clearInput.
 			^ self ].
 	(self isRepeatableStatement: self buffer)
 		ifTrue: [ 
 			history add: self buffer.
 			historyIndex := history size + 1].
-	self
-		print: String crlf , self class eraseLineUntilEnd , result , self class lineSymbol;
-		clearInput
+
+	self interface printResult: result.
+	self clearInput.

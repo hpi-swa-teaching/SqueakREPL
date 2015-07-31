@@ -1,0 +1,32 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"completionDirection",
+		"socket",
+		"historyIndex",
+		"port",
+		"completionSize",
+		"history",
+		"buffer",
+		"completion",
+		"completionIndex",
+		"completing",
+		"debugging",
+		"debugger",
+		"outputText",
+		"readMode",
+		"suggestions",
+		"parser",
+		"evaluator",
+		"process",
+		"interface" ],
+	"name" : "REPLShell",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

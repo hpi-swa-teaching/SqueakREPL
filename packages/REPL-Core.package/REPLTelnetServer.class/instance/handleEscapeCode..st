@@ -8,17 +8,19 @@ handleEscapeCode: aCharacter
 		ifTrue: [ 
 			self readMode: #csiCode.
 			^ self ].
-
+	
+	"Armin, warum?
 	aCharacter asciiValue = 7 
 		ifTrue: [ 
+			self halt.
 			self debugging
 				ifTrue: [ 
 					self debugging: false.
-					self send: self startSymbol.
+					self print: self startSymbol.
 					^ self ].
 
 			self completing
-				ifTrue: [ self clearCompletion ] ].
+				ifTrue: [ self clearCompletion ] ]."
 
 	(self class isEscapeCode: aCharacter)
 		ifTrue: [ 

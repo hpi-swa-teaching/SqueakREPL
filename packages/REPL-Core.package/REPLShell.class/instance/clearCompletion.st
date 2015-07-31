@@ -12,5 +12,5 @@ clearCompletion
 	self buffer: (self buffer copyFrom: 1 to: self buffer size - self completionSize).
 	self completionSize: 0.
 	self endCompletion.
-	self send: self class eraseDown.
+	self print: self class eraseDown.
 	^ clearingText

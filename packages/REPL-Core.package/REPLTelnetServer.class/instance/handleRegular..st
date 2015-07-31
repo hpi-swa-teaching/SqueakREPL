@@ -2,28 +2,20 @@ handling
 handleRegular: aCharacter
 	"Handle aCharacter as regular character."
 	
-	aCharacter = self class IAC
-		ifTrue: [ self readMode: #command ].
-
-	aCharacter = Character escape
-		ifTrue: [ self readMode: #escapeCode ].
-
-	aCharacter = Character tab
-		ifTrue: [ self acceptTab ]
-		ifFalse: [
-			self clearCompletion ]. "self handleAll"
-
-	aCharacter asciiValue = 3 "^C ???"
-		ifTrue: [ self acceptControlC ].
-
-	(aCharacter = Character delete or: aCharacter = Character backspace)
-		ifTrue: [ self acceptDelete ].
+	| regularCharacterHandles |
+	regularCharacterHandles := Dictionary new
+		add: self class IAC	->[ self readMode: #command ];
+		add: Character escape 	->[ self readMode: #escapeCode ];
+		add: Character tab->[ self shell acceptTab ];
+		add: (Character value: 3)->[ self shell acceptControlC ];
+		add: Character delete->[ self shell acceptDelete ];
+		add: Character backspace->[ self shell acceptDelete ];
+		add: Character cr->[ self shell acceptReturn ];
+		yourself.
+		
+	(regularCharacterHandles 
+		at: aCharacter 
+		ifAbsent: []) value.
 
 	(self class isRegular: aCharacter)
-		ifTrue: [ self acceptRegular: aCharacter ].
-
-	aCharacter == Character cr
-		ifTrue: [ self acceptReturn ].
-
-	aCharacter == Character null
-		ifTrue: [ ^ self ].
+		ifTrue: [ self shell acceptRegular: aCharacter ].

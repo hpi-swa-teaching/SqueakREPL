@@ -6,5 +6,5 @@ open
 	[ 
 	self socket waitForConnectionFor: 60.
 	self sendCommands: self class characterModeCommands.
-	self print: self class openingMessage.
+	self send: self class openingMessage.
 	self startLoop ] forkAt: Processor userBackgroundPriority

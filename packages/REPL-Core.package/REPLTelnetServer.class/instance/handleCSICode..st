@@ -3,9 +3,9 @@ handleCSICode: aCharacter
 	"Handle CSI character."
 
 	aCharacter == $A
-		ifTrue: [ self acceptArrowUp ].
+		ifTrue: [ self shell acceptArrowUp ].
 
 	aCharacter == $B
-		ifTrue: [ self acceptArrowDown ].
+		ifTrue: [ self shell acceptArrowDown ].
 
 	self readMode: #regular

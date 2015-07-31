@@ -9,5 +9,5 @@ loadRelativeHistoryEntry: aNumber
 		ifTrue: [ historyItem := ''. self historyIndex: self history size + 1]
 		ifFalse: [ historyItem := self history at: self historyIndex ].
 
-	self send: self class cursorUp , self class lineSymbol , historyItem , self class eraseLineUntilEnd.
+	self interface printSameLine: historyItem.
 	self buffer: historyItem

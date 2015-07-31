@@ -46,4 +46,4 @@ complete
 					i := i + 1 ] ].
 
 	suggestionString := changeString , String crlf , suggestionString , String cr , self class cursorUp, (self class cursorForward: 4 + self buffer size), self class eraseLineUntilEnd.
-	self send: suggestionString
+	self print: suggestionString
