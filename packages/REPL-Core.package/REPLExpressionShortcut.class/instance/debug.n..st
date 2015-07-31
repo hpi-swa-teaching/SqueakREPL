@@ -5,9 +5,9 @@ debug: aContext n: anInteger
 	| window |
 	window := (World submorphs select: [ :eachMorph | eachMorph respondsTo: #label ]) at: anInteger.
 	window model class = Debugger
-		ifFalse: [ ^ aContext interface colorize: 'This is not a debugger.' with: aContext interface class colorBad ].
+		ifFalse: [ ^ aContext userInterface colorize: 'This is not a debugger.' with: aContext userInterface class colorBad ].
 
-	aContext interface debugger: window.
-	aContext interface debugging: true.
+	aContext userInterface debugger: window.
+	aContext userInterface debugging: true.
 
-	^ (aContext interface colorize: 'Debugger attached!' with: aContext interface class colorGood) , String crlf
+	^ (aContext userInterface colorize: 'Debugger attached!' with: aContext userInterface class colorGood) , String crlf

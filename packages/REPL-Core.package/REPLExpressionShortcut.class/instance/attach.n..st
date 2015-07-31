@@ -8,8 +8,8 @@ Usage:
 
 	| debugger |
 	debugger := Debugger allInstances at: anInteger.
-	aContext interface debugger: debugger.
-	aContext interface debugger debug.
-	aContext interface debugging: true.
+	aContext userInterface debugger: debugger.
+	aContext userInterface debugger debug.
+	aContext userInterface debugging: true.
 
-	^ (aContext interface colorize: 'Debugger attached!' with: aContext interface class colorGood) asString , String crlf
+	^ (aContext userInterface colorize: 'Debugger attached!' with: aContext userInterface class colorGood) asString , String crlf

@@ -5,4 +5,4 @@ testShortcuts
 	| result |
 	result := self shortcuts shortcuts: self context.
 
-	self assertNotNilOrEmpty: result
+	self assertStringNotEmpty: result

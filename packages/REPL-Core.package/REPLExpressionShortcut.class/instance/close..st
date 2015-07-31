@@ -5,6 +5,6 @@ close: aContext
 Usage:
 !close"
 
-	aContext interface
+	aContext userInterface
 		print: String crlf , 'Goodbye!' , String crlf;
 		close

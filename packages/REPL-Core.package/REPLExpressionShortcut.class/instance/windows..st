@@ -11,7 +11,7 @@ Usage:
 	result := ''.
 	windows
 		do: [ :eachWindow | 
-			result := result , String crlf , ' ' , (aContext interface colorize: '(' , index , ') ' with: aContext interface class colorGood)
+			result := result , String crlf , ' ' , (aContext userInterface colorize: '(' , index , ') ' with: aContext userInterface class colorGood)
 				, eachWindow label.
 			index := index + 1 ].
 	^result , String crlf.

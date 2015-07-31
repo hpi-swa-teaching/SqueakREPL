@@ -11,7 +11,7 @@ Usage:
 	index := 1.
 	debuggerInstances
 		do: [ :eachDebugger | 
-			result := result , String crlf , ' ' , (aContext interface colorize: '(' , index , ') ' with: aContext interface class colorGood)
+			result := result , String crlf , ' ' , (aContext userInterface colorize: '(' , index , ') ' with: aContext userInterface class colorGood)
 				, eachDebugger contextStackList first.
 			index := index + 1 ].
 	result := result , String crlf.
