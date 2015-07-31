@@ -7,7 +7,6 @@
 		"acceptArrowLeft" : "ar 7/31/2015 18:21",
 		"acceptArrowRight" : "wr 7/31/2015 20:32",
 		"acceptArrowUp" : "wr 7/31/2015 15:16",
-<<<<<<< HEAD
 		"acceptControlC" : "wr 7/31/2015 16:50",
 		"acceptDelete" : "ar 7/31/2015 21:14",
 		"acceptEscape" : "wr 7/31/2015 20:00",
@@ -21,31 +20,14 @@
 		"buffer" : "wr 7/31/2015 15:16",
 		"buffer:" : "ar 7/31/2015 17:33",
 		"clearCompletion" : "wr 7/31/2015 20:35",
-=======
-		"acceptDelete" : "wr 7/31/2015 21:40",
-		"acceptEscape" : "wr 7/31/2015 20:00",
-		"acceptRegular:" : "wr 7/31/2015 20:16",
-		"acceptReturn" : "wr 7/31/2015 20:34",
-		"acceptTab" : "wr 7/31/2015 21:45",
-		"appendInput:" : "wr 7/31/2015 20:38",
-		"attachDebuggerInstanceAt:" : "wr 7/31/2015 15:16",
-		"beginCompletion" : "wr 7/31/2015 21:16",
-		"beginDebugging" : "wr 7/31/2015 15:16",
-		"clearCompletion" : "wr 7/31/2015 21:17",
->>>>>>> abdf534eab5e73f8eeddcf3a6eb7544c6558573f
 		"clearDebugger" : "wr 7/31/2015 15:16",
 		"clearHistory" : "wr 7/31/2015 15:16",
 		"clearHistoryIndex" : "wr 7/31/2015 15:16",
 		"clearInput" : "wr 7/31/2015 20:34",
-<<<<<<< HEAD
 		"close" : "wr 7/31/2015 15:16",
 		"complete" : "wr 7/31/2015 20:39",
 		"completeReverse" : "wr 7/31/2015 15:16",
 		"completing" : "wr 7/31/2015 15:16",
-=======
-		"close" : "wr 7/31/2015 21:21",
-		"complete" : "wr 7/31/2015 21:41",
->>>>>>> abdf534eab5e73f8eeddcf3a6eb7544c6558573f
 		"completing:" : "wr 7/31/2015 17:38",
 		"completion" : "wr 7/31/2015 20:12",
 		"completion:" : "wr 7/31/2015 20:13",
