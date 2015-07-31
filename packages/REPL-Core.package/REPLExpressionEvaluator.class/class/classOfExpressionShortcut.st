@@ -1,5 +1,5 @@
 accessing
-shortcutClass
+classOfExpressionShortcut
 	"Answer the class used for accessing shortcuts."
 
 	^ REPLExpressionShortcut 

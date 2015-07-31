@@ -3,29 +3,26 @@ handleException: anException
 	"Handle anException and try to resolve
 	MessageNotUnderstood-exceptions in order to allow special shortcuts."
 
-	| args message shortcuts value |
+	| arguments message shortcuts value |
+
 	(self isShortcutReceiver: anException)
 		ifFalse: [ ^ anException signal ].
 
-	anException message selector = self class characterOfSpecialExpressionShortcut asSymbol 
-		ifTrue: [ anException message setSelector: self class defaultParameterName ].
+	message := (self buildShortcutMessage: anException) asSymbol.
+	arguments := (self buildShortcutArguments: anException) asArray.
 
-	self context ifNil: [ self initializeContext].
+	(self class classOfExpressionShortcut canUnderstand: message)
+		ifFalse: [ ^ anException signal ].
 
-	message := anException receiver asString , ':' , anException message selector asString.
-
-	args := OrderedCollection new.
-	args add: self context.
-	args addAll: anException message arguments.
-
-	shortcuts := self class shortcutClass new.
+	shortcuts := self class classOfExpressionShortcut new.
 	[ value := shortcuts
-				perform: message asSymbol
-				withArguments: args asArray ]
-		on: MessageNotUnderstood
-		do: [ :e | ^ e signal ].
+				perform: message
+				withArguments: arguments ]
 
-	(value isMemberOf: self class shortcutClass)
+		on: MessageNotUnderstood
+		do: [ :ex | ^ ex signal ].
+
+	(value isMemberOf: self class classOfExpressionShortcut)
 		ifTrue: [ value := nil ].
 
 	anException resume: value
