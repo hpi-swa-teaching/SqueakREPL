@@ -1,3 +1,5 @@
 accessing
-shortcuts: anObject
-	shortcuts := anObject
+shortcuts: aExpressionShortcut
+	"Set aExpressionShortcut as shortcut library."
+
+	shortcuts := aExpressionShortcut

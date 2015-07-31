@@ -1,3 +1,5 @@
 accessing
-userInterfaceMock: anObject
-	userInterfaceMock := anObject
+userInterfaceMock: aUserInterfaceMock
+	"Set aUserInterfaceMock to be used for testing."
+
+	userInterfaceMock := aUserInterfaceMock

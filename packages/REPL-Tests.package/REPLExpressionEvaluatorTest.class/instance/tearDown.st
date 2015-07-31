@@ -1,5 +1,5 @@
 running
 tearDown
-	"tearDown all unit tests."
+	"Tear down all unit tests."
 
 	self deregisterShortcuts 

@@ -1,3 +1,5 @@
 accessing
-evaluator: anObject
-	evaluator := anObject
+evaluator: anExpressionEvaluator
+	"Set anExpressionEvaluator to be used for evaluation."
+
+	evaluator := anExpressionEvaluator

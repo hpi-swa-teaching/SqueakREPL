@@ -1,3 +1,5 @@
 accessing
-context: anObject
-	context := anObject
+context: anEvaluationContext
+	"Set anEvaluationContext as context."
+
+	context := anEvaluationContext
