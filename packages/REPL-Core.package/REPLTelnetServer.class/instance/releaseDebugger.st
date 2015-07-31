@@ -2,7 +2,7 @@ debugging
 releaseDebugger
 	"Release attached REPLDebugger."
 
-	self debugger: nil.
+	self clearDebugger.
 	self endDebugging.
-	self print: self lineSymbol.
+	self print: self class lineSymbol.
 	

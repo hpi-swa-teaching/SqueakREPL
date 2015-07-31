@@ -15,7 +15,7 @@ complete
 	self suggestions: (self completionSuggestionsFor: completionTarget).
 	self suggestions isEmpty
 		ifTrue: [ 
-			suggestionString := suggestionString , (self colorize: 'No completions found.' with: self class colorBad)
+			suggestionString := suggestionString , (self class colorize: 'No completions found.' with: self class colorBad)
 				, self class eraseLineUntilEnd ]
 		ifFalse: [ 
 			| i |
@@ -40,7 +40,7 @@ complete
 							changeString := (self class cursorBackward: completionTarget size), changeString , suggestion.
 							self completionSize: completionFragment size.
 							self buffer: self buffer , completionFragment.
-							formattedSuggestion := self colorize: ' [' , suggestion , '] ' with: '0;32' ]
+							formattedSuggestion := self class colorize: ' [' , suggestion , '] ' with: '0;32' ]
 						ifFalse: [ formattedSuggestion := '  ' , suggestion , '  ' ].
 					suggestionString := suggestionString , '' , formattedSuggestion.
 					i := i + 1 ] ].

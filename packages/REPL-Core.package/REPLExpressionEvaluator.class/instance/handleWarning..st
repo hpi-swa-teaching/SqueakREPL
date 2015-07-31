@@ -6,6 +6,6 @@ handleWarning: aWarning
 	interface := self context userInterface.
 	
 	interface
-		print: String crlf, (interface colorize: ('Warning: ', aWarning messageText) with: interface class colorInfo).
+		print: String crlf, (interface class colorize: ('Warning: ', aWarning messageText) with: interface class colorInfo).
 
 	aWarning resume

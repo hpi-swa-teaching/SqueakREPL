@@ -1,4 +1,4 @@
-reading
+evaluating
 isExpression: aString
 	"Answer whether aString is expression."
 

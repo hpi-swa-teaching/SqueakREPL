@@ -5,6 +5,6 @@ open
 	self socket listenOn: self port.
 	[ 
 	self socket waitForConnectionFor: 60.
-	self turnOnCharacterMode.
-	self send: self openingMessage.
+	self sendCommands: self class characterModeCommands.
+	self send: self class openingMessage.
 	self startLoop ] forkAt: Processor userBackgroundPriority

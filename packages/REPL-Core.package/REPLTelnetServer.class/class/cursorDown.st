@@ -1,4 +1,4 @@
 escape codes
 cursorDown
 
-	^self escapeCode: '[B'
+	^self escape: '[B'

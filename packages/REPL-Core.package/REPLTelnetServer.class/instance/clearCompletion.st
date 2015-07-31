@@ -1,4 +1,4 @@
-printing
+tab completion
 clearCompletion
 	| clearingText |
 

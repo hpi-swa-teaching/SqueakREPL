@@ -1,4 +1,4 @@
 escape codes
 saveCursorPosition
 	
-	^self escapeCode: '[s'
+	^self escape: '[s'

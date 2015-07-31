@@ -1,4 +1,4 @@
 escape codes
 restoreCursorPosition
 	
-	^self escapeCode: '[u'
+	^self escape: '[u'

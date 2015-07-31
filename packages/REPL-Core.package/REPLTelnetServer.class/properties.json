@@ -20,9 +20,12 @@
 		"debugger",
 		"outputText",
 		"readMode",
-		"suggestions" ],
+		"suggestions",
+		"parser",
+		"evaluator",
+		"process" ],
 	"name" : "REPLTelnetServer",
 	"pools" : [
 		 ],
-	"super" : "REPLUserInterface",
+	"super" : "Object",
 	"type" : "normal" }

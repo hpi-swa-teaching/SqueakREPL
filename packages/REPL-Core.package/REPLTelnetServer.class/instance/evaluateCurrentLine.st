@@ -5,7 +5,7 @@ evaluateCurrentLine
 	result := self evaluate: self buffer.
 	result
 		ifNil: [ 
-			self print: self lineSymbol.
+			self print: self class lineSymbol.
 			self print: self class eraseLineUntilEnd.
 			self clearInput.
 			^ self ].
@@ -14,5 +14,5 @@ evaluateCurrentLine
 			history add: self buffer.
 			historyIndex := history size + 1].
 	self
-		print: String crlf , self class eraseLineUntilEnd , result , self lineSymbol;
+		print: String crlf , self class eraseLineUntilEnd , result , self class lineSymbol;
 		clearInput

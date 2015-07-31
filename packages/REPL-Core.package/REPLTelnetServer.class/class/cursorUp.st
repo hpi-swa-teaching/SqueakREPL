@@ -1,4 +1,4 @@
 escape codes
 cursorUp
 
-	^self escapeCode: '[A'
+	^self escape: '[A'

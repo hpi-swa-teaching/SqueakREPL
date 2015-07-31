@@ -1,4 +1,4 @@
 escape codes
 eraseLineUntilEnd
 
-	^self escapeCode: '[K'
+	^self escape: '[K'

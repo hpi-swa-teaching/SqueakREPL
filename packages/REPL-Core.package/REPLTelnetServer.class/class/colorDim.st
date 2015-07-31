@@ -1,3 +1,3 @@
-as yet unclassified
+defaults
 colorDim
 	^ '0;90'

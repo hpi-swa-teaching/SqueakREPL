@@ -1,4 +1,4 @@
 escape codes
 cursorHome
 	
-	^self escapeCode: '[H'
+	^self escape: '[H'

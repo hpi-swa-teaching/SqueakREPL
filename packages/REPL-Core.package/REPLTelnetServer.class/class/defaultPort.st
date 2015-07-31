@@ -1,4 +1,4 @@
-as yet unclassified
+defaults
 defaultPort
 	"Answer default port to be used for server."
 

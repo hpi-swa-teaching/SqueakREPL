@@ -1,4 +1,4 @@
 escape codes
 eraseDown
 
-	^self escapeCode: '[J'
+	^self escape: '[J'

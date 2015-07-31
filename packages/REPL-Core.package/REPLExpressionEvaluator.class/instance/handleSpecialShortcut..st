@@ -6,7 +6,7 @@ handleSpecialShortcut: aString
 	command := aString allButFirst.
 
 	(REPLExpressionShortcut canUnderstand: (command , ':') asSymbol)
-		ifFalse: [ ^ (self context userInterface colorize: 'Unknown command: "' , command , '"' with: self context userInterface class colorBad) asString ].
+		ifFalse: [ ^ (self context userInterface class colorize: 'Unknown command: "' , command , '"' with: self context userInterface class colorBad) asString ].
 
 	value := REPLExpressionShortcut new perform: (command , ':') asSymbol with: self context.
 

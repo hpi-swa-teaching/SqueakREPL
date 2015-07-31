@@ -6,7 +6,7 @@ acceptReturn
 		ifFalse: [
 			self 
 				print: String crlf;
-				print: self continuationSymbol;
+				print: self class continuationSymbol;
 				appendInput: String cr ]
 		ifTrue: [
 			self evaluateCurrentLine ]
