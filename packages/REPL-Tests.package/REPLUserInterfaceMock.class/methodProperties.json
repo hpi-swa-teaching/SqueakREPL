@@ -3,7 +3,10 @@
 		"colorBad" : "db 7/30/2015 11:56",
 		"colorDim" : "db 7/30/2015 11:56",
 		"colorGood" : "db 7/30/2015 11:56",
-		"colorInfo" : "db 7/30/2015 11:56" },
+		"colorInfo" : "db 7/30/2015 11:56",
+		"colorize:with:" : "db 7/31/2015 13:01",
+		"eraseLineUntilEnd" : "db 7/31/2015 14:00",
+		"openingMessage" : "db 7/31/2015 13:59" },
 	"instance" : {
 		"close" : "db 7/30/2015 12:44",
 		"closed" : "db 7/30/2015 12:44",

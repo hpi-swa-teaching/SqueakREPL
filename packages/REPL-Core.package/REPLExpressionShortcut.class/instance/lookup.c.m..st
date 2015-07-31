@@ -2,7 +2,9 @@ method
 lookup: aContext c: aClassOrSymbol m: aSymbol
 	"Look up a method specified by aSymbol in the class aClassOrSymbol header and comment string."
 
-	| class header comment |
+	| class header comment interface |
+	interface := aContext userInterface.
+
 	class := aClassOrSymbol isSymbol
 		ifTrue: [ Smalltalk classNamed: aClassOrSymbol ]
 		ifFalse: [ aClassOrSymbol ].
@@ -14,4 +16,4 @@ lookup: aContext c: aClassOrSymbol m: aSymbol
 		ifNil: [ 'No comment specified.' ]
 		ifNotNil: [ comment asString copyReplaceAll: String cr with: String crlf ].
 
-	^header, String crlf, (aContext userInterface class colorize: comment with: aContext userInterface class colorGood)
+	^header, String crlf, (interface class colorize: comment with: interface class colorGood)

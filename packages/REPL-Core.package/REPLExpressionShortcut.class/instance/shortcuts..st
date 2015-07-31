@@ -5,20 +5,19 @@ shortcuts: aContext
 Usage:
 !shortcuts"
 
-	| shortcuts result |
+	| shortcuts result interface |
+	interface := aContext userInterface.
 	shortcuts := Dictionary new.
+
 	self class selectors
-		collect: [ :each |
+		collect: [ :eachSelector |
 			shortcuts
-				at:
-					((each count: [ :x | x = $: ]) = 1
-						ifTrue: [ '!' , each allButLast ]
-						ifFalse: [ each ])
-				put: (self class tryGetCommentFor: each) ].
-	result := ''.
+				at: (self class formatSelector: eachSelector)
+				put: (self class tryGetCommentFor: eachSelector) ].
+	result := String empty.
 	shortcuts
 		keysAndValuesDo: [ :eachKey :eachValue |
-			result := result , String crlf , (aContext userInterface class colorize: eachKey with: aContext userInterface class colorGood).
+			result := result , String crlf , (interface class colorize: eachKey with: interface class colorGood).
 			eachValue ifNotNil: [ result := result , String crlf , (eachValue copyReplaceAll: String cr with: String crlf) ].
 			result := result , String crlf ].
 	^ result

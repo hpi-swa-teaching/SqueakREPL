@@ -1,4 +1,4 @@
-as yet unclassified
+class variables
 vardumpColumnWidth
 	"A column's width that will be used in the variable dump."
 

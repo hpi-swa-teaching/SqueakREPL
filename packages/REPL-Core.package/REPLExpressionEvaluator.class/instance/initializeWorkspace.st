@@ -1,3 +1,5 @@
 initialize-release
 initializeWorkspace
-	self workspace: Workspace new
+	"Initialize a new workspace for evaluation."
+
+	self workspace: self class workspaceClass new

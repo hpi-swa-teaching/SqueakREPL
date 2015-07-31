@@ -5,13 +5,11 @@ windows: aContext
 Usage:
 !windows"
 
-	| result windows index |
+	| windows interface |
+	interface := aContext userInterface.
 	windows := World submorphs select: [ :eachMorph | eachMorph respondsTo: #label ].
-	index := 1.
-	result := ''.
-	windows
-		do: [ :eachWindow |
-			result := result , String crlf , ' ' , (aContext userInterface class colorize: '(' , index , ') ' with: aContext userInterface class colorGood)
-				, eachWindow label.
-			index := index + 1 ].
-	^result , String crlf.
+	^ windows
+		inject: String empty
+		into: [ :result :eachWindow | result , String crlf , ' '
+										, (interface class colorize: '(' , (windows indexOf: eachWindow) , ') ' with: interface class colorGood)
+										, eachWindow label ]

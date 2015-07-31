@@ -1,7 +1,7 @@
 repl
 win: aContext n: anInteger
+	"Answer a window identified by anInteger."
 
-	"TODO: brauchen wir das?"
-	| result |
-	result := (World submorphs select: [ :m | m respondsTo: #label ]) at: anInteger.
-	^ result
+	| windows |
+	windows := World submorphs select: [ :eachMorph | eachMorph respondsTo: #label ].
+	^ windows at: anInteger
