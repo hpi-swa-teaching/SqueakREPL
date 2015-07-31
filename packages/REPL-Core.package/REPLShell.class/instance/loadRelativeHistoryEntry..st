@@ -1,5 +1,6 @@
 history
 loadRelativeHistoryEntry: aNumber
+	"Move history index by aNumber and load entry at index."
 
 	| historyItem |
 	self history ifEmpty: [ ^self ].
@@ -9,5 +10,5 @@ loadRelativeHistoryEntry: aNumber
 		ifTrue: [ historyItem := ''. self historyIndex: self history size + 1]
 		ifFalse: [ historyItem := self history at: self historyIndex ].
 
-	self interface printSameLine: historyItem.
-	self buffer: historyItem
+	self interface printInline: historyItem.
+	self input: historyItem

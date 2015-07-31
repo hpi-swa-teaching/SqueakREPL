@@ -1,5 +1,5 @@
 accessing
-buffer: aString
+input: aString
 	"Set current input buffer to aString."
 
-	buffer := aString
+	input := aString

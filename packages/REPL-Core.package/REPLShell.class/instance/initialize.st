@@ -7,12 +7,9 @@ initialize
 		evaluator: REPLExpressionEvaluator new;
 		clearInput;
 		completion: (REPLExpressionCompletion newWith: self evaluator workspace);
-		completionIndex: 0;
-		completionDirection: 1;
-		completionSize: 0;
+		clearCompletion;
 		debugging: false;
 		outputText: '';
-		endCompletion;
 		clearHistory;
 		clearHistoryIndex.
 		

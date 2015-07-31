@@ -1,3 +1,5 @@
 accessing
-completion: anObject
-	completion := anObject
+completion: aREPLExpressionCompletion
+	 "Set aREPLExpressionCompletion to handle completion."
+
+	completion := aREPLExpressionCompletion

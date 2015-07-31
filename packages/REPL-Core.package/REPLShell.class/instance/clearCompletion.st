@@ -1,16 +1,10 @@
 tab completion
 clearCompletion
-	| clearingText |
 
-	clearingText := ''.	
-	clearingText := clearingText. 
-
-	(self completionSize == 0 and: [ self completing ])
-		ifTrue: [ ^ self ].
-	clearingText := clearingText , (self class cursorBackward: self completionSize), (self class eraseLineUntilEnd).
-
-	self buffer: (self buffer copyFrom: 1 to: self buffer size - self completionSize).
-	self completionSize: 0.
-	self endCompletion.
-	self print: self class eraseDown.
-	^ clearingText
+	self completing: false.
+	self completionTarget: nil.
+	self suggestions: nil.
+	self suggestionIndex: 1.
+	self interface ifNotNil: [
+		self interface printInline: self input. 
+		self interface print: self interface class cursorShow]

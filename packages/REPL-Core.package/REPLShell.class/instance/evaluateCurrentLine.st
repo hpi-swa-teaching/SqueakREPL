@@ -2,15 +2,15 @@ evaluating
 evaluateCurrentLine
 
 	| result |
-	result := self evaluate: self buffer.
+	result := self evaluate: self input.
 	result
 		ifNil: [ 
 			self interface printNewline.
 			self clearInput.
 			^ self ].
-	(self isRepeatableStatement: self buffer)
+	(self isRepeatableStatement: self input)
 		ifTrue: [ 
-			history add: self buffer.
+			history add: self input.
 			historyIndex := history size + 1].
 
 	self interface printResult: result.

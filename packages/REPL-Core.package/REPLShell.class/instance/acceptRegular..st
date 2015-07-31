@@ -5,7 +5,7 @@ acceptRegular: aCharacter
 		ifTrue: [ self debugger accept: aCharacter. ^self ].
 
 	self isCompleting 
-		ifTrue: [ self clearCompletion ].
+		ifTrue: [ self abortCompletion ].  
 
 	self appendInput: aCharacter.
 	self interface print: aCharacter asString.

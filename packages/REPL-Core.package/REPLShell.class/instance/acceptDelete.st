@@ -1,6 +1,6 @@
 keys
 acceptDelete
 
-	self buffer ifNotEmpty: [
-		self interface printBackspace.
-		self buffer: (self buffer copyFrom: 1 to: self buffer size - 1) ]
+	self input ifNotEmpty: [
+		self input: (self input copyFrom: 1 to: self input size - 1).
+		self interface printBackspace ]

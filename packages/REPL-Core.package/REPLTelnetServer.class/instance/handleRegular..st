@@ -5,14 +5,13 @@ handleRegular: aCharacter
 	| regularCharacterHandles |
 	regularCharacterHandles := Dictionary new
 		add: self class IAC	->[ self readMode: #command ];
-		add: Character escape 	->[ self readMode: #escapeCode ];
+		add: Character escape 	->[ self readMode: #escapeCode. self shell acceptEscape ];
 		add: Character tab->[ self shell acceptTab ];
-		add: (Character value: 3)->[ self shell acceptControlC ];
 		add: Character delete->[ self shell acceptDelete ];
 		add: Character backspace->[ self shell acceptDelete ];
 		add: Character cr->[ self shell acceptReturn ];
 		yourself.
-		
+
 	(regularCharacterHandles 
 		at: aCharacter 
 		ifAbsent: []) value.

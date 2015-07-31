@@ -1,8 +1,10 @@
 keys
 acceptReturn
 	"Handle return key."
-	
-	(self isExpression: self buffer)
+	"self halt."
+	self isCompleting ifTrue: [ self endCompletion. ^self ].
+
+	(self isExpression: self input)
 		ifFalse: [
 			self 
 				print: String crlf;
