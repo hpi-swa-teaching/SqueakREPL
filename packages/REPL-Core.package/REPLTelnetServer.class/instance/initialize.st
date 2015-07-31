@@ -9,5 +9,6 @@ initialize
 		outputText: '';
 		shell: REPLShell new.
 
-	self shell interface: self.
-	self shell initializeContext.
+	self shell
+		interface: self;
+		initializeContext.

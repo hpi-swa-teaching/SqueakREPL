@@ -16,4 +16,4 @@ printSuggestions: anOrderedCollection highlightedAt: anInteger
 	self print:
 		Character cr asString,
 		self class cursorUp,
-		(self class cursorForward: 4)
+		(self class cursorForward: self class promptOffset)

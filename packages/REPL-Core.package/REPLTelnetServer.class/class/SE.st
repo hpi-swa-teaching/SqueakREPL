@@ -1,5 +1,5 @@
 telnet codes
 SE
-	"End of subnegotiation parameters"
+	"Answer telnet subnegotiation ending code."
 
 	^ Character value: 240

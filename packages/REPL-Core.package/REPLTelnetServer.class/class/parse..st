@@ -1,8 +1,10 @@
 telnet codes
 parse: aString
-	| commands commandValues |
-	commands := aString findTokens: ' '.
-	commandValues := commands
+	"Parse aString as Telnet instructions and return commands."
+
+	| commandTokens commandValues |
+	commandTokens := aString findTokens: ' '.
+	commandValues := commandTokens
 		collect: [ :command | 
 			command isAllDigits
 				ifTrue: [ command asInteger ]
@@ -10,9 +12,9 @@ parse: aString
 					(command indexOf: $|) = 0
 						ifTrue: [ REPLCoreCompiler new evaluate: 'REPLTelnetServer ' , command, ' asciiValue' ]
 						ifFalse: [ 
-							| masks sum |
-							masks := command findTokens: '|'.
-							sum := 0.
-							masks do: [ :mask | sum := sum + (REPLCoreCompiler new evaluate: 'REPLTelnetServer ' , mask, ' asciiValue') ].
-							sum ] ] ].
+							| bitMasks maskSum |
+							bitMasks := command findTokens: '|'.
+							maskSum := 0.
+							bitMasks do: [ :eachMask | eachMask := maskSum + (REPLCoreCompiler new evaluate: 'REPLTelnetServer ' , eachMask, ' asciiValue') ].
+							maskSum ] ] ].
 	^ commandValues
