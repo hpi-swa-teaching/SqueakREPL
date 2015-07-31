@@ -9,7 +9,7 @@
 		"SE" : "wr 7/30/2015 21:15",
 		"WILL" : "wr 7/30/2015 21:33",
 		"characterModeCommands" : "wr 7/31/2015 13:11",
-		"closingMessage" : "wr 7/31/2015 13:21",
+		"closingMessage" : "wr 7/31/2015 21:23",
 		"colorBad" : "tm 7/26/2015 18:54",
 		"colorDim" : "tm 7/26/2015 18:54",
 		"colorGood" : "tm 7/26/2015 18:54",
@@ -50,11 +50,16 @@
 		"initialize" : "ar 7/31/2015 21:43",
 		"loop" : "wr 7/30/2015 15:35",
 		"open" : "wr 7/31/2015 15:48",
+<<<<<<< HEAD
 		"output:" : "ar 7/31/2015 21:42",
 		"outputText" : "ar 7/31/2015 22:05",
 		"outputText:" : "ar 7/31/2015 22:05",
 		"port" : "tm 7/26/2015 18:54",
 		"port:" : "tm 7/26/2015 18:54",
+=======
+		"port" : "wr 7/31/2015 21:51",
+		"port:" : "wr 7/31/2015 21:50",
+>>>>>>> abdf534eab5e73f8eeddcf3a6eb7544c6558573f
 		"print:" : "wr 7/31/2015 15:48",
 		"printBackspace" : "wr 7/31/2015 16:09",
 		"printCompletion:hightlightAt:" : "wr 7/31/2015 18:54",
@@ -62,16 +67,20 @@
 		"printInline:" : "wr 7/31/2015 18:44",
 		"printNewline" : "wr 7/31/2015 15:46",
 		"printResult:" : "wr 7/31/2015 15:45",
+<<<<<<< HEAD
 		"printSameLine:" : "wr 7/31/2015 16:14",
 		"process" : "tm 7/26/2015 18:54",
+=======
+		"process" : "wr 7/31/2015 21:51",
+>>>>>>> abdf534eab5e73f8eeddcf3a6eb7544c6558573f
 		"process:" : "tm 7/26/2015 18:54",
 		"read:" : "wr 7/31/2015 19:46",
-		"readMode" : "wr 7/30/2015 16:33",
-		"readMode:" : "wr 7/30/2015 16:33",
+		"readMode" : "wr 7/31/2015 21:54",
+		"readMode:" : "wr 7/31/2015 21:54",
 		"send:" : "wr 7/30/2015 18:23",
 		"sendCommands:" : "wr 7/30/2015 21:30",
-		"shell" : "wr 7/31/2015 15:21",
-		"shell:" : "wr 7/31/2015 15:20",
-		"socket" : "tm 7/26/2015 18:54",
-		"socket:" : "tm 7/26/2015 18:54",
+		"shell" : "wr 7/31/2015 21:55",
+		"shell:" : "wr 7/31/2015 21:55",
+		"socket" : "wr 7/31/2015 21:56",
+		"socket:" : "wr 7/31/2015 21:56",
 		"startLoop" : "wr 7/31/2015 13:34" } }

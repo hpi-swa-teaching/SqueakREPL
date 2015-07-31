@@ -7,4 +7,5 @@ clearCompletion
 	self suggestionIndex: 1.
 	self interface ifNotNil: [
 		self interface printInline: self inputBuffer. 
-		self interface print: self interface class cursorShow]
+		self interface print: self interface class restoreCursorPosition.
+		self interface print: self interface class cursorShow ]

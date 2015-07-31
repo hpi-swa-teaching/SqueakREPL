@@ -2,5 +2,6 @@ class initialization
 initialize
 	"Initialize main REPL class."
 
-	Smalltalk addToStartUpList: REPLStartUp.
-	Smalltalk addToShutDownList: REPLStartUp
+	Smalltalk
+		addToStartUpList: REPLStartUp;
+		addToShutDownList: REPLStartUp

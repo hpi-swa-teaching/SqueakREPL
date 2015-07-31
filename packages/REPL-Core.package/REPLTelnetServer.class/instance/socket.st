@@ -1,5 +1,5 @@
 accessing
 socket
-	"Answer socket handling interface."
+	"Answer server socket communicating with telnet."
 
 	^ socket

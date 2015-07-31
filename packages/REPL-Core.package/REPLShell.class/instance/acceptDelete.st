@@ -2,6 +2,10 @@ keys
 acceptDelete
 
 	| textAfterCursor textBeforeCursor |
+	"self halt."
+	self isCompleting
+		ifTrue: [ self abortCompletion ].
+
 	(self cursorPosition <= 1) ifTrue: [
 		^ self.
 	].

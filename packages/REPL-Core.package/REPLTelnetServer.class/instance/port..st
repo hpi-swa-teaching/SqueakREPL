@@ -1,5 +1,5 @@
 accessing
 port: aPort
-	"Set server port."
+	"Set socket port."
 
 	port := aPort

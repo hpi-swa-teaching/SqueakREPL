@@ -1,8 +1,21 @@
 {
 	"class" : {
-		 },
+		"classOfRepl" : "db 7/31/2015 21:15",
+		"port" : "db 7/31/2015 21:19" },
 	"instance" : {
+		"client" : "db 7/31/2015 21:29",
+		"client:" : "db 7/31/2015 21:29",
+		"connectClient" : "db 7/31/2015 22:04",
+		"connectServer" : "db 7/31/2015 21:32",
+		"disconnectClient" : "db 7/31/2015 21:45",
+		"disconnectServer" : "db 7/31/2015 21:33",
+		"prepareHistory:" : "db 7/31/2015 21:58",
 		"repl" : "tm 7/26/2015 18:54",
 		"repl:" : "tm 7/26/2015 18:54",
-		"setUp" : "tm 7/29/2015 17:40",
-		"testInputBuffer" : "wr 7/31/2015 20:35" } }
+		"setUp" : "db 7/31/2015 21:32",
+		"tearDown" : "db 7/31/2015 21:33",
+		"testCompletion" : "db 7/31/2015 22:10",
+		"testEvaluation" : "db 7/31/2015 22:07",
+		"testHistory" : "db 7/31/2015 21:57",
+		"testHistoryNavigation" : "db 7/31/2015 21:58",
+		"testInputBuffer" : "db 7/31/2015 21:50" } }

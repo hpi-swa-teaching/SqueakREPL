@@ -4,4 +4,5 @@ endCompletion
 
 	self inputBuffer: 
 		(self inputBuffer copyFrom: 1 to: self inputBuffer size - self completionTarget size), (self suggestions at: self suggestionIndex).
+	self cursorPosition: self inputBuffer size + 1.
 	self clearCompletion.

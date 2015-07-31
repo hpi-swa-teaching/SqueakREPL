@@ -1,7 +1,6 @@
 tab completion
 complete
 	
-	
 	self inputBuffer ifEmpty: [ ^self ].
 
 	self isCompleting
