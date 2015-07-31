@@ -7,4 +7,5 @@ cm: aContext o: anObject c: aString
 	(aContext expressionParser makesUseOfShortcuts: aString)
 		ifTrue: [ aContext userInterface
 					print: String crlf	, self class shortcutWarningMessage, String crlf ].
+
 	anObject compile: aString

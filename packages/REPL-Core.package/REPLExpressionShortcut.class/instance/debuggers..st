@@ -5,14 +5,13 @@ debuggers: aContext
 Usage:
 !debuggers"
 
-	| result index debuggerInstances |
+	| debuggerInstances interface |
+	interface := aContext userInterface.
+
 	debuggerInstances := Debugger allInstances.
-	result := ''.
-	index := 1.
-	debuggerInstances
-		do: [ :eachDebugger | 
-			result := result , String crlf , ' ' , (aContext userInterface class colorize: '(' , index , ') ' with: aContext userInterface class colorGood)
-				, eachDebugger contextStackList first.
-			index := index + 1 ].
-	result := result , String crlf.
-	^ result
+	
+	^ debuggerInstances
+		inject: String empty
+		into: [ :result :eachDebuggerInstance | result , String crlf
+												, ' ' , (interface class colorize: '(' , (debuggerInstances indexOf: eachDebuggerInstance) , ') ' with: interface class colorGood)
+												, eachDebuggerInstance contextStackList first ]
