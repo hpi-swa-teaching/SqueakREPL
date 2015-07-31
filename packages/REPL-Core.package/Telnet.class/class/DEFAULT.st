@@ -1,3 +1,0 @@
-commands
-DEFAULT
-	^ 3

@@ -1,3 +1,0 @@
-commands
-MODEACK
-	^ 4

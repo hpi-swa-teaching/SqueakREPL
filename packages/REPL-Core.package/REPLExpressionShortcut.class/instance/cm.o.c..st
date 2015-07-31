@@ -7,6 +7,6 @@ cm: aContext o: anObject c: aString
 	| parser |
 	parser := REPLExpressionParser new.
 	(parser makesUseOfShortcuts: aString)
-		ifTrue: [ aContext interface
+		ifTrue: [ aContext userInterface
 					print: String crlf	, self class shortcutWarningMessage, String crlf ].
 	anObject compile: aString

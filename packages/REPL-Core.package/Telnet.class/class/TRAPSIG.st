@@ -1,3 +1,0 @@
-options
-TRAPSIG
-	^ 2

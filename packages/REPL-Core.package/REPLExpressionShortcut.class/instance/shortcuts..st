@@ -18,7 +18,7 @@ Usage:
 	result := ''.
 	shortcuts
 		keysAndValuesDo: [ :eachKey :eachValue | 
-			result := result , String crlf , (aContext interface colorize: eachKey with: aContext interface class colorGood).
+			result := result , String crlf , (aContext userInterface colorize: eachKey with: aContext interface class colorGood).
 			eachValue ifNotNil: [ result := result , String crlf , (eachValue copyReplaceAll: String cr with: String crlf) ].
 			result := result , String crlf ].
 	^ result

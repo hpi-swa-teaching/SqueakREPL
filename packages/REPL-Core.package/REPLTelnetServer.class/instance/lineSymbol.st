@@ -3,6 +3,7 @@ lineSymbol
 	"Answer string to be printed on beginning of an input line."
 
 	^ String crlf,
+self class eraseLineUntilEnd,
 (self class colorize: '>>>' with: self class colorInfo),
 String crlf, 
 (self colorize: ' Enter !help for help.' with: self class colorDim) , 

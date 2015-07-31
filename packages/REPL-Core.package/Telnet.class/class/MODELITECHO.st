@@ -1,3 +1,0 @@
-commands
-MODELITECHO
-	^ 16

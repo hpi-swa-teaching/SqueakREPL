@@ -4,7 +4,7 @@ close: aContext
 
 Usage:
 !close"
-
-	aContext interface
+	"TODO"
+	aContext userInterface
 		print: String crlf , 'Goodbye!' , String crlf;
 		close

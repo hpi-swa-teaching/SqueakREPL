@@ -1,7 +1,7 @@
 keys
 acceptReturn
 	"Handle return key."
-
+	
 	(self isExpression: self buffer)
 		ifFalse: [
 			self 

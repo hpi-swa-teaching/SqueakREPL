@@ -2,17 +2,17 @@ evaluating
 evaluateCurrentLine
 
 	| result |
-
 	result := self evaluate: self buffer.
 	result
 		ifNil: [ 
+			self print: self lineSymbol.
+			self print: self class eraseLineUntilEnd.
 			self clearInput.
-			self print: self lineSymbol , self class eraseLineUntilEnd .
 			^ self ].
 	(self isRepeatableStatement: self buffer)
 		ifTrue: [ 
 			history add: self buffer.
 			historyIndex := history size + 1].
 	self
-		send: String crlf , self class eraseLineUntilEnd , result , self lineSymbol;
+		print: String crlf , self class eraseLineUntilEnd , result , self lineSymbol;
 		clearInput

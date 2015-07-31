@@ -1,3 +1,0 @@
-commands
-GA
-	^ 249

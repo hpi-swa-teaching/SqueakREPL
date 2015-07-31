@@ -2,7 +2,7 @@ keys
 acceptRegular: aCharacter 
 
 	self isDebugging 
-		ifTrue: [ self acceptForDebugging: aCharacter ].
+		ifTrue: [ self debugger accept: aCharacter ].
 
 	self appendInput: aCharacter.
 	self print: aCharacter asString.

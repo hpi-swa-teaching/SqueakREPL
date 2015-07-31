@@ -5,7 +5,7 @@ help: aContext
 Usage:
 !help"
 
-	^ aContext interface openingMessage , 'The Squeak REPL gives you the ability to use the Squeak' , String crlf
+	^ aContext userInterface openingMessage , 'The Squeak REPL gives you the ability to use the Squeak' , String crlf
 		, 'Environment in the comforts of your terminal. To enhance' , String crlf
 		, 'the experience, the Squeak REPL offers the following' , String crlf
 		, 'nifty shortcuts, which can be called with a `#` or a `!`' , String crlf , String crlf
