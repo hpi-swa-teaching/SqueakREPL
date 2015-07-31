@@ -1,5 +1,5 @@
 accessing
-input
+inputBuffer
 	"Answer current client input buffer."
 
-	^ input
+	^ inputBuffer

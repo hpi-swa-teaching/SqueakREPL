@@ -6,5 +6,5 @@ clearCompletion
 	self suggestions: nil.
 	self suggestionIndex: 1.
 	self interface ifNotNil: [
-		self interface printInline: self input. 
+		self interface printInline: self inputBuffer. 
 		self interface print: self interface class cursorShow]

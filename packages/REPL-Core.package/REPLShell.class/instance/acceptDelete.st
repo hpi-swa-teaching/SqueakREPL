@@ -7,9 +7,9 @@ acceptDelete
 	].
 	self output: Character backspace asString.
 	self cursorPosition: self cursorPosition - 1.
-	textBeforeCursor := (self buffer copyFrom: 1 to: self cursorPosition - 1).
-	textAfterCursor := (self buffer copyFrom: self cursorPosition + 1 to: self buffer size).
-	self input: textBeforeCursor, textAfterCursor.
+	textBeforeCursor := (self inputBuffer copyFrom: 1 to: self cursorPosition - 1).
+	textAfterCursor := (self inputBuffer copyFrom: self cursorPosition + 1 to: self inputBuffer size).
+	self inputBuffer: textBeforeCursor, textAfterCursor.
 
 	self output: (self interface class eraseLineUntilEnd), textAfterCursor.
 

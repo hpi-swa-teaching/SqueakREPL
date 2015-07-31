@@ -4,7 +4,7 @@ acceptReturn
 	"self halt."
 	self isCompleting ifTrue: [ self endCompletion. ^self ].
 
-	(self isExpression: self input)
+	(self isExpression: self inputBuffer)
 		ifFalse: [
 			self interface
 				print: String crlf;

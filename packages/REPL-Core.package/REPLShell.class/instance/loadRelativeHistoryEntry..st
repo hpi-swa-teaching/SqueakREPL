@@ -12,4 +12,4 @@ loadRelativeHistoryEntry: aNumber
 
 	self interface printInline: historyItem.
 	self cursorPosition: historyItem size + 1.
-	self input: historyItem
+	self inputBuffer: historyItem

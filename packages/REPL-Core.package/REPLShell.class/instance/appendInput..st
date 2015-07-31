@@ -3,14 +3,14 @@ appendInput: aString
 	"Append aString to input buffer."
 
 	| textAfterCursor textBeforeCursor |
-	textBeforeCursor := (self buffer copyFrom: 1 to: self cursorPosition - 1).
-	textAfterCursor := (self buffer copyFrom: self cursorPosition to: self buffer size).
+	textBeforeCursor := (self inputBuffer copyFrom: 1 to: self cursorPosition - 1).
+	textAfterCursor := (self inputBuffer copyFrom: self cursorPosition to: self inputBuffer size).
 
 
 	self cursorPosition: self cursorPosition + 1.
 
 
-	self input: textBeforeCursor, aString, textAfterCursor.
+	self inputBuffer: textBeforeCursor, aString, textAfterCursor.
 
 	self output: aString, textAfterCursor.
 

@@ -2,12 +2,12 @@ tab completion
 complete
 	
 	
-	self input ifEmpty: [ ^self ].
+	self inputBuffer ifEmpty: [ ^self ].
 
 	self isCompleting
 		ifFalse: [ 
 			self beginCompletion.
-			self completionTarget: (self input findTokens: ' ') last.
+			self completionTarget: (self inputBuffer findTokens: ' ') last.
 			self suggestions: (self completionSuggestionsFor: self completionTarget ) ]
 		ifTrue: [ 
 			self suggestionIndex: self suggestionIndex + 1.
@@ -17,6 +17,6 @@ complete
 			self abortCompletion.
 			^self ].
 
-	self interface printInline: self input, (self interface class cursorBackward: self completionTarget size), (self suggestions at: self suggestionIndex).
+	self interface printInline: self inputBuffer, (self interface class cursorBackward: self completionTarget size), (self suggestions at: self suggestionIndex).
 	self interface printCompletion: self suggestions hightlightAt: self suggestionIndex.
 	

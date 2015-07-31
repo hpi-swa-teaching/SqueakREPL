@@ -1,7 +1,7 @@
 keys
 acceptArrowRight
 
-	(self cursorPosition >= (self buffer size + 1)) ifTrue: [
+	(self cursorPosition >= (self inputBuffer size + 1)) ifTrue: [
 		^ self.
 	].
 
