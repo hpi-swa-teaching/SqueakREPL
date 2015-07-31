@@ -10,4 +10,7 @@ loadRelativeHistoryEntry: aNumber
 		ifFalse: [ historyItem := self history at: self historyIndex ].
 
 	self interface printSameLine: historyItem.
+
+	self cursorPosition: historyItem size + 1.
+	Transcript show: self cursorPosition; show: String cr.
 	self buffer: historyItem

@@ -24,7 +24,8 @@
 		"parser",
 		"evaluator",
 		"process",
-		"interface" ],
+		"interface",
+		"cursorPosition" ],
 	"name" : "REPLShell",
 	"pools" : [
 		 ],

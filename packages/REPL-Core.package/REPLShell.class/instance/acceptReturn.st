@@ -4,9 +4,11 @@ acceptReturn
 	
 	(self isExpression: self buffer)
 		ifFalse: [
-			self interface
+			self 
 				print: String crlf;
-				print: self interface class continuationSymbol.
-			self appendInput: String cr ]
+				print: self class continuationSymbol;
+				appendInput: String cr ]
 		ifTrue: [
-			self evaluateCurrentLine ]
+			self evaluateCurrentLine ].
+
+	self cursorPosition: 1.
