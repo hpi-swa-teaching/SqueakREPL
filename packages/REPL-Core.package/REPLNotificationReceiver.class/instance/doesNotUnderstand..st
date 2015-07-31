@@ -1,4 +1,4 @@
 notification handling
 doesNotUnderstand: aMessage
-	"Catch doesNotUnderstand exceptions for this doit receiver."
+	"Handle aMessage when a message was not understood."
 

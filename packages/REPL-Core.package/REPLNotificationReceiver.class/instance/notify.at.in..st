@@ -1,8 +1,6 @@
 notification handling
 notify: aString at: anInteger in: aStream
-	"The compilation of text failed. The syntax error is noted as the
-	argument,  aString. Insert it in the text at starting character position
-	anInteger."
+	"Notify the receiver of an error aString at anInteger in aStream."
 
 	self
 		lastError: 'Error: "' , aString , '" at position ' , anInteger

@@ -2,4 +2,9 @@ system
 sh: aContext n: aString
 	"Run a shell command in aString."
 
-	^ (PipeableOSProcess command: aString) output asString copyReplaceAll: String cr with: String crlf
+	| class |
+	class := Smalltalk
+			at: #PipeableOSProcess
+			ifAbsent: [^ aContext userInterface print: 'Please install OSProcess.', String crlf ].
+
+	^ (class command: aString) output asString copyReplaceAll: String cr with: String crlf

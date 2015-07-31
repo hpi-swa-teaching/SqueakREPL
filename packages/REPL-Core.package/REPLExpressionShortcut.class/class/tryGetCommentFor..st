@@ -2,6 +2,12 @@ shortcuts
 tryGetCommentFor: aSymbol
 	"Try to get a comment for the method specified by aSymbol."
 
-	(self new respondsTo: aSymbol)
-		ifTrue: [ ^ self precodeCommentOrInheritedCommentFor: aSymbol ].
-	^ nil
+	| comment |
+
+	(self canUnderstand: aSymbol)
+		ifFalse: [ ^ String empty ].
+
+	comment := self precodeCommentOrInheritedCommentFor: aSymbol.
+	^ comment
+		ifNil: [ String empty ]
+		ifNotNil: [ comment ]

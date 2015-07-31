@@ -5,9 +5,11 @@ evaluate: aString onError: aBlock
 	with more information about the error."
 
 	| notificationReceiver |
-	notificationReceiver := REPLNotificationReceiver
+	notificationReceiver := self class classOfNotificationReceiver
 								newFor: aString
 								with: self workspace.
+
+	self context ifNil: [ self initializeContext ].
 
 	(self isSpecialShortcut: aString)
 		ifTrue: [ ^ self handleSpecialShortcut: aString ].
