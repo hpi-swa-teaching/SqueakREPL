@@ -1,5 +1,5 @@
-telnet codes
+interpreting
 WILL
-	"Answer telnet WILL instruction."
+	"Answer the character representing the WILL command according to Telnet."
 
 	^ Character value: 251

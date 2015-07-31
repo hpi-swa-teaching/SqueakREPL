@@ -1,4 +1,4 @@
-telnet codes
+interpreting
 isRegular: aCharacter 
 	"Answer if aCharacter should be printed."
 

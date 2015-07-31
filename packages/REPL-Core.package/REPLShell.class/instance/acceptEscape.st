@@ -1,4 +1,4 @@
-keys
+accepting
 acceptEscape
 	"Send this message whenever an escape code or character is read."
 

@@ -1,4 +1,4 @@
-keys
+accepting
 acceptControlC
 
 	self completing

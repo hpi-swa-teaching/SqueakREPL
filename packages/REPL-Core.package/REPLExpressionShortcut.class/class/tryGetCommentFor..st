@@ -1,4 +1,4 @@
-shortcuts
+shortening
 tryGetCommentFor: aSymbol
 	"Try to get a comment for the method specified by aSymbol."
 

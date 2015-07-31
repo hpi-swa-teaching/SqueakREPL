@@ -1,5 +1,5 @@
 class
 dc: aContext o: anObject
-	"Delete the class anObject (an instance of Object)."
+	"Delete the class anObject."
 
 	anObject removeFromSystem

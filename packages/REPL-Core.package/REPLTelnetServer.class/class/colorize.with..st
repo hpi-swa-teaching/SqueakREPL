@@ -1,4 +1,4 @@
-escape codes
+escaping
 colorize: aString with: aColorValue
 	"Answer escape code for aString colorized with aColorValue."
 

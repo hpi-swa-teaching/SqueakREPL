@@ -1,4 +1,4 @@
-notification handling
+notifying
 select
 	"Select all code."
 

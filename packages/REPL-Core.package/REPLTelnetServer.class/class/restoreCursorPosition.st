@@ -1,4 +1,4 @@
-escape codes
+escaping
 restoreCursorPosition
 
 	"Answer escape code to restore a cursor position."

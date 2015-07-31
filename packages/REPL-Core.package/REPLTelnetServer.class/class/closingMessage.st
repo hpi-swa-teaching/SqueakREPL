@@ -1,4 +1,4 @@
-defaults
+configuring
 closingMessage
 	"Answer message to print on closing of REPL."
 

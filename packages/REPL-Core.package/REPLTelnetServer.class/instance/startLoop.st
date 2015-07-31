@@ -1,4 +1,4 @@
-life cycle
+living
 startLoop
 	"Start process handling read-eval-print-loop."
 

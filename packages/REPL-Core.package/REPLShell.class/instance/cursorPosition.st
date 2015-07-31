@@ -1,4 +1,4 @@
-initialize-release
+initializing
 cursorPosition
 
 	^ cursorPosition.

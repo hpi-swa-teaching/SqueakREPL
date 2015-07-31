@@ -1,4 +1,4 @@
-evaluation
+evaluating
 performShortcut: aSymbol with: anArray
 	"Perform aSymbol with anArray as arguments and validate the result."
 

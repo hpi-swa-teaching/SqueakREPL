@@ -1,4 +1,4 @@
-defaults
+configuring
 openingMessage
 	"Answer message to be printed on opening of REPL."
 

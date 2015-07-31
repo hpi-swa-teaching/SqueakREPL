@@ -1,4 +1,4 @@
-evaluation
+evaluating
 evaluateCode: aString notifying: aBlock with: aNotificationReceiver
 	"Evaluate aString and return the result. If an error occurs aBlock will be evaluated
 with aNotificationReceiver as an argument. This notification receiver then contains

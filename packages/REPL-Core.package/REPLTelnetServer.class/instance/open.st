@@ -1,4 +1,4 @@
-life cycle
+living
 open
 	"Wait for connection on port."
 
@@ -7,5 +7,5 @@ open
 	self socket waitForConnectionFor: 60.
 	self
 		sendCommands: self class characterModeCommands;
-	    print: self class openingMessage;
-	startLoop ] forkAt: Processor userBackgroundPriority
+		print: self class openingMessage;
+		startLoop ] forkAt: Processor userBackgroundPriority

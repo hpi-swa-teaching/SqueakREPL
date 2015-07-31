@@ -1,4 +1,4 @@
-tab completion
+completing
 abortCompletion
 	"Abort completion process and restore input."
 

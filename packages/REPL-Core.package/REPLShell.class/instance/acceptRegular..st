@@ -1,4 +1,4 @@
-keys
+accepting
 acceptRegular: aCharacter 
 
 	self isDebugging 

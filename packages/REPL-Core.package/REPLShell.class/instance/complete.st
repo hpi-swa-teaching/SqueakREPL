@@ -1,4 +1,4 @@
-tab completion
+completing
 complete
 	
 	self inputBuffer ifEmpty: [ ^self ].

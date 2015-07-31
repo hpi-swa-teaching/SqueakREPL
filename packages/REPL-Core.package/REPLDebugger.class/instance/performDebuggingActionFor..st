@@ -1,4 +1,4 @@
-as yet unclassified
+debugging
 performDebuggingActionFor: aCharacter
 
 	| usedButtonShortcuts buttonLine |

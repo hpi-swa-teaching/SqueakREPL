@@ -1,4 +1,4 @@
-as yet unclassified
+debugging
 accept: aCharacter
 	"Accept input character."
 	(aCharacter = $q)

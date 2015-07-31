@@ -1,4 +1,4 @@
-initialize-release
+initializing
 initialize
 	"Initialize server."
 

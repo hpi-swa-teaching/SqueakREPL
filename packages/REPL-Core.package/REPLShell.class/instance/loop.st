@@ -1,4 +1,4 @@
-life cycle
+living
 loop
 	"Anser block to be executed repeatedly for handling reading input.
 	See #startLoop."

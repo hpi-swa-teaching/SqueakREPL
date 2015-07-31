@@ -1,4 +1,4 @@
-life cycle
+living
 close
 	"Close server connection."
 

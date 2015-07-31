@@ -1,4 +1,4 @@
-defaults
+configuring
 colorInfo
 
 	"Answer color to indicate information messages."

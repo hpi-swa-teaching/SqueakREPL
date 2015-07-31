@@ -1,10 +1,7 @@
 handling
-handleCommand: aCharacter 
+handleCommand: aCharacter
 	"Handle character as Telnet command."
 
 	aCharacter = self class SB
-		ifTrue: [
-			self readMode: #subCommand.
-			^ self].
-
-	self readMode: #operation.
+		ifTrue: [ self readMode: #subCommand ]
+		ifFalse: [ self readMode: #operation ]

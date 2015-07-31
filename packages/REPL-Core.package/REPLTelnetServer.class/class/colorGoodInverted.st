@@ -1,4 +1,4 @@
-defaults
+configuring
 colorGoodInverted
 
 	"Answer good color with background and foreground values inverted."

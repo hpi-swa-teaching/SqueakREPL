@@ -1,4 +1,4 @@
-messages
+messaging
 osProcessWarningMessage 
 
 	^ 'Please install OSProcess.'

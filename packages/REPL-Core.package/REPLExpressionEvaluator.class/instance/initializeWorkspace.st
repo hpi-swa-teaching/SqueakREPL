@@ -1,4 +1,4 @@
-initialize-release
+initializing
 initializeWorkspace
 	"Initialize a new workspace for evaluation."
 

@@ -1,18 +1,13 @@
 handling
 handleCSICode: aCharacter
-	"Handle CSI character."
+	"Handle the CSI code aCharacter."
 
+	| characterBindings |
+	characterBindings := Dictionary new
+		at: $A put: #acceptArrowUp;
+		at: $B put: #acceptArrowDown;
+		at: $C put: #acceptArrowRight;
+		at: $D put: #acceptArrowLeft;
+		yourself.
 	self readMode: #regular.
-
-	aCharacter == $A
-		ifTrue: [ self shell acceptArrowUp. ^self  ].
-
-	aCharacter == $B
-		ifTrue: [ self shell acceptArrowDown. ^self ].
-
-	aCharacter == $C
-		ifTrue: [ self shell acceptArrowRight. ^self ].
-
-	aCharacter == $D
-		ifTrue: [ self shell acceptArrowLeft. ^self ].
-
+	self shell perform: (characterBindings at: aCharacter)

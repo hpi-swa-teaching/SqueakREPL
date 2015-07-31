@@ -1,4 +1,4 @@
-evaluation
+evaluating
 buildShortcutMessage: anException
 	"Answer a message that can be used for evaluating a shortcut based on anException."
 

@@ -1,4 +1,4 @@
-defaults
+configuring
 horizontalLine
  	"Answer horizontal line in ASCII representation."
 

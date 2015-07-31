@@ -1,4 +1,4 @@
-messages
+messaging
 shortcutWarningMessage 
 	^ 'Warning: Please note that you have one or more shortcuts in your method'
 		, String crlf

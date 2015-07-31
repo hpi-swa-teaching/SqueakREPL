@@ -1,4 +1,4 @@
-tab completion
+completing
 completionSuggestionsFor: aString
 	| suggestions |
 	suggestions := self completion complete: aString.

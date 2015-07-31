@@ -1,12 +1,10 @@
-life cycle
+living
 loop
-	"Anser block to be executed repeatedly for handling reading input.
-	See #startLoop."
+	"Anser block to be executed repeatedly for handling reading input."
 
 	self socket isUnconnectedOrInvalid
-		ifTrue: [
-			self close.
-			^ self]
-		ifFalse: [
-			self socket waitForData.
-			self socket receiveAvailableData do: [ :char | self read: char ]]
+		ifTrue: [ self close ]
+		ifFalse: [ 
+			self socket
+				waitForData;
+				do: [ :char | self read: char ] ]

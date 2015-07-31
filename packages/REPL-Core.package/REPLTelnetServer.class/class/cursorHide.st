@@ -1,4 +1,4 @@
-escape codes
+escaping
 cursorHide
 
 	"Answer escape code to hide the cursor."

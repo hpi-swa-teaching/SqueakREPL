@@ -1,4 +1,4 @@
-defaults
+configuring
 continuationSymbol
 	"Answer string to be printed at beginning of a continued line."
 

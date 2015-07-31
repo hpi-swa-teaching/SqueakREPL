@@ -1,4 +1,4 @@
-evaluation
+evaluating
 isSpecialShortcut: aString
 	"Check if aString contains a special shortcut."
 

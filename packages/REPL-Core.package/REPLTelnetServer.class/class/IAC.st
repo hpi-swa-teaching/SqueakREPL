@@ -1,5 +1,5 @@
-telnet codes
+interpreting
 IAC
-	"Answer telnet IAC (Interpret as Command) code."
+	"Answer the character representing the IAC command according to Telnet."
 
 	^ Character value: 255

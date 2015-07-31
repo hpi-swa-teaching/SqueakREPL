@@ -1,3 +1,5 @@
 *REPL-Core
 bindings
-	^bindings 
+	"Answer the bindings existing within the local context."
+
+	^ bindings

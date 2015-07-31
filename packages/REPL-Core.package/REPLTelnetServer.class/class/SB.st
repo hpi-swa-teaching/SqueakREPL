@@ -1,5 +1,5 @@
-telnet codes
+interpreting
 SB
-	"Answer telnet subnegotiation code."
+	"Answer the character representing the SB command according to Telnet."
 
 	^ Character value: 250

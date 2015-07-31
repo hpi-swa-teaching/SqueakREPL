@@ -1,4 +1,4 @@
-life cycle
+living
 open
 	"Wait for connection on port."
 

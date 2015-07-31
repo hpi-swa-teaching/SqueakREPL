@@ -1,5 +1,5 @@
-telnet codes
+interpreting
 MODE
-	"Answer telnet mode code."
+	"Answer the character representing the MODE command according to Telnet."
 
 	^ Character value: 1

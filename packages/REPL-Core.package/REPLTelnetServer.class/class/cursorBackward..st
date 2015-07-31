@@ -1,4 +1,4 @@
-escape codes
+escaping
 cursorBackward: aNumber
 	"Answer escape code for aNumber backwards cursor movements."
 	

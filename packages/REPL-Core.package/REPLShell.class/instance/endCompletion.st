@@ -1,4 +1,4 @@
-tab completion
+completing
 endCompletion
 	"End completion process applying suggestion."
 

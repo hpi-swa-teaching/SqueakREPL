@@ -1,4 +1,4 @@
-tab completion
+completing
 completeReverse
 	self completionDirection: -1.
 	^ self complete

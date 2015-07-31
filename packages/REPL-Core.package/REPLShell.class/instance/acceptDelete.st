@@ -1,4 +1,4 @@
-keys
+accepting
 acceptDelete
 
 	| textAfterCursor textBeforeCursor |

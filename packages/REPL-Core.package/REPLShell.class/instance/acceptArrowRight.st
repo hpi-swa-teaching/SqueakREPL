@@ -1,4 +1,4 @@
-keys
+accepting
 acceptArrowRight
 
 	(self cursorPosition >= (self inputBuffer size + 1)) ifTrue: [

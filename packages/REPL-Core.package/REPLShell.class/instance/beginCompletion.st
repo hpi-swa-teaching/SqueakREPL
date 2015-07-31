@@ -1,4 +1,4 @@
-tab completion
+completing
 beginCompletion
 	
 	self completing: true.

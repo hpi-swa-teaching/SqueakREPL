@@ -1,4 +1,4 @@
-evaluation
+evaluating
 evaluateSpecialShortcut: aString
 	"Handle a special shortcut like !help and does not comply with default smalltalk syntax."
 

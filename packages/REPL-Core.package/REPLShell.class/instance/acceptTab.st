@@ -1,4 +1,4 @@
-keys
+accepting
 acceptTab
 
 	self complete

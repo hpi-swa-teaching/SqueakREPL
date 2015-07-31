@@ -1,4 +1,4 @@
-telnet codes
+interpreting
 parse: aString
 	"Parse aString as Telnet instructions and return commands."
 
