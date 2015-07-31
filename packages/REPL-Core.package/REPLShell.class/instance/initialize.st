@@ -17,4 +17,4 @@ initialize
 		clearHistoryIndex.
 		
 
-	self evaluator context: (REPLEvaluationContext newOn: self).
+	

@@ -9,3 +9,4 @@ initialize
 		shell: REPLShell new.
 
 	self shell interface: self.
+	self shell initializeContext.
