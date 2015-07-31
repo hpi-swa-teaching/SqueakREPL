@@ -10,7 +10,8 @@
 		"port",
 		"readMode",
 		"process",
-		"shell" ],
+		"shell",
+		"outputText" ],
 	"name" : "REPLTelnetServer",
 	"pools" : [
 		 ],

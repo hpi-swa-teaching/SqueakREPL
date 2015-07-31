@@ -2,7 +2,7 @@ as yet unclassified
 accept: aCharacter
 	"Accept input character."
 	(aCharacter = $q)
-		ifTrue: [ self interface releaseDebugger. ^self ].
+		ifTrue: [ self interface shell releaseDebugger. ^self ].
 
 	self interface output: 
 		String crlfcrlf, 
