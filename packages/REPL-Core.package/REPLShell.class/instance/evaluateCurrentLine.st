@@ -1,5 +1,6 @@
 evaluating
 evaluateCurrentLine
+	"Evaluate current line and print resulting value to interface."
 
 	| result |
 	(self isRepeatableStatement: self inputBuffer)

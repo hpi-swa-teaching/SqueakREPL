@@ -1,4 +1,5 @@
-as yet unclassified
+initialize-release
 intitalize
+	"Initialize a newly created instance of the receiver."
 
 	self debugger debug.

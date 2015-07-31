@@ -1,12 +1,13 @@
 Class
 --------------------------------------------------------------------------------
 The Shell provides the core of the REPL as it represents
-the bridge between all components and its logic state.
+its state and connects all components.
 
 Responsibility
 --------------------------------------------------------------------------------
-The Shell may only be instantiated by using an interface
-class like the TelnetServer.
+The shell is instantiated by an interface (e.g., TelnetServer) 
+and communicates by sending #output and #print and
+receiving #accept commands (e.g., #acceptArrowUp).
 
 Collaboration
 --------------------------------------------------------------------------------

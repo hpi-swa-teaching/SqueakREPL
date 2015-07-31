@@ -1,5 +1,5 @@
 accessing
 historyIndex: anInteger
-	"Set index to history element to anInteger."
+	"Set index to position anInteger."
 
 	historyIndex := anInteger

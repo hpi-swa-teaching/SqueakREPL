@@ -1,6 +1,6 @@
 debugging
 releaseDebugger
-	"Release attached REPLDebugger."
+	"Release the attached debugger instance."
 
 	self clearDebugger.
 	self endDebugging.

@@ -1,4 +1,0 @@
-reading
-outputText
-
-	^ outputText.

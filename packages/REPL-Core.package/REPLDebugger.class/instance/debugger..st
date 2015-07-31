@@ -1,5 +1,5 @@
 accessing
 debugger: aDebugger
-	"Set debugger to instance of Squeak's debugger."
+	"Set debugger to instance of Squeak's debugger class."
 
 	debugger := aDebugger

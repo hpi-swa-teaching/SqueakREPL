@@ -1,5 +1,5 @@
 evaluating
 isExpression: aString
-	"Answer whether aString is expression."
+	"Answer if aString is an completed expression."
 
-	^ self parser isCompletedExpression: aString
+	^self parser isCompletedExpression: aString

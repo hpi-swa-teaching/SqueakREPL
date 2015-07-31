@@ -1,5 +1,5 @@
 accessing
-evaluator: aREPLEvaluator
+evaluator: anEvaluator
 	"Set evaluator to handle input."
 
-	evaluator := aREPLEvaluator
+	evaluator := anEvaluator

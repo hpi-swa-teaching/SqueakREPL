@@ -1,5 +1,5 @@
 accessing
 clearDebugger
-	"Set debugger to nil."
+	"Clear debugger."
 
 	debugger := nil

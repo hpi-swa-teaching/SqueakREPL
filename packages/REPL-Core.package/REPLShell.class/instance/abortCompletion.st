@@ -1,6 +1,6 @@
 tab completion
 abortCompletion
-	"Abort completion process and restore input."
+	"Abort completion process without changing input buffer."
 
 	self clearCompletion.
 	

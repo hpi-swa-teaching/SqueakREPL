@@ -1,3 +1,5 @@
 accessing
-debugger: anObject
-	debugger := anObject
+debugger: aDebugger
+	"Set aDebugger to handle debugging."
+
+	debugger := aDebugger

@@ -1,6 +1,6 @@
 keys
 acceptEscape
-	"Send this message whenever an escape code or character is read."
+	"Accept escape code or escape key."
 
 	self isCompleting
 		ifTrue: [ self abortCompletion. ]

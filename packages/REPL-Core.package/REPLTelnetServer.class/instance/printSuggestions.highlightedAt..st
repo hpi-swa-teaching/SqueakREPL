@@ -10,8 +10,7 @@ printSuggestions: anOrderedCollection highlightedAt: anInteger
 	collectionCopy := anOrderedCollection copy.
 	collectionCopy at: anInteger put: '[', (anOrderedCollection at: anInteger), ']'.
 	collectionCopy do: [ :suggestion |
-		self print: suggestion, ' '
-	].
+		self print: suggestion, ' ' ].
 
 	self print:
 		Character cr asString,

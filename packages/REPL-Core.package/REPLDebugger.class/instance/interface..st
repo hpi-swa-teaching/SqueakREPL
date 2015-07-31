@@ -1,5 +1,5 @@
 accessing
-interface: aREPLInterface
-	"Set interface to instance of REPLInterface."
+interface: anInterface
+	"Set anInterface to communicate with the receiver."
 
-	interface := aREPLInterface
+	interface := anInterface

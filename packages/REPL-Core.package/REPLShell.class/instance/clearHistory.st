@@ -1,5 +1,5 @@
 accessing
 clearHistory
-	"Set history to empty collection."
+	"Clear history."
 
 	self history: OrderedCollection new.

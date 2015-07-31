@@ -1,6 +1,6 @@
 evaluating
 evaluate: aString
-	"Evaluate input and return as string."
+	"Evaluate aString and answer resuting value."
 
 	| value |
 

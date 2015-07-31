@@ -1,5 +1,5 @@
 accessing
 history: aCollection
-	"Set history to aCollection."
+	"Set history of previous expressions to aCollection."
 
 	history := aCollection

@@ -1,10 +1,10 @@
 keys
 acceptArrowLeft
+	"Accept arrow left key."
 
-	(self cursorPosition <= 1) ifTrue: [
-		^ self.
-	].
+	(self cursorPosition <= 1) ifTrue: [ ^self ].
 
-	self output: (self interface class cursorBackward).
-	self cursorPosition: self cursorPosition - 1.
-	self flushOutput.
+	self 
+		appendOutput: (self interface class cursorBackward);
+		cursorPosition: self cursorPosition - 1;
+		flushOutput.

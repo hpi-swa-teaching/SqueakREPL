@@ -1,5 +1,5 @@
 accessing
 completion
-	"Answer instance of REPLExpressionCompletion handling completion."
+	"Answer instance of class handling completion."
 
 	^ completion

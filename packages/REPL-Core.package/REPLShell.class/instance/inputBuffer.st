@@ -1,5 +1,5 @@
 accessing
 inputBuffer
-	"Answer current client input buffer."
+	"Answer current input buffer."
 
 	^ inputBuffer

@@ -1,5 +1,6 @@
 keys
 acceptRegular: aCharacter 
+	"Accept regular (printable) character."
 
 	self isDebugging 
 		ifTrue: [ self debugger accept: aCharacter. ^self ].

@@ -1,4 +1,5 @@
 accessing
-suggestions: anObject
+suggestions: anOrderedCollection
+	"Set list of suggestions to anOrderedCollection."
 
-	suggestions := anObject
+	suggestions := anOrderedCollection

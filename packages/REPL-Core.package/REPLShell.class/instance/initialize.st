@@ -1,16 +1,16 @@
 initialize-release
 initialize
-	"Initialize server."
+	"Initialize a newly created instance of the receiver."
 
 	self
-		parser: REPLExpressionParser new;
-		evaluator: REPLExpressionEvaluator new;
+		parser: self class expressionParserClass new;
+		evaluator: self class expressionEvaluatorClass new;
 		clearInput;
 		cursorPosition: 1;
-		completion: (REPLExpressionCompletion newWith: self evaluator workspace);
+		completion: (self class expressionCompletionClass newWith: self evaluator workspace);
 		clearCompletion;
 		debugging: false;
-		outputText: '';
+		clearOutputBuffer;
 		clearHistory;
 		clearHistoryIndex.
 		

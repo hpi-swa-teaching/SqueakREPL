@@ -4,9 +4,8 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "wr 7/31/2015 21:55",
+	"commentStamp" : "wr 7/31/2015 23:24",
 	"instvars" : [
-		"outputText",
 		"debugger",
 		"suggestionIndex",
 		"suggestions",
@@ -20,7 +19,8 @@
 		"cursorPosition",
 		"interface",
 		"historyIndex",
-		"inputBuffer" ],
+		"inputBuffer",
+		"outputBuffer" ],
 	"name" : "REPLShell",
 	"pools" : [
 		 ],

@@ -1,13 +1,15 @@
 {
 	"class" : {
+		"exitCharacter" : "wr 7/31/2015 22:54",
+		"maximumNumberOfLines" : "wr 7/31/2015 23:01",
 		"newWith:" : "db 7/31/2015 20:06" },
 	"instance" : {
-		"accept:" : "ar 7/31/2015 22:10",
-		"codeText" : "wr 7/31/2015 11:21",
-		"debugger" : "wr 7/31/2015 11:13",
-		"debugger:" : "wr 7/31/2015 11:12",
-		"debuggingStackView" : "wr 7/31/2015 11:21",
-		"interface" : "wr 7/31/2015 11:13",
-		"interface:" : "wr 7/31/2015 11:13",
-		"intitalize" : "wr 7/31/2015 11:50",
-		"performDebuggingActionFor:" : "wr 7/31/2015 12:09" } }
+		"accept:" : "wr 8/1/2015 01:04",
+		"codeText" : "wr 7/31/2015 22:59",
+		"debugger" : "wr 7/31/2015 23:17",
+		"debugger:" : "wr 7/31/2015 23:15",
+		"debuggingStackView" : "wr 7/31/2015 23:08",
+		"interface" : "wr 7/31/2015 23:16",
+		"interface:" : "wr 7/31/2015 23:17",
+		"intitalize" : "wr 7/31/2015 23:09",
+		"performDebuggingActionFor:" : "wr 7/31/2015 23:18" } }

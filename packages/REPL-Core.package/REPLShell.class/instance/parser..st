@@ -1,5 +1,5 @@
 accessing
-parser: aREPLParser
+parser: aParser
 	"Set parser to query input."
 
-	parser := aREPLParser
+	parser := aParser

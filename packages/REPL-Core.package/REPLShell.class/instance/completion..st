@@ -1,5 +1,5 @@
 accessing
-completion: aREPLExpressionCompletion
-	 "Set aREPLExpressionCompletion to handle completion."
+completion: anExpressionCompletion
+	 "Set instance of completion class to handle completion."
 
-	completion := aREPLExpressionCompletion
+	completion := anExpressionCompletion

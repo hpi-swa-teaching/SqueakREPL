@@ -1,15 +1,16 @@
 keys
 acceptReturn
-	"Handle return key."
+	"Accept return key."
 	
 	self isCompleting ifTrue: [ self endCompletion. ^self ].
 	(self isExpression: self inputBuffer)
 		ifFalse: [
-			self inputBuffer: self inputBuffer, String cr.
-			self cursorPosition: self inputBuffer size + 1.
-			self output: String crlf, self interface class continuationSymbol.
-			self flushOutput.
-			]
+			self 
+				inputBuffer: self inputBuffer, String cr;
+				cursorPosition: self inputBuffer size + 1;
+				appendOutput: String crlf, self interface class continuationSymbol;
+				flushOutput ]
 		ifTrue: [
-			self evaluateCurrentLine.
-			self cursorPosition: 1. ].
+			self 
+				evaluateCurrentLine;
+				cursorPosition: 1 ]

@@ -1,5 +1,6 @@
-as yet unclassified
+key handling
 performDebuggingActionFor: aCharacter
+	"Execute debugging command according to aCharacter and answer the textual representation of the debugger's buttons."
 
 	| usedButtonShortcuts buttonLine |
 	usedButtonShortcuts := Set new.

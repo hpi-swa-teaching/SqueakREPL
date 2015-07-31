@@ -1,5 +1,5 @@
 accessing
 debugger
-	"Answer related instance of Squeak's debugger."
+	"Answer related instance of Squeak's debugger class."
 
 	^debugger

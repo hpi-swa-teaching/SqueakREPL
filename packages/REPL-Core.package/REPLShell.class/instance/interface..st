@@ -1,4 +1,5 @@
 accessing
-interface: aREPLInterface
+interface: anInterface
+	"Set interface to handle user input and output."
 	
-	interface := aREPLInterface
+	interface := anInterface

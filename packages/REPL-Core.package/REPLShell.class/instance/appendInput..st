@@ -6,16 +6,12 @@ appendInput: aString
 	textBeforeCursor := (self inputBuffer copyFrom: 1 to: self cursorPosition - 1).
 	textAfterCursor := (self inputBuffer copyFrom: self cursorPosition to: self inputBuffer size).
 
-
-	self cursorPosition: self cursorPosition + 1.
-
-
-	self inputBuffer: textBeforeCursor, aString, textAfterCursor.
-
-	self output: aString, textAfterCursor.
-
+	self 
+		cursorPosition: self cursorPosition + 1; 
+		inputBuffer: textBeforeCursor, aString, textAfterCursor;
+		appendOutput: aString, textAfterCursor.
 
 		(textAfterCursor size > 0) ifTrue: [
-			self output:  (self interface class cursorBackward: (textAfterCursor size)). ].
+			self appendOutput: (self interface class cursorBackward: (textAfterCursor size)). ].
 
 	self flushOutput.

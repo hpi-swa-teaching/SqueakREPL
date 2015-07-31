@@ -1,4 +1,6 @@
 accessing
 flushOutput
-	self interface print: self outputText.
-	self outputText: ''
+	"Print entire output to interface."
+
+	self interface print: self outputBuffer.
+	self clearOutputBuffer.

@@ -2,5 +2,5 @@ initialize-release
 initialize
 	
 	self
-		output: OrderedCollection new;
+		appendOutput: OrderedCollection new;
 		closed: false

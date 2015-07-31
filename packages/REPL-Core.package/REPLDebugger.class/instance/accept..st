@@ -1,21 +1,24 @@
-as yet unclassified
+key handling
 accept: aCharacter
-	"Accept input character."
-	(aCharacter = $q)
-		ifTrue: [ self interface shell releaseDebugger. ^self ].
+	"Print textual representation of debugger after handling aCharacter."
 
-	self interface output: 
+	| interfaceClass shell |
+	shell := self interface shell.
+	(aCharacter = self class exitCharacter)
+		ifTrue: [ shell releaseDebugger. ^self ].
+
+	interfaceClass := self interface class.
+	shell appendOutput: 
 		String crlfcrlf, 
-		self interface class cursorHome,
-		self interface class eraseDown,
-		self interface class horizontalLine,
+		interfaceClass cursorHome,
+		interfaceClass eraseDown,
+		interfaceClass horizontalLine,
 		self debuggingStackView,
-		self interface class horizontalLine, 
+		interfaceClass horizontalLine, 
 		(self performDebuggingActionFor: aCharacter), 
 		String crlf , 
-		self interface class horizontalLine,
+		interfaceClass horizontalLine,
 		self codeText,
 		String crlf,
-		self interface class horizontalLine.
-
-	self interface flushOutput.
+		interfaceClass horizontalLine;
+		flushOutput.

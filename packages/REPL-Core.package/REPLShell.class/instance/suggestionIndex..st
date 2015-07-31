@@ -1,5 +1,5 @@
 accessing
 suggestionIndex: anInteger
-	"Set index to point to term in list of suggestions at position anInteger."
+	"Set index pointing to list of suggestions to position anInteger."
 
 	suggestionIndex := anInteger
