@@ -1,6 +1,6 @@
 printing
-printCompletion: anOrderedCollection hightlightAt: anInteger
-	"Print completion suggestions and highlight suggestion at anInteger."
+printSuggestions: anOrderedCollection highlightedAt: anInteger
+	"Print completion suggestions and highlight suggestion at position anInteger."
 
 	| collectionCopy |
 	self print: 
@@ -9,7 +9,6 @@ printCompletion: anOrderedCollection hightlightAt: anInteger
 	
 	collectionCopy := anOrderedCollection copy.
 	collectionCopy at: anInteger put: '[', (anOrderedCollection at: anInteger), ']'.
-
 	collectionCopy do: [ :suggestion |
 		self print: suggestion, ' '
 	].

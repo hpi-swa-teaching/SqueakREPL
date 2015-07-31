@@ -1,6 +1,6 @@
 printing
 print: aString
-	"Print aString to client."
+	"Print the message aString to the client."
 
 	self send: aString
 	

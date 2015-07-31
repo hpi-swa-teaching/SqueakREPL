@@ -1,6 +1,6 @@
 printing
 printNewline
-	"Print newline with prompt to client."
+	"Wrap the current line and show a prompt to the client."
 
-	self print: self class lineSymbol.
-	self print: self class eraseLineUntilEnd.
+	self print: self class lineSymbol;
+		 print: self class eraseLineUntilEnd

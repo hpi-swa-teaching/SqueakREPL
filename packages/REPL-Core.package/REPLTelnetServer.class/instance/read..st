@@ -1,6 +1,6 @@
 reading
 read: aCharacter
-	"Handle input character."
+	"Read character from client and handle according to read mode. Distinguish regular (printable) characters, escape codes and Telnet specific commands."
 
 	| handles |
 	handles := Dictionary new

@@ -1,6 +1,6 @@
 printing
 printResult: aString
-	"Print aString to client."
+	"Print the result aString to the client."
 
 	self print: 
 		String crlf, 

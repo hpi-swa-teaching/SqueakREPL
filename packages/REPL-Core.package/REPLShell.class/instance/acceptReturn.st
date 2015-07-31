@@ -2,6 +2,7 @@ keys
 acceptReturn
 	"Handle return key."
 	
+	self isCompleting ifTrue: [ self endCompletion. ^self ].
 	(self isExpression: self inputBuffer)
 		ifFalse: [
 			self inputBuffer: self inputBuffer, String cr.
@@ -11,5 +12,4 @@ acceptReturn
 			]
 		ifTrue: [
 			self evaluateCurrentLine.
-			self cursorPosition: 1.
-].
+			self cursorPosition: 1. ].

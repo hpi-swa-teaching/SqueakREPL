@@ -1,5 +1,5 @@
 printing
 printInline: aString
-	"Print aString in same line to client."
+	"Print the message aString to the client without wrapping the line."
 
 	self print: self class cursorUp , self class lineSymbol , aString , self class eraseLineUntilEnd.

@@ -1,6 +1,6 @@
 printing
 printError: aString
-	"Print aString as error to client."
+	"Print the error aString to the client."
 
 	self print: 		
 		String crlf, 

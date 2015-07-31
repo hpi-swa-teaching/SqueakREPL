@@ -17,5 +17,5 @@ complete
 			^self ].
 
 	self interface printInline: self inputBuffer, (self interface class cursorBackward: self completionTarget size), (self suggestions at: self suggestionIndex).
-	self interface printCompletion: self suggestions hightlightAt: self suggestionIndex.
+	self interface printSuggestions: self suggestions highlightedAt: self suggestionIndex.
 	
