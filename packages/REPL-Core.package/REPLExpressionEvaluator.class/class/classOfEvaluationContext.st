@@ -1,5 +1,5 @@
 accessing
-classOfEvaluationContext 
+classOfEvaluationContext
 	"Answer the class used for providing context."
 
-	^ REPLEvaluationContext 
+	^ REPLEvaluationContext

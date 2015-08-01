@@ -1,5 +1,5 @@
 as yet unclassified
-classOfRepl 
+classOfRepl
 	"Answer the class responsible for starting the repl."
 
 	^ REPLStartUp

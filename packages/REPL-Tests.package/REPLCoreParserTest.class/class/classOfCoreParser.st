@@ -1,5 +1,5 @@
 accessing
 classOfCoreParser
-    "Answer the class the tests should be performed on."
+	"Answer the class the tests should be performed on."
 
-    ^ REPLCoreParser
+	^ REPLCoreParser

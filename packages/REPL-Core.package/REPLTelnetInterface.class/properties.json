@@ -1,0 +1,18 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "db 7/31/2015 19:59",
+	"instvars" : [
+		"socket",
+		"port",
+		"readMode",
+		"process",
+		"shell" ],
+	"name" : "REPLTelnetInterface",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

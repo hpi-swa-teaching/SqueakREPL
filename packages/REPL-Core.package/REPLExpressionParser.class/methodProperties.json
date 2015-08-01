@@ -1,16 +1,16 @@
 {
 	"class" : {
-		"classOfExpressionShortcut" : "tm 7/30/2015 22:22",
-		"glossaryOfSpecialCharacters" : "tm 7/30/2015 20:57" },
+		"classOfExpressionShortcut" : "dbP 8/1/2015 02:43",
+		"glossaryOfSpecialCharacters" : "dbP 8/1/2015 02:43" },
 	"instance" : {
-		"areShortcutSelectors:containedWithin:" : "tm 7/30/2015 20:53",
-		"areSpecialCharacters:properlyNestedWithin:" : "tm 7/30/2015 20:53",
-		"filterOutSpecialCharacters:from:" : "tm 7/30/2015 20:55",
-		"handleCompletingException:" : "tm 7/30/2015 20:55",
-		"handleShorteningException:" : "tm 7/30/2015 20:56",
-		"initialize" : "tm 7/26/2015 18:54",
-		"isCompletedExpression:" : "tm 7/30/2015 20:56",
-		"makesUseOfShortcuts:" : "tm 7/30/2015 22:21",
-		"scanner" : "tm 7/30/2015 20:57",
-		"scanner:" : "tm 7/30/2015 20:57",
-		"truncateShortcutSelectors:" : "tm 7/30/2015 20:57" } }
+		"areShortcutSelectors:containedWithin:" : "dbP 8/1/2015 02:43",
+		"areSpecialCharacters:properlyNestedWithin:" : "dbP 8/1/2015 02:43",
+		"filterOutSpecialCharacters:from:" : "dbP 8/1/2015 02:43",
+		"handleCompletingException:" : "dbP 8/1/2015 02:43",
+		"handleShorteningException:" : "dbP 8/1/2015 02:43",
+		"initialize" : "dbP 8/1/2015 02:43",
+		"isCompletedExpression:" : "dbP 8/1/2015 02:43",
+		"makesUseOfShortcuts:" : "dbP 8/1/2015 02:43",
+		"scanner" : "dbP 8/1/2015 02:43",
+		"scanner:" : "dbP 8/1/2015 02:43",
+		"truncateShortcutSelectors:" : "dbP 8/1/2015 02:43" } }

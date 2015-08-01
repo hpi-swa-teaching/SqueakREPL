@@ -1,3 +1,5 @@
 as yet unclassified
-eraseLineUntilEnd 
+eraseLineUntilEnd
 	"Mock removing the output line until the end."
+
+	

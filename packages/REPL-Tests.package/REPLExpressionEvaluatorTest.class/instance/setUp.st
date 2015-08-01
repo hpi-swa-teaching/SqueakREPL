@@ -7,8 +7,6 @@ setUp
 		userInterfaceMock: REPLUserInterfaceMock new;
 		evaluator: REPLExpressionEvaluator new;
 		evaluate: 'testVar := 123'.
-
 	self context: (REPLEvaluationContext newFor: self evaluator on: self userInterfaceMock with: REPLExpressionParser new).
 	self evaluator context: self context.
-
-	self registerShortcuts 
+	self registerShortcuts

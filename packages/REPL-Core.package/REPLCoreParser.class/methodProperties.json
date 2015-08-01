@@ -2,5 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"correctSelector:wordIntervals:exprInterval:ifAbort:" : "tm 7/29/2015 19:32",
-		"correctVariable:interval:" : "db 7/31/2015 20:04" } }
+		"correctSelector:wordIntervals:exprInterval:ifAbort:" : "dbP 8/1/2015 02:42",
+		"correctVariable:interval:" : "dbP 8/1/2015 02:42" } }

@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"classOfCoreCompiler" : "tm 7/30/2015 22:41",
-		"classOfCoreParser" : "tm 7/30/2015 22:43" },
+		"classOfCoreCompiler" : "dbP 8/1/2015 02:42",
+		"classOfCoreParser" : "dbP 8/1/2015 02:42" },
 	"instance" : {
-		"coreCompilerClass" : "tm 7/29/2015 19:40",
-		"coreCompilerClass:" : "tm 7/30/2015 21:32",
-		"coreParserClass" : "tm 7/29/2015 19:42",
-		"coreParserClass:" : "tm 7/30/2015 21:32",
-		"setUp" : "tm 7/30/2015 22:26",
-		"testClassOfCoreParser" : "tm 7/30/2015 21:34" } }
+		"coreCompilerClass" : "dbP 8/1/2015 02:42",
+		"coreCompilerClass:" : "dbP 8/1/2015 02:42",
+		"coreParserClass" : "dbP 8/1/2015 02:42",
+		"coreParserClass:" : "dbP 8/1/2015 02:42",
+		"setUp" : "dbP 8/1/2015 02:42",
+		"testClassOfCoreParser" : "dbP 8/1/2015 02:42" } }

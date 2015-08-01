@@ -6,7 +6,6 @@ testEvaluation
 		clearInput;
 		appendInput: '1+1';
 		acceptReturn.
-
 	self
-		assert: (self client receiveAvailableData asString endsWith: (self repl class lineSymbol))
+		assert: (self client receiveAvailableData asString endsWith: self repl class lineSymbol)
 		description: 'Unexpected answer was sent.'

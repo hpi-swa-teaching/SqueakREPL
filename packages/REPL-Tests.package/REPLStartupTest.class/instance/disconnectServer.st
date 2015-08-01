@@ -1,5 +1,6 @@
 running
-disconnectServer 
-
+disconnectServer
 	self repl close.
-	[ self repl socket closeAndDestroy: 1 ] on: Error do: [ :ex | ]
+	[ self repl socket closeAndDestroy: 1 ]
+		on: Error
+		do: [ :ex |  ]

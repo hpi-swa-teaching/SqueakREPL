@@ -4,7 +4,7 @@ rm: aContext o: aClass m: anOldString n: aNewString
 
 	RBRenameMethodRefactoring
 		renameMethod: anOldString
-		in: aClass
-		to: aNewString
-		permutation: (1 to: aNewString asSymbol numArgs);
+			in: aClass
+			to: aNewString
+			permutation: (1 to: aNewString asSymbol numArgs);
 		execute

@@ -1,7 +1,7 @@
 running
-tearDown 
+tearDown
 	"Tear down all unit tests."
 
 	self
 		disconnectServer;
-		disconnectClient 
+		disconnectClient

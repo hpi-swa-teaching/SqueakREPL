@@ -5,5 +5,4 @@ buildShortcutArguments: anException
 	^ OrderedCollection new
 		add: self context;
 		addAll: anException message arguments;
-		yourself.
-
+		yourself

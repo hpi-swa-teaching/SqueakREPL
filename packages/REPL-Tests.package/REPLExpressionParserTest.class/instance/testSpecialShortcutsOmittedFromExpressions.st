@@ -5,5 +5,4 @@ testSpecialShortcutsOmittedFromExpressions
 	self
 		deny:
 			(self expressionParser
-				makesUseOfShortcuts:
-					'self doPreprocessing. [Smalltalk snapshot: true andQuit: true] fork. self doPostprocessing')
+				makesUseOfShortcuts: 'self doPreprocessing. [Smalltalk snapshot: true andQuit: true] fork. self doPostprocessing')

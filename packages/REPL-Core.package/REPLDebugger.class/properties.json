@@ -1,0 +1,15 @@
+{
+	"category" : "REPL-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "db 8/1/2015 02:34",
+	"instvars" : [
+		"debugger",
+		"interface" ],
+	"name" : "REPLDebugger",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

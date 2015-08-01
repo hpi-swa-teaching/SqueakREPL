@@ -1,7 +1,8 @@
 running
 connectServer
-
-	self repl: (self class classOfRepl new
-					port: self class port;
-					open;
-					yourself)
+	self
+		repl:
+			(self class classOfRepl new
+				port: self class port;
+				open;
+				yourself)

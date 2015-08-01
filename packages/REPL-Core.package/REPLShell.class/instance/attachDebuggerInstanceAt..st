@@ -7,4 +7,4 @@ attachDebuggerInstanceAt: anInteger
 	self debugger: (self class debuggerClass newWith: debuggerInstance).
 	self debugger interface: self interface.
 	self debugger accept: $_.
-	self beginDebugging.
+	self beginDebugging

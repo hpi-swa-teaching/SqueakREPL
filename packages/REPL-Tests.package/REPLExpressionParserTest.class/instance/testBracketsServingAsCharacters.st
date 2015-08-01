@@ -4,4 +4,5 @@ testBracketsServingAsCharacters
 
 	self
 		assert:
-			(self expressionParser isCompletedExpression: 's := ''Brackets '', $[, $], '' are mainly used to insert explanatory material.''')
+			(self expressionParser
+				isCompletedExpression: 's := ''Brackets '', $[, $], '' are mainly used to insert explanatory material.''')

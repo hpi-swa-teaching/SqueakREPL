@@ -4,5 +4,4 @@ releaseDebugger
 
 	self clearDebugger.
 	self endDebugging.
-	self interface print: self interface class lineSymbol.
-	
+	self interface print: self interface class lineSymbol

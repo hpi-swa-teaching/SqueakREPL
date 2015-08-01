@@ -1,5 +1,5 @@
 accessing
-classOfExpressionEvaluator 
+classOfExpressionEvaluator
 	"Answer the class used for code evaluation."
 
-	^ REPLExpressionEvaluator 
+	^ REPLExpressionEvaluator

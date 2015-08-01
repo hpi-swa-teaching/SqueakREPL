@@ -8,6 +8,5 @@ Usage:
 
 	| interface |
 	interface := aContext userInterface.
-
 	interface shell attachDebuggerInstanceAt: anInteger.
 	^ (interface class colorize: self class debuggerAttachedMessage with: interface class colorGood) asString , String crlf

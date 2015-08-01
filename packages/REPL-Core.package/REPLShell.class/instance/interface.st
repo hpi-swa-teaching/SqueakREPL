@@ -1,5 +1,5 @@
 accessing
 interface
-	"Answer interface handling user input and output."	
+	"Answer interface handling user input and output."
 
 	^ interface

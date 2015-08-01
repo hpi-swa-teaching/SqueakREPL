@@ -5,5 +5,4 @@ quit: aContext
 Usage:
 !quit"
 
-
-	[Smalltalk snapshot: true andQuit: true] fork
+	[ Smalltalk snapshot: true andQuit: true ] fork

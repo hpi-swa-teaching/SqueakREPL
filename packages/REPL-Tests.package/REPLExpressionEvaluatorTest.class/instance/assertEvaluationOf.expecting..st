@@ -4,7 +4,4 @@ assertEvaluationOf: aString expecting: anObject
 
 	| result |
 	result := self evaluate: aString.
-
-	self
-		assert: (result = anObject)
-		description: 'Unexpected result ', result, ', expected ', anObject
+	self assert: result = anObject description: 'Unexpected result ' , result , ', expected ' , anObject

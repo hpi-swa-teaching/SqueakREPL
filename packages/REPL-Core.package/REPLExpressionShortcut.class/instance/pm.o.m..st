@@ -6,7 +6,4 @@ pm: aContext o: aClassOrSymbol m: aSymbol
 	class := aClassOrSymbol isSymbol
 		ifTrue: [ Smalltalk classNamed: aClassOrSymbol ]
 		ifFalse: [ aClassOrSymbol ].
-
-	^ (aClassOrSymbol sourceCodeAt: aSymbol) asString
-			copyReplaceAll: String cr
-			with: String crlf
+	^ (aClassOrSymbol sourceCodeAt: aSymbol) asString copyReplaceAll: String cr with: String crlf

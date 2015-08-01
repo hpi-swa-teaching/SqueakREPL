@@ -1,4 +1,3 @@
 colorization
 colorGood
-
 	^ #mock

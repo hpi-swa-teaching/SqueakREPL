@@ -4,9 +4,5 @@ testVardumpNonEmpty
 
 	| result |
 	self context expressionEvaluator evaluate: 'a := 5'.
-
 	result := self shortcuts vardump: self context.
-
-	self
-		assert: (result = 'No local bindings found.') not
-		description: 'Expected bindings to be found.'
+	self assert: (result = 'No local bindings found.') not description: 'Expected bindings to be found.'

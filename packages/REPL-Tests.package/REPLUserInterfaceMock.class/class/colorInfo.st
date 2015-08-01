@@ -1,4 +1,3 @@
 colorization
 colorInfo
-
 	^ #mock

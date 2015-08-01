@@ -1,18 +1,18 @@
 {
 	"class" : {
-		"classOfExpressionEvaluator" : "tm 7/29/2015 22:46",
-		"classOfExpressionShortcut" : "tm 7/29/2015 22:46",
-		"newWith:" : "tm 7/29/2015 22:55" },
+		"classOfExpressionEvaluator" : "dbP 8/1/2015 02:42",
+		"classOfExpressionShortcut" : "dbP 8/1/2015 02:42",
+		"newWith:" : "dbP 8/1/2015 02:42" },
 	"instance" : {
-		"complete:" : "tm 7/30/2015 00:08",
-		"completeExpression:" : "tm 7/30/2015 20:32",
-		"completeOrdinaryShortcut:" : "tm 7/30/2015 01:20",
-		"completeSpecialShortcut:" : "tm 7/30/2015 01:20",
-		"determineLocalBindings:" : "tm 7/29/2015 23:40",
-		"initialize" : "tm 7/29/2015 22:43",
-		"isOrdinaryShortcut:" : "tm 7/30/2015 00:08",
-		"isSpecialShortcut:" : "tm 7/30/2015 00:08",
-		"optimisticModel" : "tm 7/29/2015 20:17",
-		"optimisticModel:" : "tm 7/29/2015 20:18",
-		"workspace" : "tm 7/29/2015 21:06",
-		"workspace:" : "tm 7/29/2015 21:06" } }
+		"complete:" : "dbP 8/1/2015 02:42",
+		"completeExpression:" : "dbP 8/1/2015 02:42",
+		"completeOrdinaryShortcut:" : "dbP 8/1/2015 02:42",
+		"completeSpecialShortcut:" : "dbP 8/1/2015 02:42",
+		"determineLocalBindings:" : "dbP 8/1/2015 02:42",
+		"initialize" : "dbP 8/1/2015 02:42",
+		"isOrdinaryShortcut:" : "dbP 8/1/2015 02:42",
+		"isSpecialShortcut:" : "dbP 8/1/2015 02:42",
+		"optimisticModel" : "dbP 8/1/2015 02:42",
+		"optimisticModel:" : "dbP 8/1/2015 02:42",
+		"workspace" : "dbP 8/1/2015 02:42",
+		"workspace:" : "dbP 8/1/2015 02:42" } }

@@ -1,9 +1,7 @@
 running
 disconnectClient
-
 	[ self client closeAndDestroy: 1 ]
 		on: ConnectionClosed
-		do: [ :ex | ]
-
+		do: [ :ex |  ]
 		on: ConnectionTimedOut
-		do: [ :ex | ]
+		do: [ :ex |  ]

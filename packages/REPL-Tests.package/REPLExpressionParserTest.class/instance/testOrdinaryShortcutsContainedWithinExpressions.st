@@ -4,4 +4,5 @@ testOrdinaryShortcutsContainedWithinExpressions
 
 	self
 		assert:
-			(self expressionParser makesUseOfShortcuts: 'self doPreprocessing. #cc s: #NewClass c: ''NewCategory''. self doPostprocessing')
+			(self expressionParser
+				makesUseOfShortcuts: 'self doPreprocessing. #cc s: #NewClass c: ''NewCategory''. self doPostprocessing')

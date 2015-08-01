@@ -5,4 +5,4 @@ setUp
 	super setUp.
 	self
 		connectServer;
-		connectClient 
+		connectClient

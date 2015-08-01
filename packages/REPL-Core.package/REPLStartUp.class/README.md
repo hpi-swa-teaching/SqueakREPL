@@ -11,4 +11,4 @@ the #new message to create a new REPL instance.
 
 Collaboration
 --------------------------------------------------------------------------------
-TelnetServer
+TelnetInterface

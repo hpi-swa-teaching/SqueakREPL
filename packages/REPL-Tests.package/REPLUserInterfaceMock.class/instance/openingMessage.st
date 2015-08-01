@@ -1,5 +1,5 @@
 as yet unclassified
-openingMessage 
+openingMessage
 	"Mock the server's opering message."
 
 	^ 'mock'

@@ -11,5 +11,5 @@ receiving #accept commands (e.g., #acceptArrowUp).
 
 Collaboration
 --------------------------------------------------------------------------------
-TelnetServer, Debugger, ExpressionCompletion,
+TelnetInterface, Debugger, ExpressionCompletion,
 ExpressionEvaluator

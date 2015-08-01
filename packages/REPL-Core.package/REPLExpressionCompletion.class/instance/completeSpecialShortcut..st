@@ -4,7 +4,7 @@ completeSpecialShortcut: aString
 
 	| selectors suggestions |
 	selectors := self class classOfExpressionShortcut selectors
-		select: [ :eachSelector | ((eachSelector occurrencesOf: $:) = 1) and: [ eachSelector startsWith: aString allButFirst ] ].
+		select: [ :eachSelector | (eachSelector occurrencesOf: $:) = 1 and: [ eachSelector startsWith: aString allButFirst ] ].
 	suggestions := selectors
-		collect: [ :eachSelector | self class classOfExpressionEvaluator characterOfSpecialExpressionShortcut asString, eachSelector allButLast ].
+		collect: [ :eachSelector | self class classOfExpressionEvaluator characterOfSpecialExpressionShortcut asString , eachSelector allButLast ].
 	^ suggestions asOrderedCollection

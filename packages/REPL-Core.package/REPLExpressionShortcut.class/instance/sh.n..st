@@ -4,7 +4,6 @@ sh: aContext n: aString
 
 	| class |
 	class := Smalltalk
-			at: #PipeableOSProcess
-			ifAbsent: [^ aContext userInterface print: self osProcessWarningMessage, String crlf ].
-
+		at: #PipeableOSProcess
+		ifAbsent: [ ^ aContext userInterface print: self osProcessWarningMessage , String crlf ].
 	^ (class command: aString) output asString copyReplaceAll: String cr with: String crlf

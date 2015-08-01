@@ -9,8 +9,8 @@ createTestClass
 		classVariableNames: ''
 		poolDictionaries: ''
 		category: self class testClassCategoryName.
-
 	classInstance := Smalltalk at: self class testClassName asSymbol.
-
-	classInstance compile: 'testFunction
+	classInstance
+		compile:
+			'testFunction
 ^1234'

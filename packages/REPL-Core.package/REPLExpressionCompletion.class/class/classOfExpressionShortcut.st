@@ -1,5 +1,5 @@
 accessing
 classOfExpressionShortcut
-    "Answer the class handling expression shortcuts for the receiver."
+	"Answer the class handling expression shortcuts for the receiver."
 
-    ^ REPLExpressionShortcut
+	^ REPLExpressionShortcut

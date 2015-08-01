@@ -10,6 +10,7 @@ Usage:
 	windows := World submorphsSatisfying: [ :eachSubMorph | eachSubMorph isKindOf: SystemWindow ].
 	^ windows
 		inject: String empty
-		into: [ :result :eachWindow | result , String crlf , ' '
-										, (interface class colorize: '(' , (windows indexOf: eachWindow) , ') ' with: interface class colorGood)
-										, eachWindow label ]
+		into: [ :result :eachWindow | 
+			result , String crlf , ' '
+				, (interface class colorize: '(' , (windows indexOf: eachWindow) , ') ' with: interface class colorGood)
+				, eachWindow label ]

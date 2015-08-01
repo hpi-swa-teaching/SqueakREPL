@@ -11,4 +11,4 @@ UserInterface.
 
 Collaboration
 --------------------------------------------------------------------------------
-EvaluationContext, ExpressionParser, UserInterface
+EvaluationContext, ExpressionParser, TelnetInterface

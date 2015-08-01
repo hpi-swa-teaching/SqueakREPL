@@ -4,10 +4,7 @@ performShortcut: aSymbol with: anArray
 
 	| shortcuts value |
 	shortcuts := self class classOfExpressionShortcut new.
-	value := shortcuts
-				perform: aSymbol
-				withArguments: anArray.
-
+	value := shortcuts perform: aSymbol withArguments: anArray.
 	^ (value isMemberOf: self class classOfExpressionShortcut)
 		ifFalse: [ value ]
 		ifTrue: [ nil ]

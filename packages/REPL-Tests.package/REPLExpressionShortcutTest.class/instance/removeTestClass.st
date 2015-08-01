@@ -4,4 +4,4 @@ removeTestClass
 
 	| classInstance |
 	classInstance := Smalltalk at: self class testClassName asSymbol.
-	classInstance removeFromSystem 
+	classInstance removeFromSystem

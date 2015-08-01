@@ -1,4 +1,3 @@
 colorization
 colorBad
-
 	^ #mock

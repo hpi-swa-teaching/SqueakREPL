@@ -2,4 +2,4 @@ accessing
 clearInput
 	"Clear input buffer."
 
-	self inputBuffer: ''.
+	self inputBuffer: ''

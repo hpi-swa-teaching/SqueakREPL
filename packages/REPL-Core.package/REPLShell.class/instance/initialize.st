@@ -12,7 +12,4 @@ initialize
 		debugging: false;
 		clearOutputBuffer;
 		clearHistory;
-		clearHistoryIndex.
-		
-
-	
+		clearHistoryIndex

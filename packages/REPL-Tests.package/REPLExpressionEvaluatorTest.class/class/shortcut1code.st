@@ -1,5 +1,5 @@
 as yet unclassified
-shortcut1code 
+shortcut1code
 	^ 'testCommand: aContext
 
 ^ aContext'

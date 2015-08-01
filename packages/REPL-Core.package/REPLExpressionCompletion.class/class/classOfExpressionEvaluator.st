@@ -1,5 +1,5 @@
 accessing
 classOfExpressionEvaluator
-    "Answer the class evaluating expression shortcuts for the receiver."
+	"Answer the class evaluating expression shortcuts for the receiver."
 
-    ^ REPLExpressionEvaluator
+	^ REPLExpressionEvaluator
