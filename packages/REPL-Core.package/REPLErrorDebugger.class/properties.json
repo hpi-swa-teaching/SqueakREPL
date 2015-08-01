@@ -8,7 +8,7 @@
 	"instvars" : [
 		"debugger",
 		"interface" ],
-	"name" : "REPLDebugger",
+	"name" : "REPLErrorDebugger",
 	"pools" : [
 		 ],
 	"super" : "Object",

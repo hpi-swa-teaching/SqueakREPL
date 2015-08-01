@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "wr 8/1/2015 02:07",
 	"instvars" : [
 		"repl",
 		"client" ],
-	"name" : "REPLTest",
+	"name" : "REPLStartupTest",
 	"pools" : [
 		 ],
 	"super" : "TestCase",
