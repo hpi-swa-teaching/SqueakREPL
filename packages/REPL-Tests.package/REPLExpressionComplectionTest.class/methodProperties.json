@@ -1,16 +1,16 @@
 {
 	"class" : {
-		"classOfExpressionCompletion" : "dbP 8/1/2015 02:42" },
+		"classOfExpressionCompletion" : "tm 8/4/2015 18:03" },
 	"instance" : {
-		"bindings" : "dbP 8/1/2015 02:42",
-		"expressionCompletion" : "dbP 8/1/2015 02:42",
-		"expressionCompletion:" : "dbP 8/1/2015 02:42",
-		"setUp" : "dbP 8/1/2015 02:42",
-		"testCorrectCommonExpressionCompletion" : "dbP 8/1/2015 02:42",
-		"testCorrectLocalBindingDetermination" : "dbP 8/1/2015 02:42",
-		"testCorrectOrdinaryShortcutCompletion" : "dbP 8/1/2015 02:42",
-		"testCorrectSpecialShortcutCompletion" : "dbP 8/1/2015 02:42",
-		"testIncorrectCommonExpressionCompletion" : "dbP 8/1/2015 02:42",
-		"testIncorrectLocalBindingDetermination" : "dbP 8/1/2015 02:42",
-		"testIncorrectOrdinaryShortcutCompletion" : "dbP 8/1/2015 02:42",
-		"testIncorrectSpecialShortcutCompletion" : "dbP 8/1/2015 02:42" } }
+		"bindings" : "tm 8/4/2015 18:03",
+		"expressionCompletion" : "tm 8/4/2015 18:03",
+		"expressionCompletion:" : "tm 8/4/2015 18:03",
+		"setUp" : "tm 8/4/2015 18:03",
+		"testCorrectCommonExpressionCompletion" : "tm 8/4/2015 18:03",
+		"testCorrectLocalBindingDetermination" : "tm 8/4/2015 18:03",
+		"testCorrectOrdinaryShortcutCompletion" : "tm 8/4/2015 18:03",
+		"testCorrectSpecialShortcutCompletion" : "tm 8/4/2015 18:03",
+		"testIncorrectCommonExpressionCompletion" : "tm 8/4/2015 18:03",
+		"testIncorrectLocalBindingDetermination" : "tm 8/4/2015 18:03",
+		"testIncorrectOrdinaryShortcutCompletion" : "tm 8/4/2015 18:03",
+		"testIncorrectSpecialShortcutCompletion" : "tm 8/4/2015 18:03" } }

@@ -1,11 +1,11 @@
 {
 	"class" : {
-		"newFor:on:with:" : "dbP 8/1/2015 02:42",
-		"newOn:" : "dbP 8/1/2015 02:42" },
+		"newFor:on:with:" : "tm 8/4/2015 18:03",
+		"newOn:" : "tm 8/4/2015 18:03" },
 	"instance" : {
-		"expressionEvaluator" : "dbP 8/1/2015 02:42",
-		"expressionEvaluator:" : "dbP 8/1/2015 02:42",
-		"expressionParser" : "dbP 8/1/2015 02:42",
-		"expressionParser:" : "dbP 8/1/2015 02:42",
-		"userInterface" : "dbP 8/1/2015 02:42",
-		"userInterface:" : "dbP 8/1/2015 02:42" } }
+		"expressionEvaluator" : "tm 8/4/2015 18:03",
+		"expressionEvaluator:" : "tm 8/4/2015 18:03",
+		"expressionParser" : "tm 8/4/2015 18:03",
+		"expressionParser:" : "tm 8/4/2015 18:03",
+		"userInterface" : "tm 8/4/2015 18:03",
+		"userInterface:" : "tm 8/4/2015 18:03" } }

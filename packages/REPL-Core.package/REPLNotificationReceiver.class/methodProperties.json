@@ -1,16 +1,16 @@
 {
 	"class" : {
-		"newFor:with:" : "dbP 8/1/2015 02:43" },
+		"newFor:with:" : "tm 8/4/2015 18:03" },
 	"instance" : {
-		"bindingOf:" : "dbP 8/1/2015 02:43",
-		"doesNotUnderstand:" : "dbP 8/1/2015 02:43",
-		"lastError" : "dbP 8/1/2015 02:43",
-		"lastError:" : "dbP 8/1/2015 02:43",
-		"model" : "dbP 8/1/2015 02:43",
-		"model:" : "dbP 8/1/2015 02:43",
-		"notify:at:in:" : "dbP 8/1/2015 02:43",
-		"select" : "dbP 8/1/2015 02:43",
-		"selectFrom:to:" : "dbP 8/1/2015 02:43",
-		"selectionInterval" : "dbP 8/1/2015 02:43",
-		"source" : "dbP 8/1/2015 02:43",
-		"source:" : "dbP 8/1/2015 02:43" } }
+		"bindingOf:" : "tm 8/4/2015 18:03",
+		"doesNotUnderstand:" : "tm 8/4/2015 18:03",
+		"lastError" : "tm 8/4/2015 18:03",
+		"lastError:" : "tm 8/4/2015 18:03",
+		"model" : "tm 8/4/2015 18:03",
+		"model:" : "tm 8/4/2015 18:03",
+		"notify:at:in:" : "tm 8/4/2015 18:03",
+		"select" : "tm 8/4/2015 18:03",
+		"selectFrom:to:" : "tm 8/4/2015 18:03",
+		"selectionInterval" : "tm 8/4/2015 18:03",
+		"source" : "tm 8/4/2015 18:03",
+		"source:" : "tm 8/4/2015 18:03" } }
