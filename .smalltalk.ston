@@ -1,0 +1,1 @@
+SmalltalkCISpec {  #loading : [    SCIMetacelloLoadSpec {      #baseline : 'REPL',      #directory : 'packages',      #platforms : [ #squeak ],      #load : [ 'TravisCI' ],      #useLatestMetacello : true    }  ],  #testing : {    #categories : [ 'REPL-*' ],    #coverage : {      #categories : [ 'REPL-Core' ]    }  }}
